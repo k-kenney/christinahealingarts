@@ -1,8 +1,7 @@
 // Config files
 @import "config/setup";
-
-// External libraries
+@import "config/variables";
 
 // Stylesheets
 @import "components/index";
-@import "components/navbar";
+@import "pages/homepage/index";
