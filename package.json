@@ -13,7 +13,7 @@
     "sass": "^1.62.1"
   },
   "scripts": {
-    "dev": "parcel index.html --open",
+    "dev": "parcel index.html",
     "build": "parcel build index.html"
   }
 }
