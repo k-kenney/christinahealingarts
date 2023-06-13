@@ -1,9 +1,42 @@
-body {
-  background-color: #f5f5f5;
-  color: #323232;
-}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 120px;
 
-.nav-bar-logo {
-  width: 60px;
-  fill: pink;
+  .navbar-logo {
+    width: 160px;
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+
+  .pages-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    padding-left: 0;
+    font-size: 25px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    margin-right: 50px;
+  }
+
+  ul {
+    list-style-type: none;
+
+    .home-tab {
+      border-bottom: solid 1px;
+    }
+
+    i {
+      color: #47562F;
+      font-size: 30px;
+    }
+  }
+
 }
