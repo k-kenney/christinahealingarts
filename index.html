@@ -121,34 +121,63 @@
      </section>
      <!-- contact section -->
      <section class="section-contact">
-      <div class="form-group">
-        <form action="https://formsubmit.co/el/kaylachristinekenney@gmail.com" method="POST">
-          <label for="name">Name*</label>
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            required
-          >
-          <label for="email">Email*</label>
-          <input
-            type="emai"
-            name="email"
-            placeholder="john-doe@gmail.com"
-            required
-          >
-          <label for="phone">Phone</label>
-          <input type="tel" name="phone" placeholder="123-123-1234">
+      <h1>Contact me</h1>
+      <hr>
+      <div class="contact-container">
+        <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/f/myyarwyj" method="post">
+          <fieldset id="fs-frm-inputs">
+            <div class="contact-col-1">
+              <div class="name-section">
+                <label for="full-name"><img src="img/person-icon.png" alt="person" class="person-icon"></label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last*" required="">
+              </div>
+              <div class="email-section">
+                <label for="email-address"><img src="img/email-icon.png" alt="person" class="person-icon"></label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld*" required="">
+              </div>
+              <label for="yoga-type" class="yoga-type">Which type of yoga interests you?</label>
+              <select name="yoga-type" id="yoga-type">
+                <option value="" selected="" disabled="">Select</option>
+                <option value="strength">Yoga for stregth and mobility</option>
+                <option value="stress">Yoga for stress and anxiety</option>
+                <option value="adaptive">Adaptive yoga</option>
+                <option value="vocal">Vocal yoga</option>
+                <option value="fertility">Yoga for fertility</option>
+                <option value="any">Any kind of yoga</option>
+              </select>
+            </div>
+            <div class="contact-col-2">
+              <!-- <label for="message">Message</label> -->
+              <textarea rows="7" name="message" id="message" placeholder="Message"></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+            </div>
+          </fieldset>
+          <input type="submit" value="Submit" class="submit-button">
+        </form>
       </div>
-      <div class="form-group-full">
-        <textarea type="text" name="message" placeholder="Message" required>
-        <button type="submit">Send</button>
-      </div>
-      </form>
-
      </section>
      <!-- footer -->
      <footer>
+      <div class="footer-container">
+        <div class="business-logo-white">
+          <img src="img/business-logo-white.png" alt="business-logo-white">
+        </div>
+        <div class="copyright">
+          <small>&copy; Copyright 2023, Christina Healing Arts</small>
+        </div>
+        <div class="social-icons">
+          <div>
+            <p>Let's connect!</p>
+          </div>
+          <div>
+            <ul class="social-icons">
+              <li><a href="https://www.instagram.com/christinahealingarts/" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/christinahealingarts/" target="_blank" rel="noopener"><i class="fa-brands fa-square-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/christina-phares-3863216b/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
      </footer>
   </main>
 </body>
