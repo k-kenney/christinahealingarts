@@ -5,8 +5,8 @@
   width: cover;
 
   .homepage-about-text{
-    width: 650px;
-    height: 720px;
+    width: 40%;
+    height: 60%;
     background: rgba(71, 86, 47, 0.5);
     padding: 30px 90px 10px 50px;
     margin-top: 70px;
@@ -78,5 +78,20 @@
     border-radius: 7px;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
   }
+
+   // all rules outside of @media queries apply to devices 1201px and above
+   @media (max-width: 1200px) {
+    //from 993px to 1200px (inclusive)
+    }
+    @media (max-width: 992px) {
+    //from 769px to 992px (inclusive)
+    }
+    @media (max-width: 768px) {
+    // from 0px to 768px (inclusive)
+      img {
+        display: none;
+      }
+    }
+
 
 }

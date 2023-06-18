@@ -1,4 +1,5 @@
 .banner {
+  width: cover;
 
   .banner-image {
     background: url(../img/homepage-banner.jpeg);
@@ -9,13 +10,13 @@
     height: 90vh;
     overflow-x: hidden;
     opacity: 0.6;
-    position: relative;
+    // position: relative;
   }
 
   .banner-box{
     position: absolute;
     left: 57%;
-    top: 270px;
+    top: 45%;
 
     p {
       background-color: #f5f5f5;
@@ -34,6 +35,42 @@
       font-size: 35px;
       padding-left: 180px;
     }
+  }
+
+
+  // all rules outside of @media queries apply to devices 1201px and above
+  @media (max-width: 1200px) {
+  //from 993px to 1200px (inclusive)
+  }
+  @media (max-width: 992px) {
+  //from 769px to 992px (inclusive)
+    .banner-box{
+      position: absolute;
+      left: 55%;
+      top: 100%;
+
+      p {
+        background-color: #f5f5f5;
+        background: rgba(245,245,245,0.8);
+        width: 185px;
+        height: 135px;
+        border-radius: 5px;
+        font-size: 27px;
+        line-height: 40px;
+        text-align: center;
+        padding-top: 15px;
+      }
+
+      .banner-box-islander {
+        font-family: 'Island Moments', cursive;
+        font-size: 25px;
+        padding-left: 50px;
+      }
+    }
+
+  }
+  @media (max-width: 768px) {
+  // from 0px to 768px (inclusive)
   }
 
 }
