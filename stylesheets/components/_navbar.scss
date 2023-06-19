@@ -56,16 +56,12 @@ header {
       display: none;
     }
 
-
-    // all rules outside of @media queries apply to devices 1201px and above
     @media (max-width: 1200px) {
     //from 993px to 1200px (inclusive)
     }
     @media (max-width: 992px) {
-      height: 100px;
-
       .social-icons {
-        display: none;
+        display: none !important;
       }
 
       .navbar-logo {
@@ -85,7 +81,6 @@ header {
         cursor: pointer;
         position: relative;
         z-index: 2; /* Ensure the hamburger icon appears above the navbar */
-
       }
 
       .pages-navbar {
@@ -100,14 +95,23 @@ header {
         background: rgba(245,245,245,0.6);
         width: 160px;
         padding-right: 50px;
+        padding-left: 0; /* Reset left padding */
+
+        li {
+          width: 100%; /* Full width for list items */
+        }
+
+        a {
+          display: block; /* Make anchor tags full-width for clickable area */
+          padding: 0 20px; /* Add padding for better spacing */
+          color: #323232;
+          text-decoration: none;
+        }
 
         a:hover {
           color: gray;
         }
       }
-
-
-
     }
     @media (max-width: 768px) {
     // from 0px to 768px (inclusive)

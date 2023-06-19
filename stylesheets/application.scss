@@ -1,7 +1,7 @@
 // Config files
-@import "config/setup";
 @import "config/variables";
+@import "config/setup";
 
 // Stylesheets
-@import "components/index";
 @import "pages/homepage/index";
+@import "components/index";
