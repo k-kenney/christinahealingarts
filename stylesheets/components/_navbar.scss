@@ -94,8 +94,8 @@ header {
         line-height: 45px;
         background: rgba(245,245,245,0.6);
         width: 160px;
-        padding-right: 50px;
-        padding-left: 0; /* Reset left padding */
+        padding-right: 0;
+        padding-left: 40px; /* Reset left padding */
 
         li {
           width: 100%; /* Full width for list items */

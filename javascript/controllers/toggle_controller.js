@@ -5,13 +5,13 @@ export default class extends Controller {
 
   static values = { isOpen: Boolean }
 
-  connect = () => {
+  connect() {
     // console.log(this.element)
     this.updateMenuVisibility()
     window.addEventListener("resize", this.updateMenuVisibility.bind(this))
   }
 
-  disconnect = () => {
+  disconnect() {
     window.removeEventListener("resize", this.updateMenuVisibility.bind(this))
   }
 
