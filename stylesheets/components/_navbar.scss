@@ -1,31 +1,33 @@
 .navbar {
-  width: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
+  gap: 50px;
   height: 100px;
+  justify-content: space-between;
   margin: 0;
-  padding: 0;
-  margin-bottom: -45px;
-  margin-top: 5px;
 
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    margin-right: 55px;
+    width: 35px;
+    z-index: 2; /* Ensure the hamburger icon appears above the navbar */
+  }
 
-  // .navbar {
+  img {
+    padding-top: 10px;
+    width: 160px;
+  }
 
-    .navbar-logo {
-      width: 160px;
-      padding-top: 10px;
-      margin: 0 auto;
-    }
-
-    .pages-navbar {
-      display: flex;
-      justify-content: space-between;
-      width: 130%;
-      margin-left: -70px;
-      font-size: 23px;
-    }
+  .pages-navbar {
+    display: flex;
+    flex-grow: 1;
+    font-size: 23px;
+    justify-content: space-between;
+  }
 
     .social-icons {
       display: flex;
@@ -53,11 +55,9 @@
 
     }
 
-    button {
-      display: none;
-    }
-
-  // }
+    // button {
+    //   display: none;
+    // }
 
   @media (min-width: 1200px) {
     //from 993px to 1200px (inclusive)
@@ -118,8 +118,57 @@
   }
   @media (min-width: $phone)  {
     // from 0px to 768px (inclusive)
+    a {
+      color: #323232;
+    }
+  }
 
+  .social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    padding-right: 50px;
+
+    i {
+      color: #47562F;
+      font-size: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    button {
+      display: block;
     }
 
+    .pages-navbar {
+      background: rgba(245,245,245,0.6);
+      flex-direction: column;
+      font-size: 1.6rem;
+      line-height: 45px;
+      padding-right: 0;
+      position: absolute;
+      right: 0;
+      text-align: end;
+      top: 100px;
+      width: max-content;
+      z-index: 1; /* Ensure it appears above other elements */
 
+      &.mobile-hidden {
+        display: none;
+      }
+
+      a {
+        padding: 0 20px; /* Add padding for better spacing */
+        width: 100%;
+
+        &:hover {
+          color: gray;
+        }
+      }
+    }
+
+    .social-icons {
+      display: none;
+    }
+  }
 }
