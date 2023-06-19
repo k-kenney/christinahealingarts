@@ -1,4 +1,3 @@
-
 .homepage-services-container {
   display: flex;
   flex-direction: column;
@@ -7,12 +6,14 @@
   margin: 0;
   background-color: #F3E7EB;
   width: 100%;
+  padding-bottom: 40px;
+
 
   h1{
     font-size: 45px;
     margin: 0;
     padding-bottom: 20px;
-    padding-top: 35px;
+    padding-top: 55px;
   }
 
   hr {

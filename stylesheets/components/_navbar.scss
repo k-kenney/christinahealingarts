@@ -1,16 +1,17 @@
-header {
+.navbar {
   width: 100%;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -45px;
+  margin-top: 5px;
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: -45px;
-    margin-top: 5px;
+
+  // .navbar {
 
     .navbar-logo {
       width: 160px;
@@ -56,67 +57,69 @@ header {
       display: none;
     }
 
-    @media (max-width: 1200px) {
+  // }
+
+  @media (max-width: 1200px) {
     //from 993px to 1200px (inclusive)
     }
-    @media (max-width: 992px) {
-      .social-icons {
-        display: none !important;
+  @media (max-width: 992px)  {
+    .social-icons {
+      display: none !important;
+    }
+
+    .navbar-logo {
+      width: 60%;
+      margin: 0;
+      padding-top: 45px;
+    }
+
+    button {
+      display: block;
+      margin-right: 55px;
+      padding: 0;
+      width: 35px;
+      height: 35px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      position: relative;
+      z-index: 2; /* Ensure the hamburger icon appears above the navbar */
+    }
+
+    .pages-navbar {
+      flex-direction: column;
+      align-items: end;
+      font-size: 1.6rem;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      z-index: 1; /* Ensure it appears above other elements */
+      line-height: 45px;
+      background: rgba(245,245,245,0.6);
+      width: 160px;
+      padding-right: 0;
+      padding-left: 40px; /* Reset left padding */
+
+      li {
+        width: 100%; /* Full width for list items */
       }
 
-      .navbar-logo {
-        width: 60%;
-        margin: 0;
-        padding-top: 45px;
+      a {
+        display: block; /* Make anchor tags full-width for clickable area */
+        padding: 0 20px; /* Add padding for better spacing */
+        color: #323232;
+        text-decoration: none;
       }
 
-      button {
-        display: block;
-        margin-right: 55px;
-        padding: 0;
-        width: 35px;
-        height: 35px;
-        border: none;
-        background: transparent;
-        cursor: pointer;
-        position: relative;
-        z-index: 2; /* Ensure the hamburger icon appears above the navbar */
-      }
-
-      .pages-navbar {
-        flex-direction: column;
-        align-items: end;
-        font-size: 1.6rem;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        z-index: 1; /* Ensure it appears above other elements */
-        line-height: 45px;
-        background: rgba(245,245,245,0.6);
-        width: 160px;
-        padding-right: 0;
-        padding-left: 40px; /* Reset left padding */
-
-        li {
-          width: 100%; /* Full width for list items */
-        }
-
-        a {
-          display: block; /* Make anchor tags full-width for clickable area */
-          padding: 0 20px; /* Add padding for better spacing */
-          color: #323232;
-          text-decoration: none;
-        }
-
-        a:hover {
-          color: gray;
-        }
+      a:hover {
+        color: gray;
       }
     }
-    @media (max-width: 768px) {
+  }
+  @media screen and (max-width: $phone)  {
     // from 0px to 768px (inclusive)
 
     }
-  }
+
 
 }

@@ -10,9 +10,10 @@ $softblack: #323232;
 $body-font: 'Cormorant', serif;
 $special-text: 'Island Moments', cursive;
 
-// Screen sizes
-// $large: 996px;
-// $small: 576px;
+// breakpoints
+$phone: 320px;
+$tablet: 768px;
+$laptop: 1024px;
 
 // Spacing
 // $padding: 0.5rem 1rem;
