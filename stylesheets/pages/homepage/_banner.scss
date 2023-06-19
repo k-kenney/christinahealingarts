@@ -1,13 +1,10 @@
 .banner {
-  width: cover;
-
   .banner-image {
     background: url(../img/homepage-banner.jpeg);
     background-repeat: no-repeat;
-    background-size: 140%;
-    background-position: 95% 30%;
-    margin-top: 40px;
-    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 100px);
     overflow-x: hidden;
     opacity: 0.6;
   }
