@@ -40,7 +40,7 @@
   @media (max-width: 1200px) {
   //from 993px to 1200px (inclusive)
   }
-  @media (max-width: 992px) {
+  @media screen and (max-width: $tablet) {
   //from 769px to 992px (inclusive)
     .banner-box{
       left: 55%;
@@ -61,7 +61,7 @@
     }
 
   }
-  @media (max-width: 768px) {
+  @media (max-width: $phone) {
   // from 0px to 768px (inclusive)
     .banner-box{
       left: 55%;
@@ -80,6 +80,5 @@
         padding-left: 55px;
       }
     }
-
   }
 }

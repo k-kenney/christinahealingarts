@@ -59,10 +59,10 @@
 
   // }
 
-  @media (max-width: 1200px) {
+  @media (min-width: 1200px) {
     //from 993px to 1200px (inclusive)
     }
-  @media (max-width: 992px)  {
+  @media (min-width: $tablet)  {
     .social-icons {
       display: none !important;
     }
@@ -116,7 +116,7 @@
       }
     }
   }
-  @media screen and (max-width: $phone)  {
+  @media (min-width: $phone)  {
     // from 0px to 768px (inclusive)
 
     }
