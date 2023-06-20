@@ -40,6 +40,8 @@
       height: 230px;
       border: none;
       border-radius: 10px;
+      -webkit-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+      -moz-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
       box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
       font-family: $body-font;
       color: $softblack;
@@ -119,9 +121,14 @@
       text-decoration: none;
       font-family: $body-font;
       font-size: 16px;
-      -webkit-border: none;
-      -moz-border: none;
+      -webkit-border: transparent;
+      -moz-border: transparent;
+      border: transparent;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
       border-radius: 5px;
+      -webkit-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+      -moz-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
       box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
       cursor: pointer;
       display: inline-block;
