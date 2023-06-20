@@ -32,20 +32,22 @@
     align-items: center;
     justify-content: center;
     margin: 0;
-    padding: 40px 30px;
 
     .service-ind {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      width: 300px;
+      justify-content: start;
+      width: 370px;
+      height: 270px;
+      margin-top: 50px;
     }
 
     p {
       font-size: 32px;
       line-height: 40px;
-      padding-bottom: 35px;
+      padding-top: 40px;
+      padding-bottom: 30px;
       width: 280px;
       text-align: center;
     }
@@ -57,7 +59,7 @@
 
   button {
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding: 15px 25px;
     text-decoration: none;
     font-family: 'Cormorant', serif;
@@ -65,31 +67,93 @@
     border: none;
     border-radius: 10px;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-  }
-
-  button{
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
+
+    &:after {
+      content: '»';
+      position: absolute;
+      opacity: 0;
+      top: 15px;
+      right: -10px;
+      transition: 0.5s;
+    }
+
+    &:hover{
+      padding-right: 25px;
+      padding-left:15px;
+      background: rgba(0, 0, 0,.2);
+    }
+
+    &:hover:after {
+      opacity: 1;
+      right: 10px;
+    }
+  }
+  @media only screen and (max-width: $laptop) {
+    hr {
+      margin-bottom: 40px;
+    }
+
+    .homepage-services-content {
+
+      .service-ind {
+        width: 350px;
+        height: 250px;
+      }
+
+      img {
+        width: 90px;
+      }
+    }
+
+    button {
+      margin-top: 30px;
+    }
   }
 
-  button:after {
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    top: 15px;
-    right: -10px;
-    transition: 0.5s;
+  @media only screen and (max-width: $tablet) {
+    .homepage-services-content {
+
+      .service-ind {
+        width: 300px;
+        height: 220px;
+      }
+
+    }
   }
 
-  button:hover{
-    padding-right: 25px;
-    padding-left:15px;
-  }
+  @media only screen and (max-width: $phone) {
+    .homepage-services-content {
 
-  button:hover:after {
-    opacity: 1;
-    right: 10px;
+      .service-ind {
+        width: 250px;
+        height: 200px;
+
+        p {
+          font-size: 26px;
+          line-height: 35px;
+          padding-top: 40px;
+        }
+      }
+    }
+
+    button {
+      margin-top: 60px;
+      padding: 8px 10px;
+      font-size: 14px;
+
+      &:hover{
+        padding-right: 20px;
+        padding-left: 10px;
+        background: rgba(0, 0, 0,.2);
+      }
+
+      &:after {
+        top: 8px;
+      }
+    }
   }
 }

@@ -81,7 +81,7 @@
   }
 
   }
-  @media (max-width: $phone) {
+  @media screen and (max-width: $phone) {
   .banner-box{
     left: 50%;
     margin-left: -100px;
