@@ -13,7 +13,7 @@
   hr {
     border: 0;
     width: 10%;
-    background-color:$softblack;
+    background-color: $softblack;
     height: 0.5px;
     margin: auto;
     margin-bottom: 40px;
@@ -41,7 +41,7 @@
       border: none;
       border-radius: 10px;
       box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-      font-family: 'Cormorant', serif;
+      font-family: $body-font;
       font-size: 20px;
       background-color: transparent;
       padding: 10px;
@@ -69,8 +69,8 @@
 
       #full-name, #email-address {
         border: 0;
-        border-bottom: solid 1px #323232;
-        font-family: 'Cormorant', serif;
+        border-bottom: solid 1px $softblack;
+        font-family: $body-font;
         font-size: 20px;
         background: none;
         margin-bottom: 50px;
@@ -89,11 +89,12 @@
 
       #yoga-type {
         border-radius: 7px;
-        border: solid 1px #323232;
+        border: solid 1px $softblack;
         padding: 7px;
-        font-family: 'Cormorant', serif;
+        font-family: $body-font;
         font-size: 18px;
         margin-top: 12px;
+        color: $softblack;
       }
 
 
@@ -113,7 +114,7 @@
       margin-bottom: 80px;
       padding: 15px 25px;
       text-decoration: none;
-      font-family: 'Cormorant', serif;
+      font-family: $body-font;
       font-size: 16px;
       border: none;
       border-radius: 10px;
