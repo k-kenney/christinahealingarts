@@ -38,15 +38,17 @@
     textarea {
       width: 360px;
       height: 230px;
+      color: $softblack;
+      background-color: $background;
+      margin-top: 20px;
+      margin-bottom: 60px;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-family: $body-font;
+      font-size: 20px;
       border: none;
       border-radius: 10px;
-      -webkit-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-      -moz-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
       box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-      font-family: $body-font;
-      color: $softblack;
-      font-size: 20px;
-      background-color: $background;
       padding: 10px;
     }
 
@@ -100,7 +102,6 @@
         color: $softblack;
       }
 
-
       .contact-col-1 {
         display: flex;
         flex-direction: column;
@@ -113,31 +114,29 @@
     }
 
     .submit-button {
-      color: $softblack;
-      background-color: $background;
-      margin-top: 30px;
-      margin-bottom: 80px;
-      padding: 15px 25px;
-      text-decoration: none;
-      font-family: $body-font;
-      font-size: 16px;
-      -webkit-border: transparent;
-      -moz-border: transparent;
-      border: transparent;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-      -webkit-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-      -moz-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-      box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.2s;
+        color: $softblack;
+        background-color: $background;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        padding: 15px 25px;
+        text-decoration: none;
+        font-family: $body-font;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+
 
       &:hover{
-        font-weight: bold;
-        box-shadow: 0 10px 35px -8px rgba(0, 0, 0,.7);
+        background: rgba(0, 0, 0,.2);
+      }
+
+      &:hover:after {
+        opacity: 1;
       }
     }
   }
@@ -145,9 +144,10 @@
   @media only screen and (max-width: $laptop) {
     form {
       textarea {
-        width: 380px;
-        height: 230px;
+        width: 500px;
+        height: 280px;
       }
+
       fieldset {
         justify-content: center;
 
@@ -157,7 +157,7 @@
         }
 
         #yoga-type {
-          margin-bottom: 50px;
+          margin-bottom: 0;
         }
       }
     }
@@ -167,9 +167,10 @@
     padding-bottom: 0;
       form {
         textarea {
-          width: 380px;
-          height: 230px;
+          width: 350px;
+          height: 180px;
         }
+
         fieldset {
           justify-content: center;
 
@@ -177,6 +178,7 @@
             border-radius: 7px;
             border: solid 1px $softblack;
             padding: 7px;
+            padding-right: 110px;
             font-family: $body-font;
             font-size: 18px;
             margin-top: 1px;
@@ -184,7 +186,7 @@
           }
 
           .contact-icon {
-            width: 28px;
+            width: 25px;
             margin-bottom: -4px;
           }
 
@@ -195,32 +197,27 @@
       }
   }
 
-  @media only screen and (max-width: $laptop) {
+  @media only screen and (max-width: $phone) {
     form {
       textarea {
-        width: 300px;
-        height: 180px;
+        width: 230px;
+        height: 160px;
       }
       fieldset {
         justify-content: center;
 
         #full-name, #email-address {
           margin-bottom: 60px;
-          padding-right: 80px;
+          padding-right: 60px;
         }
 
-        img {
-          width: 25px;
-          // margin-right: 10px;
-          margin-bottom: 8px;
+        .contact-icon {
+          width: 20px;
         }
 
         #yoga-type {
-          margin-bottom: -20px;
+          margin-bottom: -40px;
         }
-      }
-      .submit-button {
-        padding: 10px 20px;
       }
     }
   }
