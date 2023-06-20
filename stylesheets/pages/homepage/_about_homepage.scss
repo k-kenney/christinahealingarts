@@ -38,6 +38,7 @@
     }
 
     button {
+      color: $softblack;
       margin-top: 20px;
       margin-bottom: 20px;
       padding: 12px 22px;
@@ -114,13 +115,16 @@
     }
    }
     @media only screen and (max-width: $tablet) {
+      padding-top: 0;
+
       .homepage-about-text{
-        width: 75%;
+        width: 100%;
         padding: 30px 40px 0 40px;
-        margin-top: 25px;
+        margin-top: 0;
+        border-radius: 0;
 
         h1 {
-          display: none;
+          font-size: 40px;
         }
 
         p {
@@ -130,7 +134,7 @@
         }
 
         button {
-          margin-bottom: 30px;
+          margin-bottom: 40px;
           padding: 8px 13px;
           font-size: 14px;
 
