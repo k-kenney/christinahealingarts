@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: cover;
+  width: max-width;
   padding-top: 30px;
 
   .homepage-about-text{
@@ -145,7 +145,25 @@
 
     }
     @media only screen and (max-width: $phone) {
+      .homepage-about-text{
+        padding: 30px 25px 0 25px;
+        margin-top: 25px;
 
+        p {
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+
+        button {
+          margin-bottom: 30px;
+          padding: 8px 10px;
+          font-size: 14px;
+
+          &:after {
+            top: 8px;
+          }
+        }
+      }
 
     }
 

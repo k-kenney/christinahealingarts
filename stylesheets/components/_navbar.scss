@@ -56,6 +56,8 @@
     }
 
   @media only screen and (max-width: $laptop) {
+
+
     button {
       display: block;
     }
@@ -92,7 +94,7 @@
   @media only screen and (max-width: $tablet) {
     img {
       padding-top: 20px;
-      width: 140px;
+      width: 30%;
     }
 
     .pages-navbar {
@@ -103,15 +105,5 @@
   }
 
   @media only screen and (max-width: $phone) {
-    img {
-      padding-top: 10px;
-      width: 120px;
-    }
-
-    .pages-navbar {
-      font-size: 1rem;
-      line-height: 30px;
-
-    }
   }
 }

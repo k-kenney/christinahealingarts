@@ -82,21 +82,22 @@
 
   }
   @media (max-width: $phone) {
-  // from 0px to 768px (inclusive)
   .banner-box{
     left: 50%;
-    margin-left: -120px;
-    top: 83%;
+    margin-left: -100px;
+    top: 75%;
 
     p {
-      width: 240px;
-      height: 135px;
-      font-size: 30px;
-      line-height: 40px;
+      padding-top: 10px;
+      width: 200px;
+      height: 110px;
+      font-size: 25px;
+      line-height: 30px;
     }
 
     .banner-box-islander {
-      padding-left: 90px;
+      padding-left: 65px;
+      font-size: 20px;
     }
   }
   }
