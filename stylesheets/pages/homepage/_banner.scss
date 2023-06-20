@@ -65,18 +65,18 @@
   //from 769px to 992px (inclusive)
   .banner-box{
     left: 50%;
-    margin-left: -130px;
-    top: 73%;
+    margin-left: -150px;
+    top: 72%;
 
     p {
-      width: 260px;
-      height: 165px;
-      font-size: 34px;
+      width: 300px;
+      height: 170px;
+      font-size: 40px;
       line-height: 45px;
     }
 
     .banner-box-islander {
-      padding-left: 80px;
+      padding-left: 110px;
     }
   }
 
@@ -84,19 +84,19 @@
   @media screen and (max-width: $phone) {
   .banner-box{
     left: 50%;
-    margin-left: -100px;
-    top: 75%;
+    margin-left: -110px;
+    top: 80%;
 
     p {
       padding-top: 10px;
-      width: 200px;
-      height: 110px;
-      font-size: 25px;
-      line-height: 30px;
+      width: 220px;
+      height: 120px;
+      font-size: 30px;
+      line-height: 35px;
     }
 
     .banner-box-islander {
-      padding-left: 65px;
+      padding-left: 90px;
       font-size: 20px;
     }
   }
