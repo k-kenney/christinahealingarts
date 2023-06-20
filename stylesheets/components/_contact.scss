@@ -42,8 +42,9 @@
       border-radius: 10px;
       box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
       font-family: $body-font;
+      color: $softblack;
       font-size: 20px;
-      background-color: transparent;
+      background-color: $background;
       padding: 10px;
     }
 
@@ -110,6 +111,8 @@
     }
 
     .submit-button {
+      color: $softblack;
+      background-color: $background;
       margin-top: 30px;
       margin-bottom: 80px;
       padding: 15px 25px;
@@ -117,7 +120,7 @@
       font-family: $body-font;
       font-size: 16px;
       border: none;
-      border-radius: 10px;
+      border-radius: 5px;
       box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
       cursor: pointer;
       display: inline-block;
