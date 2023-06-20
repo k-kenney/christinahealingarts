@@ -1,7 +1,7 @@
 .navbar {
   align-items: center;
   display: flex;
-  gap: 50px;
+  gap: 130px;
   height: 100px;
   justify-content: space-between;
   margin: 0;
@@ -18,7 +18,7 @@
   }
 
   img {
-    padding-top: 10px;
+    padding-top: 20px;
     width: 160px;
   }
 
@@ -27,115 +27,25 @@
     flex-grow: 1;
     font-size: 23px;
     justify-content: space-between;
-  }
 
-    .social-icons {
-      display: flex;
-      justify-content: space-between;
-      width: 150px;
-      padding-right: 50px;
-    }
-
-    ul {
-      list-style: none;
-
-      i {
-        color: #47562F;
-        font-size: 35px;
-      }
-
-    }
-
-    nav {
-
-      a {
-        text-decoration: none;
-        color: #323232;
-      }
-
-    }
-
-    // button {
-    //   display: none;
-    // }
-
-  @media (min-width: 1200px) {
-    //from 993px to 1200px (inclusive)
-    }
-  @media (min-width: $tablet)  {
-    .social-icons {
-      display: none !important;
-    }
-
-    .navbar-logo {
-      width: 60%;
-      margin: 0;
-      padding-top: 45px;
-    }
-
-    button {
-      display: block;
-      margin-right: 55px;
-      padding: 0;
-      width: 35px;
-      height: 35px;
-      border: none;
-      background: transparent;
-      cursor: pointer;
-      position: relative;
-      z-index: 2; /* Ensure the hamburger icon appears above the navbar */
-    }
-
-    .pages-navbar {
-      flex-direction: column;
-      align-items: end;
-      font-size: 1.6rem;
-      position: absolute;
-      top: 70px;
-      right: 0;
-      z-index: 1; /* Ensure it appears above other elements */
-      line-height: 45px;
-      background: rgba(245,245,245,0.6);
-      width: 160px;
-      padding-right: 0;
-      padding-left: 40px; /* Reset left padding */
-
-      li {
-        width: 100%; /* Full width for list items */
-      }
-
-      a {
-        display: block; /* Make anchor tags full-width for clickable area */
-        padding: 0 20px; /* Add padding for better spacing */
-        color: #323232;
-        text-decoration: none;
-      }
-
-      a:hover {
-        color: gray;
-      }
-    }
-  }
-  @media (min-width: $phone)  {
-    // from 0px to 768px (inclusive)
     a {
       color: #323232;
     }
   }
 
-  .social-icons {
-    display: flex;
-    justify-content: space-between;
-    width: 150px;
-    padding-right: 50px;
+    .social-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 190px;
+      padding-right: 50px;
 
-    i {
-      color: #47562F;
-      font-size: 35px;
+      i {
+        color: #47562F;
+        font-size: 35px;
+      }
     }
-  }
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: $laptop) {
     button {
       display: block;
     }
@@ -158,17 +68,44 @@
       }
 
       a {
-        padding: 0 20px; /* Add padding for better spacing */
+        padding: 0 50px 0 20px; /* Add padding for better spacing */
         width: 100%;
 
         &:hover {
           color: gray;
+          text-decoration: underline;
         }
       }
     }
 
     .social-icons {
       display: none;
+    }
+  }
+
+  @media only screen and (max-width: $tablet) {
+    img {
+      padding-top: 20px;
+      width: 140px;
+    }
+
+    .pages-navbar {
+      font-size: 1.2rem;
+      line-height: 30px;
+
+    }
+  }
+
+  @media only screen and (max-width: $phone) {
+    img {
+      padding-top: 10px;
+      width: 120px;
+    }
+
+    .pages-navbar {
+      font-size: 1rem;
+      line-height: 30px;
+
     }
   }
 }
