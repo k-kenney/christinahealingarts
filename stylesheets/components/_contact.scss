@@ -209,9 +209,13 @@
   }
 
   @media only screen and (max-width: $phone) {
+    hr {
+      margin-bottom: 5px;
+    }
+
     form {
       textarea {
-        width: 230px;
+        width: 280px;
         height: 160px;
       }
       fieldset {
@@ -228,8 +232,13 @@
         }
 
         #yoga-type {
-          margin-bottom: -40px;
+          margin-bottom: -60px;
+          width: 267px;
         }
+      }
+      .submit-button {
+        margin-top: -55px;
+        margin-bottom: 40px;
       }
     }
   }
