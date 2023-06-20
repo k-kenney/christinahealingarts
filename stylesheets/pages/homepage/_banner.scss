@@ -11,71 +11,93 @@
 
   .banner-box{
     position: absolute;
-    left: 57%;
+    left: 65%;
     top: 45%;
 
     p {
       background-color: #f5f5f5;
       background: rgba(245,245,245,0.8);
-      width: 400px;
-      height: 250px;
+      width: 350px;
+      height: 270px;
       border-radius: 5px;
-      font-size: 55px;
+      font-size: 50px;
       line-height: 80px;
       text-align: center;
       padding-top: 30px;
+
     }
 
     .banner-box-islander {
       font-family: $special-text;
       font-size: 35px;
-      padding-left: 180px;
+      padding-left: 155px;
     }
   }
 
   // all rules outside of @media queries apply to devices 1201px and above
-  @media (max-width: 1200px) {
+  @media screen and (max-width: $laptop) {
   //from 993px to 1200px (inclusive)
+    .banner-box{
+      left: 63%;
+
+      p {
+        background-color: #f5f5f5;
+        background: rgba(245,245,245,0.8);
+        width: 300px;
+        height: 220px;
+        border-radius: 5px;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+        padding-top: 25px;
+
+      }
+
+      .banner-box-islander {
+        font-family: $special-text;
+        font-size: 30px;
+        padding-left: 110px;
+      }
+    }
   }
   @media screen and (max-width: $tablet) {
   //from 769px to 992px (inclusive)
     .banner-box{
-      left: 55%;
-      top: 50%;
+      left: 63%;
+      top: 55%;
 
       p {
-        width: 290px;
-        height: 190px;
-        font-size: 42px;
-        line-height: 60px;
-        padding-top: 15px;
+        width: 230px;
+        height: 155px;
+        font-size: 30px;
+        line-height: 45px;
+        padding-top: 10px;
       }
 
       .banner-box-islander {
-        font-size: 25px;
-        padding-left: 140px;
+        font-size: 20px;
+        padding-left: 95px;
       }
     }
 
   }
   @media (max-width: $phone) {
   // from 0px to 768px (inclusive)
-    .banner-box{
-      left: 55%;
-      top: 50%;
+  .banner-box{
+    left: 50%;
+    margin-left: -120px;
+    top: 81%;
 
-      p {
-        width: 185px;
-        height: 125px;
-        font-size: 26px;
-        line-height: 40px;
-        padding-top: 15px;
-      }
-
-      .banner-box-islander {
-        font-size: 23px;
-        padding-left: 55px;
-      }
+    p {
+      width: 240px;
+      height: 140px;
+      font-size: 30px;
+      line-height: 40px;
     }
+
+    .banner-box-islander {
+      padding-left: 90px;
+    }
+  }
   }
 }

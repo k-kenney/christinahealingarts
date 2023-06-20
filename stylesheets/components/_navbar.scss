@@ -1,7 +1,7 @@
 .navbar {
   align-items: center;
   display: flex;
-  gap: 130px;
+  gap: 150px;
   height: 100px;
   justify-content: space-between;
   margin: 0;
@@ -30,6 +30,12 @@
 
     a {
       color: #323232;
+
+      &:hover {
+        color: gray;
+        text-decoration: underline;
+        text-underline-position: under
+      }
     }
   }
 
@@ -42,6 +48,10 @@
       i {
         color: #47562F;
         font-size: 35px;
+
+        &:hover {
+          color: rgba(71, 86, 47, 0.5);
+        }
       }
     }
 
@@ -56,6 +66,7 @@
       font-size: 1.6rem;
       line-height: 45px;
       padding-right: 0;
+      border-radius: 5px;
       position: absolute;
       right: 0;
       text-align: end;
@@ -70,11 +81,6 @@
       a {
         padding: 0 50px 0 20px; /* Add padding for better spacing */
         width: 100%;
-
-        &:hover {
-          color: gray;
-          text-decoration: underline;
-        }
       }
     }
 
