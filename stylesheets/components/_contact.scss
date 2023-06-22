@@ -174,7 +174,7 @@
   }
 
   @media only screen and (max-width: $tablet) {
-    padding-bottom: 0;
+    padding-bottom: 20px;
       form {
         textarea {
           width: 340px;
@@ -187,12 +187,8 @@
           #full-name, #email-address {
             border-radius: 7px;
             border: solid 1px $softblack;
-            padding: 7px;
-            padding-right: 110px;
-            font-family: $body-font;
+            padding: 5px;
             font-size: 18px;
-            margin-top: 1px;
-            color: $softblack;
           }
 
           .contact-icon {
