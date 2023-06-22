@@ -92,8 +92,8 @@
 
   @media only screen and (max-width: $tablet) {
     img {
-      padding-top: 30px;
-      width: 20%;
+      padding-top: 20px;
+      width: 50%;
     }
 
     .pages-navbar {
@@ -105,14 +105,8 @@
 
   @media only screen and (max-width: $phone) {
     img {
-      padding-top: 15px;
-      width: 30%;
+      width: 60%;
     }
 
-    .pages-navbar {
-      font-size: 1.5rem;
-      line-height: 45px;
-
-    }
   }
 }
