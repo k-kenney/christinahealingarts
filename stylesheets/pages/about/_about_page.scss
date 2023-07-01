@@ -124,6 +124,9 @@
         font-size: 21px;
        }
     }
+    h1 {
+      font-size: 35px;
+    }
   }
 
   @media only screen and (max-width: $phone) {
@@ -137,7 +140,7 @@
       justify-content: center;
       align-items: center;
       width: 260px;
-      margin-top: 30px;
+      margin-top: 35px;
 
       .about-description {
         margin-left: 0;
@@ -145,13 +148,14 @@
         text-align: center;
       }
       h1 {
+        font-size: 30px;
         text-align: center;
         padding-bottom: 15px;
         margin-right: 0;
       }
 
       hr {
-        width: 110px;
+        width: 15%;
         margin: auto;
       }
 
@@ -162,6 +166,9 @@
       p{
         margin-bottom: 20px;
       }
+    }
+    h1 {
+      font-size: 25px;
     }
   }
 }

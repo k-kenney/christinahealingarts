@@ -191,6 +191,10 @@
   }
 
   @media only screen and (max-width: $phone) {
+    h1 {
+      font-size: 35px;
+    }
+    
     form {
       textarea {
         width: 270px;
