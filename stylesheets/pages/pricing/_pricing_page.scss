@@ -1,0 +1,25 @@
+.pricing-page {
+  .pricing-banner {
+    background: rgba(71, 86, 47, 0.5);
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+    h1 {
+      margin: 0;
+      text-align: center;
+      font-size: 80px;
+      color: $background;
+      padding-bottom: 20px;
+    }
+
+    hr {
+      border: 0;
+      width: 10%;
+      background-color: $background;
+      height: 0.5px;
+      margin: auto;
+      margin-bottom: 40px;
+      margin-top: 0;
+    }
+  }
+}
