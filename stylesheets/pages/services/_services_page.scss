@@ -36,6 +36,33 @@
     border-bottom-left-radius: 7px;
     margin-bottom: 60px;
 
+    .pre-text {
+      font-size: 20px;
+      line-height: 34px;
+      color: $softblack;
+      padding: 30px 60px;
+      text-align: center;
+    }
+
+    .services-title {
+        font-size: 45px;
+        margin: 0;
+        padding-bottom: 20px;
+        padding-top: 55px;
+        text-align: center;
+      }
+
+    .title-hr {
+        border: 0;
+        width: 10%;
+        background-color: $softblack;
+        height: 0.5px;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+
     .services-cards {
       display: flex;
       justify-content: space-around;
@@ -89,6 +116,15 @@
       width: 800px;
       margin-bottom: 20px;
 
+      .pre-text {
+        line-height: 28px;
+      }
+
+      .title-hr {
+          margin-bottom: 0;
+        }
+
+
       .services-cards {
 
         .symbol {
@@ -127,6 +163,12 @@
     .services-container {
       width: 600px;
       margin-bottom: 20px;
+
+      .pre-text {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
 
       .services-cards {
 
@@ -169,9 +211,17 @@
       margin-bottom: 0;
       padding-bottom: 30px;
 
+      .pre-text {
+        padding: 10px 30px;
+      }
+
+      .services-title {
+          font-size: 35px;
+          padding: 20px;
+        }
+
       .services-cards {
-        padding: 0;
-        padding-top: 30px;
+        padding: 50px 0 30px 0;
         flex-direction: column;
 
         .symbol {
@@ -194,6 +244,7 @@
           font-size: 18px;
           line-height: 24px;
           padding: 30px 35px;
+          text-align: center;
         }
       }
     }
