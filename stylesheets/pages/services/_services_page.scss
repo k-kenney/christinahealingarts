@@ -17,15 +17,11 @@
       width: 40%;
       height: 30%;
       border-radius: 5px;
-      font-size: 85px;
+      font-size: 80px;
       line-height: 80px;
       display: flex;
       justify-content: center;
       align-items: center;
-      // position: absolute;
-      // left: 75%;
-      // top: 55%;
-
     }
   }
 
@@ -66,7 +62,8 @@
       }
 
       .services-text {
-        width: 55%;
+        width: 65%;
+        padding-left: 60px;
         font-size: 20px;
         line-height: 34px;
         color: $softblack
@@ -76,6 +73,129 @@
       width: 80%;
       margin: auto;
       color: $softblack;
+    }
+  }
+
+  @media only screen and (max-width: $laptop) {
+    .services-banner {
+
+      h1 {
+        font-size: 60px;
+        line-height: 35px;
+      }
+    }
+
+    .services-container {
+      width: 800px;
+      margin-bottom: 20px;
+
+      .services-cards {
+
+        .symbol {
+          width: 200;
+        }
+
+        img {
+          width: 120px;
+          padding-bottom: 35px;
+        }
+
+        h1 {
+          font-size: 30px;
+          line-height: 45px;
+        }
+
+        .services-text {
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+    }
+
+  }
+
+  @media only screen and (max-width: $tablet) {
+    .services-banner {
+
+      h1 {
+        width: 50%;
+        height: 25%;
+        font-size: 45px;
+      }
+    }
+
+    .services-container {
+      width: 600px;
+      margin-bottom: 20px;
+
+      .services-cards {
+
+        .symbol {
+          width: 160px;
+        }
+
+        img {
+          width: 120px;
+          padding-bottom: 30px;
+        }
+
+        h1 {
+          font-size: 26px;
+          line-height: 35px;
+        }
+
+        .services-text {
+          font-size: 18px;
+          line-height: 24px;
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $phone) {
+    .services-banner {
+      height: calc(65vh - 100px);
+
+      h1 {
+        width: 50%;
+        height: 17%;
+        font-size: 30px;
+      }
+    }
+
+    .services-container {
+      width: 300px;
+      margin-bottom: 0;
+      padding-bottom: 30px;
+
+      .services-cards {
+        padding: 0;
+        padding-top: 30px;
+        flex-direction: column;
+
+        .symbol {
+          width: 160px;
+        }
+
+        img {
+          width: 65px;
+          padding-bottom: 25px;
+        }
+
+        h1 {
+          font-size: 24px;
+          line-height: 30px;
+          width: 200px;
+        }
+
+        .services-text {
+          width: 100%;
+          font-size: 18px;
+          line-height: 24px;
+          padding: 30px 35px;
+        }
+      }
     }
   }
 }
