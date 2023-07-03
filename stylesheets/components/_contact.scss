@@ -1,6 +1,6 @@
 .section-contact {
   padding-top: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 
   h1 {
     font-size: 45px;
@@ -142,6 +142,29 @@
     }
   }
 
+  .google-form {
+    text-align: center;
+    margin-top: 50px;
+
+    h3 {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 22px;
+      padding-top: 20px;
+    }
+
+    a {
+      color: #47562F;
+      text-decoration: underline;
+
+      &:hover {
+        color: rgba(71, 86, 47, 0.5);
+      }
+    }
+  }
+
   @media only screen and (max-width: $laptop) {
   }
 
@@ -192,7 +215,7 @@
 
   @media only screen and (max-width: $phone) {
     padding-top: 0;
-    
+
     h1 {
       font-size: 35px;
     }
@@ -205,6 +228,18 @@
 
       .submit-button {
         margin-top: -25px;
+      }
+    }
+
+    .google-form {
+      text-align: center;
+
+      h3 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 20px;
       }
     }
   }
