@@ -27,7 +27,7 @@
   .pricing-container {
     margin: 0;
     padding: 0;
-    padding-top: 30px;
+    padding-top: 20px;
 
     hr {
       width: 80%;
@@ -40,12 +40,15 @@
       justify-content: center;
       align-items: center;
       width: 80%;
-      gap: 120px;
-      margin: 80px 35px;
+      gap: 90px;
+      margin: 70px 25px;
 
       h1 {
-        font-size: 45px;
+        margin: 0;
+        padding: 0;
+        font-size: 40px;
         text-align: center;
+        margin-bottom: 20px;
       }
 
       hr {
@@ -68,6 +71,10 @@
         align-items: center;
         flex-direction: column;
 
+        p {
+          margin: 0;
+        }
+
         ul {
           padding-left: 50px;
           padding-bottom: 25px;
@@ -85,12 +92,12 @@
 
       .pricing-cards {
         width: 90%;
-        gap: 40px;
-        margin: 50px 25px;
+        gap: none;
+        margin-top: 50px;
+        margin-bottom: 50px;
 
         img {
           width: 280px;
-          height: 400px;
         }
 
         .pricing-text {
@@ -115,8 +122,8 @@
 
   @media only screen and (max-width: $tablet) {
     .pricing-banner {
-      padding-top: 60px;
-      padding-bottom: 35px;
+      padding-top: 50px;
+      padding-bottom: 25px;
 
       h1 {
         font-size: 60px;
@@ -128,11 +135,11 @@
       padding-top: 0;
 
       .pricing-cards {
-        gap: 40px;
+        flex-direction: column;
+        margin: 50px 0;
 
         img {
-          width: 230px;
-          height: 350px;
+          display: none;
         }
 
         .pricing-text {
@@ -147,7 +154,7 @@
           }
 
           ul {
-            padding-left: 50px;
+            padding-left: 35px;
             padding-bottom: 15px;
           }
 
