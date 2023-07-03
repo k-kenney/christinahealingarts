@@ -191,6 +191,8 @@
   }
 
   @media only screen and (max-width: $phone) {
+    padding-top: 0;
+    
     h1 {
       font-size: 35px;
     }

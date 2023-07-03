@@ -27,7 +27,7 @@
   .pricing-container {
     margin: 0;
     padding: 0;
-    padding-top: 50px;
+    padding-top: 30px;
 
     hr {
       width: 80%;
@@ -45,6 +45,7 @@
 
       h1 {
         font-size: 45px;
+        text-align: center;
       }
 
       hr {
@@ -54,6 +55,8 @@
 
       img {
         width: 300px;
+        border-radius: 7px;
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
       }
 
       .pricing-text {
@@ -64,16 +67,140 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        font-size: 24px;
-        line-height: 50px;
 
         ul {
           padding-left: 50px;
-          padding-bottom: 30px;
+          padding-bottom: 25px;
         }
 
         ul li {
-          padding-bottom: 10px;
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $laptop) {
+    .pricing-container {
+
+      .pricing-cards {
+        width: 90%;
+        gap: 40px;
+        margin: 50px 25px;
+
+        img {
+          width: 280px;
+          height: 400px;
+        }
+
+        .pricing-text {
+
+          p {
+            font-size: 20px;
+            line-height: 25px;
+          }
+
+          ul {
+            padding-left: 50px;
+            padding-bottom: 25px;
+          }
+
+          ul li {
+            padding-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet) {
+    .pricing-banner {
+      padding-top: 60px;
+      padding-bottom: 35px;
+
+      h1 {
+        font-size: 60px;
+      }
+    }
+
+    .pricing-container {
+      margin-top: 0;
+      padding-top: 0;
+
+      .pricing-cards {
+        gap: 40px;
+
+        img {
+          width: 230px;
+          height: 350px;
+        }
+
+        .pricing-text {
+
+          h1 {
+            font-size: 35px;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 23px;
+          }
+
+          ul {
+            padding-left: 50px;
+            padding-bottom: 15px;
+          }
+
+          ul li {
+            padding-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $phone) {
+    .pricing-banner {
+      padding-top: 30px;
+      padding-bottom: 5px;
+
+      h1 {
+        font-size: 45px;
+      }
+    }
+
+    .pricing-container {
+      margin: 0;
+      padding: 0;
+
+      .pricing-cards {
+        gap: 0;
+        margin-top: 0;
+        margin-bottom: 35px;
+
+        img {
+          display: none;
+        }
+
+        .pricing-text {
+
+          h1 {
+            font-size: 30px;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 23px;
+          }
+
+          ul {
+            padding-left: 20px;
+            padding-bottom: 15px;
+          }
+
+          ul li {
+            padding-bottom: 8px;
+          }
         }
       }
     }
