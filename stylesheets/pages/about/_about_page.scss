@@ -1,4 +1,6 @@
 .about-page {
+  padding-bottom: 25px;
+
   img {
     display: block;
     margin-left: auto;
@@ -51,22 +53,46 @@
     }
   }
 
-  h1 {
-    text-align: center;
-    font-size: 45px;
-    margin: 0;
-    padding-bottom: 20px;
-    padding-top: 65px;
-  }
-
-  hr {
-    border: 0;
-    width: 10%;
-    background-color:#323232;
-    height: 0.5px;
+  .licenses {
     margin: auto;
-    margin-bottom: 40px;
-    margin-top: 0;
+    padding: 0;
+
+    h1 {
+      text-align: center;
+      font-size: 45px;
+      margin: 0;
+      padding-bottom: 20px;
+      padding-top: 65px;
+    }
+
+    hr {
+      border: 0;
+      width: 10%;
+      background-color:#323232;
+      height: 0.5px;
+      margin: auto;
+      margin-bottom: 70px;
+      margin-top: 0;
+    }
+
+    .license-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      ul li {
+        margin: auto;
+        text-align: left;
+        font-size: 24px;
+        line-height: 45px;
+        display: list-item;
+        list-style-type: disc;
+        list-style-position: inside;
+        padding-left: 40px;
+      }
+
+    }
   }
 
   @media only screen and (max-width: $laptop) {
@@ -124,12 +150,29 @@
         font-size: 21px;
        }
     }
-    h1 {
-      font-size: 35px;
+    .licenses {
+
+      h1 {
+        font-size: 35px;
+      }
+
+      hr {
+        margin-bottom: 50px;
+      }
+
+      .license-list {
+
+        ul li {
+          font-size: 18px;
+          line-height: 40px;
+          padding-left: 5px;
+        }
+      }
     }
   }
 
   @media only screen and (max-width: $phone) {
+    padding-bottom: 10px;
     img {
       width: 300px;
       margin-top: 10px;
@@ -167,8 +210,25 @@
         margin-bottom: 20px;
       }
     }
-    h1 {
-      font-size: 23px;
+    .licenses {
+
+      h1 {
+        font-size: 23px;
+      }
+
+      hr {
+        margin-bottom: 40px;
+      }
+
+      .license-list {
+
+        ul li {
+          text-align: center;
+          font-size: 18px;
+          line-height: 35px;
+          padding: 0 10px;
+        }
+      }
     }
   }
 }
