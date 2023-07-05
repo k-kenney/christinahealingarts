@@ -130,10 +130,10 @@
 
 
     .homepage-services-content {
-
+      background: cover;
 
       .service-ind {
-        width: 150px;
+        width: 35%;
         height: 100px;
 
 
@@ -143,8 +143,9 @@
 
         p {
           font-size: 20px;
-          line-height: 35px;
+          line-height: 30px;
           padding-top: 40px;
+          width: 150px;
         }
       }
     }
