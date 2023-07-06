@@ -37,7 +37,7 @@
     }
 
     .about-description {
-      font-size: 24px;
+      font-size: 20px;
       margin: 0;
       padding: 0;
       margin-left: 70px;
@@ -51,6 +51,34 @@
       font-family: $special-text;
       font-size: 30px;
     }
+
+    ul {
+      padding: 5px 30px;
+    }
+    ul li {
+      margin-bottom: 20px;
+    }
+  }
+
+  .dear {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: $pink;
+    width: cover;
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+    h3 {
+      font-size: 28px;
+      line-height: 40px;
+      margin: auto;
+      padding: 30px;
+      text-align: center;
+      width: 75%;
+      border-right: $softblack solid 0.5px;
+      border-left: $softblack solid 0.5px;
+    }
+
   }
 
   .licenses {
@@ -75,24 +103,57 @@
       margin-top: 0;
     }
 
-    .license-list {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      .license-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-      ul li {
-        margin: auto;
-        text-align: left;
-        font-size: 24px;
-        line-height: 45px;
-        display: list-item;
-        list-style-type: disc;
-        list-style-position: inside;
-        padding-left: 40px;
+        ul li {
+          margin: auto;
+          text-align: left;
+          font-size: 24px;
+          line-height: 45px;
+          display: list-item;
+          list-style-type: disc;
+          list-style-position: inside;
+          padding-left: 40px;
+        }
+      }
+    }
+    .personal-life {
+      width: cover;
+      background: rgba(71, 86, 47, 0.5);
+      padding-bottom: 100px;
+      margin-top: 100px;
+      color: $background;
+
+      h1 {
+        text-align: center;
+        font-size: 45px;
+        margin: 0;
+        padding-bottom: 20px;
+        padding-top: 65px;
       }
 
-    }
+      hr {
+        border: 0;
+        width: 10%;
+        background-color: $background;
+        height: 0.5px;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 0;
+      }
+
+      p{
+        text-align: center;
+        width: 70%;
+        font-size: 24px;
+        line-height: 40px;
+        margin: auto;
+      }
+
   }
 
   @media only screen and (max-width: $laptop) {
