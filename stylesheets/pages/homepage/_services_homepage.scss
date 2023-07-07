@@ -74,6 +74,10 @@
     position: relative;
     transition: 0.5s;
 
+    a:visited {
+      color: $softblack;
+    }
+
     &:after {
       content: '»';
       position: absolute;

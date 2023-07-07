@@ -115,10 +115,10 @@
     .submit-button {
         color: $softblack;
         background-color: $background;
-        padding:10px 25px;
+        padding:15px 30px;
         text-decoration: none;
         font-family: $body-font;
-        font-size: 16px;
+        font-size: 18px;
         border: none;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -209,6 +209,7 @@
         .submit-button {
           margin-top: -25px;
           padding: 10px 20px;
+          font-size: 16px;
         }
       }
   }

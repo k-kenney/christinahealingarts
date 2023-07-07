@@ -51,27 +51,33 @@
     display: inline-block;
     position: relative;
     transition: 0.5s;
+
+    a:visited {
+      color: $softblack;
+    }
+
+    &:after {
+      content: '»';
+      position: absolute;
+      opacity: 0;
+      top: 15px;
+      right: -10px;
+      transition: 0.5s;
+    }
+
+    &:hover{
+      padding-right: 25px;
+      padding-left:15px;
+      background: rgba(0, 0, 0,.2);
+    }
+
+    &:hover:after {
+      opacity: 1;
+      right: 10px;
+    }
   }
 
-  button:after {
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    top: 15px;
-    right: -10px;
-    transition: 0.5s;
-  }
 
-  button:hover{
-    padding-right: 25px;
-    padding-left:15px;
-    background: rgba(0, 0, 0,.2);
-  }
-
-  button:hover:after {
-    opacity: 1;
-    right: 10px;
-  }
   @media only screen and (max-width: $laptop) {
 
   }
