@@ -113,23 +113,27 @@
     }
 
     .submit-button {
-        color: $softblack;
-        background-color: $background;
+      color: $softblack;
+      background-color: $background;
+      padding:15px 30px;
+      text-decoration: none;
+      font-family: $body-font;
+      font-size: 18px;
+      border: none;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+      -moz-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+      -webkit-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+
+      &:after {
         padding:15px 30px;
-        text-decoration: none;
-        font-family: $body-font;
-        font-size: 18px;
-        border: none;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-        -moz-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-        -webkit-box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-        border-radius: 10px;
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
+      }
 
 
       &:hover{
@@ -210,6 +214,10 @@
           margin-top: -25px;
           padding: 10px 20px;
           font-size: 16px;
+
+          &:after {
+            padding: 10px 20px;
+          }
         }
       }
   }
