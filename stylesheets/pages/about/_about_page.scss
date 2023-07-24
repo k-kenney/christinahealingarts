@@ -153,6 +153,21 @@
         line-height: 40px;
         margin: auto;
       }
+
+      .images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+        margin-top: 30px;
+
+        img {
+          width: 45%;
+          border-radius: 5px;
+          box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+        }
+      }
   }
 
   @media only screen and (max-width: $laptop) {
@@ -239,7 +254,7 @@
     }
 
     .personal-life {
-      padding-bottom: 60px;
+      padding-bottom: 70px;
       h1 {
         font-size: 35px;
         padding-top: 40px;
@@ -247,6 +262,15 @@
       p {
         font-size: 18px;
         line-height: 30px;
+      }
+      .images {
+        flex-direction: column;
+        margin-top: 0;
+
+        img {
+          width: 70%;
+          margin-top: 35px;
+        }
       }
     }
   }
@@ -334,6 +358,17 @@
 
       h1 {
         font-size: 32px;
+      }
+
+      hr {
+        margin-bottom: 30px;
+      }
+
+      .images {
+
+        img {
+          width: 80%;
+        }
       }
     }
   }
