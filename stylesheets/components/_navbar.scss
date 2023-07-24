@@ -32,6 +32,7 @@
 
     a {
       color: #323232;
+      transition: 0.3s;
 
       &:hover {
         color: gray;
@@ -50,6 +51,7 @@
       i {
         color: #47562F;
         font-size: 35px;
+        transition: 0.3s;
 
         &:hover {
           color: rgba(71, 86, 47, 0.5);
