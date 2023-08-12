@@ -105,7 +105,9 @@
       }
 
     @media only screen and (max-width: $phone) {
-
+      h3 {
+        font-size: 35px;
+      }
       p {
         font-size: 18px;
       }
