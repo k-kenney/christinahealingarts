@@ -1,6 +1,7 @@
 .section-contact {
   padding-top: 20px;
   padding-bottom: 50px;
+  margin-bottom: 50px;
 
   h1 {
     font-size: 45px;
@@ -146,8 +147,20 @@
     }
   }
 
-
   @media only screen and (max-width: $laptop) {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+    hr {
+      margin-bottom: 30px;
+    }
+    form {
+      fieldset {
+        textarea {
+          margin-top: -90px;
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: $tablet) {
@@ -181,7 +194,7 @@
 
           #yoga-type {
             width: 95%;
-            margin-bottom: -130px;
+            // margin-bottom: -130px;
           }
 
           .contact-col-1 {
@@ -205,6 +218,7 @@
 
     h1 {
       font-size: 35px;
+      padding-top: 0;
     }
 
     form {
