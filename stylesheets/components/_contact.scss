@@ -146,29 +146,6 @@
     }
   }
 
-  .google-form {
-    text-align: center;
-    margin-top: 50px;
-
-    h3 {
-      font-size: 35px;
-    }
-
-    p {
-      font-size: 22px;
-      padding-top: 20px;
-    }
-
-    a {
-      color: #47562F;
-      text-decoration: underline;
-      transition: 0.3;
-
-      &:hover {
-        color: rgba(71, 86, 47, 0.5);
-      }
-    }
-  }
 
   @media only screen and (max-width: $laptop) {
   }
