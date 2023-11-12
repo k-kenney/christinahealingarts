@@ -8,7 +8,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, 'about/index.html'),
         services: resolve(__dirname, "services/index.html"),
-        pricing: resolve(__dirname, "pricing/index.html")
+        pricing: resolve(__dirname, "pricing/index.html"),
+        retreats: resolve(__dirname, "retreats/index.html")
       },
     },
   },
