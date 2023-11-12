@@ -6,6 +6,7 @@
   padding-bottom: 45px;
   gap: 100px;
   margin: auto;
+  width: 95%;
 
   .header-half-container {
     display: flex;
@@ -67,7 +68,7 @@
 
     h1 {
       font-size: 40px;
-      line-height: 70px;
+      line-height: 60px;
     }
 
     .buttons-container {
@@ -78,11 +79,11 @@
 
       button {
         margin: 10px 10px;
-        padding: 10px 22px;
-        font-size: 22px;
+        padding: 8px 22px;
+        font-size: 20px;
 
         &:hover {
-          font-size: 23px;
+          font-size: 21px;
         }
       }
     }
@@ -128,7 +129,7 @@
     }
 
     img {
-      width: 65%;
+      width: 70%;
       position: relative;
       z-index: 0;
       margin-top: 40px;
