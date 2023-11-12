@@ -23,6 +23,17 @@
     width: 160px;
   }
 
+  .retreats-logo {
+    padding-top: 10px;
+    padding-left: 40px;
+    width: 120px;
+
+    &:hover {
+      width: 125px;
+      transition: 0.3s;
+    }
+  }
+
   .pages-navbar {
     display: flex;
     flex-grow: 1;
@@ -36,7 +47,11 @@
 
       &:hover {
         color: gray;
-        border-bottom: gray solid 0.5px;
+        // border-bottom: gray solid 0.5px;
+      }
+      hr {
+        margin-top: 8px;
+        color: $softblack;
       }
     }
   }
@@ -73,7 +88,7 @@
       border-radius: 5px;
       position: absolute;
       right: 0;
-      text-align: end;
+      text-align: left;
       top: 100px;
       width: max-content;
       z-index: 1; /* Ensure it appears above other elements */
@@ -85,6 +100,14 @@
       a {
         padding: 0 35px 0 10px; /* Add padding for better spacing */
         width: 100%;
+
+        &:hover {
+          border-bottom: none;
+        }
+  
+        hr {
+          margin-top: 3px;
+        }
       }
     }
 
@@ -99,11 +122,25 @@
       width: 50%;
     }
 
+    .retreats-logo {
+      padding-top: 10px;
+      padding-left: 40px;
+      width: 100px;
+  
+      &:hover {
+        width: 105px;
+        transition: 0.3s;
+      }
+    }
+
     .pages-navbar {
       font-size: 1.5rem;
       line-height: 45px;
 
     }
+
+
+
   }
 
   @media only screen and (max-width: $phone) {
