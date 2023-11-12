@@ -1,0 +1,132 @@
+.what-is-retreat {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 65%;
+    margin: auto;
+
+    h2 {
+        font-size: 40px;
+        padding-bottom: 50px;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+.retreat-green-container {
+    background: rgba(71, 86, 47, 0.5);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .retreat-column-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        gap: 40px;
+        width: 80%;
+        padding: 0;
+
+        .column-section {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            width: 80%;
+
+            h2 {
+                font-size: 35px;
+                padding-bottom: 15px;
+            }
+    
+            hr {
+                border: 0;
+                width: 10%;
+                background-color:#323232;
+                height: 0.5px;
+            }
+    
+            p {
+                font-size: 22px;
+                line-height: 35px;
+                padding-top: 35px;
+            }
+        }
+
+        .local {
+            border-right: 0.8px solid $softblack;
+            padding-right: 40px;
+            width: 100%;
+        }
+
+        .community {
+            border-left: 0.8px solid $softblack;
+            padding-left: 40px;
+            width: 100%;
+        }    
+
+    }
+
+    .say-yes-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 30px;
+
+        h2 {
+            color: $background;
+            font-size: 30px;
+            padding-top: 20px;
+        }
+
+        .say-yes-button {
+        color: $softblack;
+        margin: 30px 10px;
+        padding: 12px 22px;
+        text-decoration: none;
+        font-family: $body-font;
+        font-size: 20px;
+        background-color: $background;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+        cursor: pointer;
+        transition: 0.5s;
+
+
+      &:hover{
+        font-size: 21px;
+        background: rgba(0, 0, 0,.2);
+      }
+
+    }
+
+    }
+
+    @media only screen and (max-width: $laptop) {
+
+    }
+
+    @media only screen and (max-width: $tablet) {
+
+    }
+
+    @media only screen and (max-width: $phone) {
+        
+    }
+}
