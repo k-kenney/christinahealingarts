@@ -16,11 +16,11 @@
     flex-direction: column;
 
     h2 {
-        font-size: 45px;
-        line-height: 55px;;
-        text-align: center;
-        padding-bottom: 40px;
-        color: $background;
+      font-size: 45px;
+      line-height: 55px;
+      text-align: center;
+      padding-bottom: 40px;
+      color: $background;
     }
 
     button {
@@ -54,6 +54,73 @@
       border-radius: 7px;
       box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
       width: 400px;
+    }
+  }
+
+  @media only screen and (max-width: $laptop) {
+  }
+
+  @media only screen and (max-width: $tablet) {
+  }
+
+  @media only screen and (max-width: $phone) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(71, 86, 47, 0.5);
+    margin-top: 100px;
+
+    .harvest-banner-text {
+      width: 330px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h2 {
+        font-size: 45px;
+        line-height: 55px;
+        text-align: center;
+        padding-bottom: 40px;
+        color: $background;
+      }
+
+      button {
+        color: $softblack;
+        margin: 20px 10px;
+        padding: 12px 22px;
+        text-decoration: none;
+        font-family: $body-font;
+        font-size: 24px;
+        background-color: $background;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          font-size: 25px;
+          background: rgba(0, 0, 0, 0.2);
+        }
+
+        &:hover:after {
+          opacity: 1;
+          right: 10px;
+        }
+      }
+    }
+
+    .flyer {
+      img {
+        border-radius: 7px;
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+        width: 320px;
+      }
     }
   }
 }
