@@ -1,5 +1,5 @@
 .meet-inst-container {
-  width: 90%;
+  max-width: 90%;
   margin: auto;
   height: 270vh;
 
@@ -372,6 +372,7 @@
 
   @media only screen and (max-width: $large-phone) {
     height: 200vh;
+    max-width: 80%;
 
     .top-circles {
       .meet-inst-small-pink {
@@ -459,19 +460,19 @@
   }
 
   @media only screen and (max-width: $phone) {
-    width: 100%;
-    height: 165vh;
+    max-width: 80%;
+    height: 135vh;
 
     .top-circles {
       .meet-inst-small-pink {
         text-align: center;
-        left: 14%;
+        left: 0;
         right: 0;
         top: -15%;
 
         h1 {
           top: 150px;
-          left: 18%;
+          left: 21%;
           right: 0;
           font-size: 35px;
         }
@@ -483,7 +484,7 @@
 
       .meet-inst-photo {
         top: 200px;
-        left: 14%;
+        left: 10%;
 
         img {
           width: 300px;
@@ -500,13 +501,11 @@
 
         img {
           display: none;
-          width: 300px;
-          // object-fit: cover;
         }
       }
 
       .big-green-circle-text {
-        left: 4%;
+        left: -2%;
         top: 375px;
         width: 280px;
         text-align: center;
@@ -524,8 +523,8 @@
 
     .big-pink-circle-container {
       position: relative;
-      top: -4%;
-      left: 5%;
+      top: -5%;
+      left: -2%;
 
       .big-pink-circle {
         position: relative;
