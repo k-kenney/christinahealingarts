@@ -371,15 +371,15 @@
   }
 
   @media only screen and (max-width: $large-phone) {
-    height: 145vh;
+    height: 200vh;
 
     .top-circles {
       .meet-inst-small-pink {
-        left: 5%;
+        left: 20%;
 
         h1 {
           top: 160px;
-          left: 26%;
+          left: 32%;
           width: 170px;
 
         }
@@ -400,7 +400,7 @@
 
     .big-green-circle-container {
       top: 23%;
-      left: 0%;
+      left: 8%;
 
       .big-green-circle {
 
@@ -428,7 +428,7 @@
 
     .big-pink-circle-container {
       top: 0%;
-      left: 0%;
+      left: 2%;
 
       .big-pink-circle {
 
