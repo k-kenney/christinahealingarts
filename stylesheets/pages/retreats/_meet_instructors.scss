@@ -1,7 +1,7 @@
 .meet-inst-container {
   max-width: 90%;
-  margin: auto;
-  height: 270vh;
+  margin-left: 4%;
+  height: 250vh;
 
   .top-circles {
     display: flex;
@@ -182,8 +182,6 @@
 
     .top-circles {
       .meet-inst-small-pink {
-
-        
         h1 {
           top: 180px;
           left: 24%;
@@ -382,7 +380,6 @@
           top: 160px;
           left: 32%;
           width: 170px;
-
         }
 
         img {
@@ -404,7 +401,6 @@
       left: 8%;
 
       .big-green-circle {
-
         img {
           width: 450px;
         }
@@ -432,7 +428,6 @@
       left: 2%;
 
       .big-pink-circle {
-
         img {
           width: 450px;
         }
@@ -456,12 +451,11 @@
         }
       }
     }
-
   }
 
   @media only screen and (max-width: $phone) {
     max-width: 80%;
-    height: 180vh;
+    min-height: 100vh;
 
     .top-circles {
       .meet-inst-small-pink {
@@ -497,8 +491,6 @@
       left: 10%;
 
       .big-green-circle {
-
-
         img {
           display: none;
         }
@@ -521,8 +513,13 @@
       }
     }
 
+
+  @media only screen and (min-width: 200px) {
+    height: 175vh;
+  }
+
     .big-pink-circle-container {
-      top: -7%;
+      top: -4%;
       left: -2%;
 
       .big-pink-circle {
@@ -530,7 +527,7 @@
         z-index: 0;
 
         img {
-          display: none;;
+          display: none;
           width: 340px;
         }
       }
@@ -553,6 +550,5 @@
         }
       }
     }
-
   }
 }
