@@ -497,7 +497,7 @@
       }
 
       .big-green-circle-text {
-        left: 0%;
+        left: 1%;
         top: 375px;
         width: 280px;
         text-align: center;
@@ -515,12 +515,12 @@
 
 
   @media only screen and (min-width: 200px) {
-    height: 165vh;
+    height: 160vh;
   }
 
     .big-pink-circle-container {
-      top: -6%;
-      left: 0%;
+      top: -4%;
+      left: 1%;
 
       .big-pink-circle {
         position: relative;
