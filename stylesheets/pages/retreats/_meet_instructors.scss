@@ -16,14 +16,14 @@
       position: relative;
       left: 50%;
       background-color: $pink;
-      width: 350px;
-      height: 350px;
+      width: 430px;
+      height: 390px;
       border-radius: 50%;
 
       h1 {
-        font-size: 55px;
+        font-size: 60px;
         text-align: center;
-        padding-top: 85px;
+        padding-top: 95px;
       }
     }
 
@@ -43,25 +43,26 @@
     position: relative;
     background-color: rgba(71, 86, 47, 0.5);
     border-radius: 50%;
-    width: 620px;
-    height: 620px;
-    padding-left: 65px;
-    padding-top: 80px;
+    width: 700px;
+    height: 700px;
+    padding-left: 80px;
+    padding-top: 95px;
     bottom: 280px;
     left: 15%;
     z-index: 1;
 
     .big-green-circle-text {
       text-align: right;
-      width: 430px;
+      width: 450px;
 
       h2 {
         font-size: 40px;
+        padding-bottom: 15px;
       }
 
       p {
-        font-size: 24px;
-        line-height: 35px;
+        font-size: 25px;
+        line-height: 38px;
       }
     }
   }
@@ -70,13 +71,13 @@
     position: relative;
     background-color: $pink;
     border-radius: 50%;
-    width: 580px;
-    height: 580px;
+    width: 680px;
+    height: 680px;
     margin: auto;
-    right: 22%;
+    right: 18%;
     margin-top: -480px;
     padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 70px;
     z-index: 0;
 
     .big-pink-circle-text {
@@ -87,11 +88,12 @@
 
       h2 {
         font-size: 40px;
+        padding-bottom: 15px;
       }
 
       p {
-        font-size: 24px;
-        line-height: 35px;
+        font-size: 25px;
+        line-height: 38px;
       }
     }
   }
@@ -109,11 +111,12 @@
       }
 
       .meet-inst-photo {
-        left: 12%;
+        left: 0;
+        padding-left: 140px;
         bottom: 150px;
 
         img {
-          width: 47%;
+          width: 55%;
         }
       }
     }
@@ -180,8 +183,9 @@
       }
 
       .meet-inst-photo {
+        padding-left: 60px;
         img {
-          width: 50%;
+          width: 60%;
         }
       }
     }
@@ -204,7 +208,7 @@
   
       .meet-inst-small-pink {
         position: relative;
-        left: 30%;
+        left: 38%;
         width: 300px;
         height: 300px;
   
@@ -214,18 +218,19 @@
       }
   
       .meet-inst-photo {
-        left: 21%;
+        left: 0;
+        padding-left: 90px;
         bottom: 90px;
   
         img {
-          width: 55%;
+          width: 65%;
         }
       }
     }
   
     .big-green-circle-container {
       border-radius: 5%;
-      width: 60%;
+      width: 75%;
       height: 100%;
       padding-left: 30px;
       padding-right: 30px;
@@ -252,7 +257,7 @@
   
     .big-pink-circle-container {
       border-radius: 5%;
-      width: 60%;
+      width: 75%;
       height: 100%;
       right: 0%;
       margin-top: 20px;
@@ -286,7 +291,7 @@
     .top-circles {
   
       .meet-inst-small-pink {
-        left: 22%;
+        left: 0;
         width: 260px;
         height: 240px;
         
@@ -298,11 +303,12 @@
       }
   
       .meet-inst-photo {
-        left: 15%;
+        left: 0;
+        padding-left: 0px;
         bottom: 80px;
   
         img {
-          width: 70%;
+          width: 280px;
         }
       }
     }
