@@ -4,12 +4,13 @@ footer {
   color: #f5f5f5;
 
   .footer-container {
-    width: 100%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
     padding-bottom: 10px;
+    height: 17vh;
 
     .business-logo-white, .copyright, .social-icons {
       width: 100%;
@@ -17,13 +18,18 @@ footer {
 
     .copyright {
       text-align: center;
-      font-size: 24px;
+      font-size: 28px;
     }
 
     img {
-      width: 150px;
-      margin-top: -23px;
-      margin-left: 15px;
+      width: 80px;
+      margin-top: 15px;
+
+      &:hover {
+        width: 85px;
+        transition: 0.8s;
+      }
+
     }
 
     .social-icons {
@@ -34,16 +40,17 @@ footer {
     ul {
       list-style-type: none;
       margin: 0;
-      padding-right: 35px;
+  
 
       i {
-        font-size: 30px;
+        font-size: 35px;
         color: #f5f5f5;
         padding: 0 15px;
         transition: 0.3;
 
         &:hover {
           color: $pink;
+          transition: 1s;
         }
       }
     }

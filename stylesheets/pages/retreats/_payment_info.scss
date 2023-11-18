@@ -1,0 +1,119 @@
+.cost-payment-container {
+  width: cover;
+  background-color: $pink;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+
+  .cost-payment-info {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+    padding-bottom: 70px;
+
+    .payment-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-size: 45px;
+        text-align: center;
+      }
+
+      hr {
+        text-align: center;
+        border: 0;
+        width: 10%;
+        background-color: #323232;
+        height: 0.5px;
+      }
+
+      h4 {
+        text-align: center;
+        font-size: 28px;
+        line-height: 45px;
+        padding-top: 30px;
+      }
+
+      p {
+        text-align: center;
+        padding-top: 35px;
+        font-size: 18px;
+        line-height: 21px;
+        width: 80%;
+      }
+    }
+
+    .icons {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 20px;
+
+      button {
+        color: $softblack;
+        width: 300px;
+        margin: 25px 10px;
+        padding: 20px 22px 12px 22px;
+        text-decoration: none;
+        font-family: $body-font;
+        background-color: $background;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        transition: 0.8s;
+
+        &:hover {
+            padding: 21px 23px 13px 23px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      .payment-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .payment-text-div {
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          flex-direction: column;
+
+          h5 {
+            font-size: 28px;
+            line-height: 15px;
+          }
+
+          p {
+            padding: 0;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .payment-terms {
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid $softblack;
+  }
+
+  span {
+    font-weight: 700;
+    color: black;
+    font-size: 1.2em;
+  }
+}

@@ -1,204 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <title>Christina Healing Arts</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <title>Christina Healing Arts</title>
+    <link rel="stylesheet" href="../stylesheets/application.scss" />
+    <script type="module" src="../javascript/application.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/0071cab30c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <link rel="stylesheet" href="../stylesheets/application.scss">
-  <script type="module" src="../javascript/application.js" defer></script>
-  <script src="https://kit.fontawesome.com/0071cab30c.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <!-- navbar section -->
+    <header data-controller="toggle">
+      <div class="navbar">
+        <a href="../index.html" target="_blank" rel="noopener"
+        ><img
+          class="retreats-logo"
+          src="../img/circle-logo.png"
+          alt="business logo"
+      /></a>
+        <!-- <a href="../index.html"
+          ><img src="../img/business-logo-black.png" alt="business logo"
+        /></a> -->
 
-<body>
-  <!-- navbar section -->
-  <header data-controller="toggle">
-    <div class="navbar">
-      <a href="../index.html"><img src="../img/business-logo-black.png" alt="business logo"></a>
+        <nav data-toggle-target="menu" class="pages-navbar mobile-hidden">
+          <a href="../index.html">Home</a>
+          <a href="index.html"
+            >About
+            <hr
+          /></a>
+          <a href="../services/index.html">Services</a>
+          <a href="../pricing/index.html">Pricing</a>
+          <a href="../retreats/index.html">Retreats</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-      <nav data-toggle-target="menu" class="pages-navbar mobile-hidden">
-        <a href="../index.html">Home</a>
-        <a href="index.html">About <hr></a>
-        <a href="../services/index.html">Services</a>
-        <a href="../pricing/index.html">Pricing</a>
-        <a href="../retreats/index.html">Retreats</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <nav class="social-icons">
+          <a
+            href="https://www.facebook.com/christinapharesyoga"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
 
-      <nav class="social-icons">
-        <a href="https://www.facebook.com/christinapharesyoga" target="_blank" rel="noopener">
-          <i class="fa-brands fa-square-facebook"></i>
-        </a>
+          <a
+            href="https://www.instagram.com/christinahealingarts/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
 
-        <a href="https://www.instagram.com/christinahealingarts/" target="_blank" rel="noopener">
-          <i class="fa-brands fa-square-instagram"></i>
-        </a>
+          <a
+            href="https://www.linkedin.com/in/christina-phares-18b541145/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </nav>
 
-        <a href="https://www.linkedin.com/in/christina-phares-18b541145/" target="_blank" rel="noopener">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </nav>
+        <button data-action="click->toggle#toggleMenu" type="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 50 50"
+            width="40px"
+            height="40px"
+          >
+            <path
+              data-toggle-target="hamburger"
+              d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z"
+            />
 
-      <button data-action="click->toggle#toggleMenu" type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="40px" height="40px">
-          <path data-toggle-target="hamburger"
-            d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z" />
-
-          <path data-toggle-target="close" class="d-none"
-            d="M 40.783203 7.2714844 A 2.0002 2.0002 0 0 0 39.386719 7.8867188 L 25.050781 22.222656 L 10.714844 7.8867188 A 2.0002 2.0002 0 0 0 9.2792969 7.2792969 A 2.0002 2.0002 0 0 0 7.8867188 10.714844 L 22.222656 25.050781 L 7.8867188 39.386719 A 2.0002 2.0002 0 1 0 10.714844 42.214844 L 25.050781 27.878906 L 39.386719 42.214844 A 2.0002 2.0002 0 1 0 42.214844 39.386719 L 27.878906 25.050781 L 42.214844 10.714844 A 2.0002 2.0002 0 0 0 40.783203 7.2714844 z" />
-        </svg>
-      </button>
-    </div>
-  </header>
-  <main class="about-page">
-    <section class="about-hero">
-      <img src="../img/about-page-hero.jpeg" alt="Picture of Christina">
-    </section>
-    <section class="about-text">
-      <div>
-        <h1>Christina Phares</h1>
-        <hr>
+            <path
+              data-toggle-target="close"
+              class="d-none"
+              d="M 40.783203 7.2714844 A 2.0002 2.0002 0 0 0 39.386719 7.8867188 L 25.050781 22.222656 L 10.714844 7.8867188 A 2.0002 2.0002 0 0 0 9.2792969 7.2792969 A 2.0002 2.0002 0 0 0 7.8867188 10.714844 L 22.222656 25.050781 L 7.8867188 39.386719 A 2.0002 2.0002 0 1 0 10.714844 42.214844 L 25.050781 27.878906 L 39.386719 42.214844 A 2.0002 2.0002 0 1 0 42.214844 39.386719 L 27.878906 25.050781 L 42.214844 10.714844 A 2.0002 2.0002 0 0 0 40.783203 7.2714844 z"
+            />
+          </svg>
+        </button>
       </div>
-      <div class="about-description">
-        <p>Born and raised in San Diego, Christina was first introduced to yoga while teaching English as a Second
-          Language in <span>South Korea</span>. Her Korean yoga instructor helped her further understand the mind-body
-          connection.
-        </p>
-        <p>After four years in Korea, Christina returned to the United States and settled in Chicago, where she
-          completed her 200-Hour Yoga Alliance Approved Teacher Training in the style of Baptiste Power Vinyasa.
-          Baptiste Power Vinyasa Yoga is a combination of yoga traditions, including Ashtanga and Iyengar.</p>
-        <p>Her classes are fun, empowering and adaptable. She strongly believes that all people, no matter age, gender,
-          level or body type, can benefit from yoga.
-        </p>
-        <p>Christina worked in Yoga Studio Management for 7 years, helping small business owners attract, grow &
-          maintain their clientele. After helping others realize their dreams, she decided it was time to focus on her
-          own vision of offering tools for introspection, empowering people to learn more about themselves & take charge
-          of their own well-being.</p>
-        <p>Christina considers herself to be a loving, supportive guide; through exploration & curiosity we work
-          together to find a path that works best for you. Her genuine passion for community, movement, integrity &
-          service permeates every aspect of her business.</p>
-        <p>With a background in Nursing & Education, her goal is to educate and inspire clients on what it means to
-          uncover who you really are & live that out in every day life through the rich practice of yoga.</p>
-        <p>Christina's unique life experiences allow her to deeply connect and tailor to your specific needs.</p>
-        <!-- <ul>
-          <li><strong>Proactive:</strong> empowering you to take control of your own well-being.</li>
-          <li><strong>Participatory:</strong> engaging & effecting positive life changes. </li>
-          <li><stong>Personalized:</stong> treated as a unique individual, providing tools designed to support your physical, energetic, mental, & spiritual health. </li>
-        </ul> -->
-      </div>
-    </section>
-    <section class="dear">
-      <h3>Dear friend, if you're ready to take the next step & embark on this transformative journey together, please
-        understand that I will be your biggest cheerleader, rooting for you every step of the way! xo </h3>
-    </section>
-    <section class="licenses">
-      <h1>Licenses | Education | Experience</h1>
-      <hr>
-      <div class="license-list">
-        <ul>
-          <li>7 Years of Yoga Studio Management & Small Business Marketing</li>
-          <li>B.A. English Literature & Writing</li>
-          <li>Fully Bilingual in Spanish</li>
-          <li>Certified Nurse Assistant</li>
-          <li>18 Hours of Yin Yoga Teacher Training</li>
-          <li>16.5 Hours of Breathing & Meditation Training</li>
-          <li>Anatomy for Yoga by Paul Grilley - https://pranamaya.com/</li>
-        </ul>
-      </div>
-    </section>
-    <section class="personal-life">
-      <h1>Christina's Personal Life</h1>
-      <hr>
-      <p>When Christina isn't teaching yoga, you can find her singing lead vocals & playing foot tambourine in her
-        4-piece cover band CCnE. As an aspiring writer, she has also co-written 5 original songs with her guitarist Ed
-        Stocke. She hopes to do a min-tour in the states one day playing original music & meeting a variety of people to
-        connect with and share the healing power of music.
-      </p>
-      <div class="images">
-        <img src="../img/christy-band.jpeg" alt="Christy's band">
-        <img src="../img/christy-family.jpg" alt="Christy's band">
-      </div>
-    </section>
-  </main>
-
-  <section class="get-started">
-    <div class="form-calendly">
-      <h3>Ready to get started?</h3>
-      <p>Fill out the form <a
-          href="https://docs.google.com/forms/d/1c12HxTH5fKurR7dbOgmCemAS2mOiePM4Hl9trmL74yA/prefill">HERE!</a>
-        <!-- Calendly link widget begin -->
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-      <p>Schedule a time with me <a href=""
-          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/phareschristina'});return false;">HERE!</a></p>
-      <!-- Calendly link widget end -->
-    </div>
-  </section>
-  <!-- contact section -->
-  <section class="section-contact" id="contact">
-    <h1>Contact me</h1>
-    <hr>
-    <div class="contact-container">
-      <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mleyegqd"
-        method="post">
-        <fieldset id="fs-frm-inputs">
-          <div class="contact-col-1">
-            <div class="name-section">
-              <label for="full-name"><img src="../img/person-icon.png" alt="person" class="contact-icon"></label>
-              <input type="text" name="name" id="full-name" placeholder="First and Last*" required="">
-            </div>
-            <div class="email-section">
-              <label for="email-address"><img src="../img/email-icon.png" alt="person" class="contact-icon"></label>
-              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld*" required="">
-            </div>
-            <label for="yoga-type" class="yoga-type">Which type of yoga interests you?</label>
-            <select name="yoga-type" id="yoga-type">
-              <option value="" selected="" disabled="">Select</option>
-              <option value="adaptive">Adaptive Yoga</option>
-              <option value="mobility">Yoga for stregth & mobility</option>
-              <option value="stress">Yoga for stress & anxiety</option>
-              <option value="trauma">Trauma informed yoga</option>
-              <option value="fertility">Yoga Therapy</option>
-              <option value="Retreats">Local Half-Day Retreats</option>
-              <option value="any">I'm open</option>
-            </select>
+    </header>
+    <main class="about-page">
+      <section class="about-hero">
+        <img src="../img/about-hero.jpg" alt="Picture of Christina" />
+      </section>
+      <section class="about-text">
+        <div>
+          <h1>Christina Phares</h1>
+          <hr />
+        </div>
+        <div class="about-description">
+          <p>
+            Born and raised in San Diego, Christina was first introduced to yoga
+            while teaching English as a Second Language in
+            <span>South Korea</span>. Her Korean yoga instructor helped her
+            further understand the mind-body connection.
+          </p>
+          <p>
+            After four years in Korea, Christina returned to the United States
+            and settled in Chicago, where she completed her 200-Hour Yoga
+            Alliance Approved Teacher Training in the style of Baptiste Power
+            Vinyasa. Baptiste Power Vinyasa Yoga is a combination of yoga
+            traditions, including Ashtanga and Iyengar.
+          </p>
+          <p>
+            Her classes are fun, empowering and adaptable. She strongly believes
+            that all people, no matter age, gender, level or body type, can
+            benefit from yoga.
+          </p>
+          <p>
+            Christina worked in Yoga Studio Management for 7 years, helping
+            small business owners attract, grow & maintain their clientele.
+            After helping others realize their dreams, she decided it was time
+            to focus on her own vision of offering tools for introspection,
+            empowering people to learn more about themselves & take charge of
+            their own well-being.
+          </p>
+          <p>
+            Christina considers herself to be a loving, supportive guide;
+            through exploration & curiosity we work together to find a path that
+            works best for you. Her genuine passion for community, movement,
+            integrity & service permeates every aspect of her business.
+          </p>
+          <p>
+            With a background in Nursing & Education, her goal is to educate and
+            inspire clients on what it means to uncover who you really are &
+            live that out in every day life through the rich practice of yoga.
+          </p>
+          <p>
+            Christina's unique life experiences allow her to deeply connect and
+            tailor to your specific needs.
+          </p>
+        </div>
+      </section>
+      <section class="dear">
+        <h3>
+          Dear friend, if you're ready to take the next step & embark on this
+          transformative journey together, please understand that I will be your
+          biggest cheerleader, rooting for you every step of the way! xo
+        </h3>
+      </section>
+      <section class="licenses">
+        <h1>Licenses | Education | Experience</h1>
+        <hr />
+        <div class="license-list">
+          <ul>
+            <li>
+              7 Years of Yoga Studio Management & Small Business Marketing
+            </li>
+            <li>Reiki 1 & 2 Certified</li>
+            <li>18 Hours of Yin Yoga Teacher Training</li>
+            <li>16.5 Hours of Breathing & Meditation Training</li>
+            <li>Anatomy for Yoga by Paul Grilley - https://pranamaya.com/</li>
+            <li>B.A. English Literature & Writing</li>
+            <li>Fully Bilingual in English & Spanish</li>
+            <li>Certified Nurse Assistant</li>
+            
+          </ul>
+        </div>
+      </section>
+      <section class="personal-life-container">
+        <div class="personal-life">
+          <div>
+            <h1>Christina's Personal Life</h1>
+            <hr />
+            <p>
+              When Christina isn't teaching yoga, you can find her singing,
+              reading, writing, hiking & spending time with family & friends.
+              She is also a musical theater geek that loves to randomly sing
+              whenever & wherever she goes.
+            </p>
           </div>
-          <div class="contact-col-2">
-            <!-- <label for="message">Message</label> -->
-            <textarea rows="7" name="message" id="message" placeholder="Message"></textarea>
-            <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+          <div class="images">
+            <!-- <img src="../img/christy-band.jpeg" alt="Christy's band" /> -->
+            <img src="../img/christy-music.jpg" alt="Christy's band" />
           </div>
-        </fieldset>
-        <input type="submit" value="Submit" class="submit-button">
-      </form>
-    </div>
-  </section>
+        </div>
+      </section>
+    </main>
 
-  <!-- footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="business-logo-white">
-        <a href="../index.html" target="_blank" rel="noopener"><img src="../img/business-logo-white.png"
-            alt="business-logo-white"></a>
-      </div>
-      <div class="copyright">
-        <small>&copy; Copyright 2023, Christina Healing Arts</small>
-      </div>
-      <div class="social-icons">
-        <ul class="social-icons">
-          <li><a href="https://www.facebook.com/christinapharesyoga" target="_blank" rel="noopener"><i
-                class="fa-brands fa-square-facebook"></i></a></li>
-          <li><a href="https://www.instagram.com/christinahealingarts/" target="_blank" rel="noopener"><i
-                class="fa-brands fa-square-instagram"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/christina-phares-18b541145/" target="_blank" rel="noopener"><i
-                class="fa-brands fa-linkedin"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</body>
+    <section class="get-started">
+      <div class="form-calendly">
+        <h3>Ready to get started?</h3>
+        <p>
+          Fill out the form
+          <a
+            href="https://docs.google.com/forms/d/1c12HxTH5fKurR7dbOgmCemAS2mOiePM4Hl9trmL74yA/prefill"
+            >HERE!</a
+          >
+          <!-- Calendly link widget begin -->
+          <link
+            href="https://assets.calendly.com/assets/external/widget.css"
+            rel="stylesheet"
+          />
+          <script
+            src="https://assets.calendly.com/assets/external/widget.js"
+            type="text/javascript"
+            async
+          ></script>
+        </p>
 
+        <p>
+          Schedule a time with me
+          <a
+            href=""
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/phareschristina'});return false;"
+            >HERE!</a
+          >
+        </p>
+        <!-- Calendly link widget end -->
+      </div>
+    </section>
+    <!-- contact section -->
+    <section class="section-contact" id="contact">
+      <h1>Contact me</h1>
+      <hr />
+      <div class="contact-container">
+        <form
+          id="fs-frm"
+          name="department-contact-form"
+          accept-charset="utf-8"
+          action="https://formspree.io/f/mleyegqd"
+          method="post"
+        >
+          <fieldset id="fs-frm-inputs">
+            <div class="contact-col-1">
+              <div class="name-section">
+                <label for="full-name"
+                  ><img
+                    src="../img/person-icon.png"
+                    alt="person"
+                    class="contact-icon"
+                /></label>
+                <input
+                  type="text"
+                  name="name"
+                  id="full-name"
+                  placeholder="First and Last*"
+                  required=""
+                />
+              </div>
+              <div class="email-section">
+                <label for="email-address"
+                  ><img
+                    src="../img/email-icon.png"
+                    alt="person"
+                    class="contact-icon"
+                /></label>
+                <input
+                  type="email"
+                  name="_replyto"
+                  id="email-address"
+                  placeholder="email@domain.tld*"
+                  required=""
+                />
+              </div>
+              <label for="yoga-type" class="yoga-type"
+                >Which type of yoga interests you?</label
+              >
+              <select name="yoga-type" id="yoga-type">
+                <option value="" selected="" disabled="">Select</option>
+                <option value="adaptive">Adaptive Yoga</option>
+                <option value="mobility">Yoga for stregth & mobility</option>
+                <option value="stress">Yoga for stress & anxiety</option>
+                <option value="trauma">Trauma informed yoga</option>
+                <option value="fertility">Yoga Therapy</option>
+                <option value="Retreats">Local Half-Day Retreats</option>
+                <option value="any">I'm open</option>
+              </select>
+            </div>
+            <div class="contact-col-2">
+              <!-- <label for="message">Message</label> -->
+              <textarea
+                rows="7"
+                name="message"
+                id="message"
+                placeholder="Message"
+              ></textarea>
+              <input
+                type="hidden"
+                name="_subject"
+                id="email-subject"
+                value="Department Contact Form Submission"
+              />
+            </div>
+          </fieldset>
+          <input type="submit" value="Submit" class="submit-button" />
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="business-logo-white">
+          <a href="../index.html" target="_blank" rel="noopener"
+            ><img
+              src="../img/business-logo-white.png"
+              alt="business-logo-white"
+          /></a>
+        </div>
+        <div class="copyright">
+          <small>&copy; Copyright 2023, Christina Healing Arts</small>
+        </div>
+        <div class="social-icons">
+          <ul class="social-icons">
+            <li>
+              <a
+                href="https://www.facebook.com/christinapharesyoga"
+                target="_blank"
+                rel="noopener"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/christinahealingarts/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/christina-phares-18b541145/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
