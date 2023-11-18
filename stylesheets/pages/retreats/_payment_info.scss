@@ -24,6 +24,7 @@
       h1 {
         font-size: 45px;
         text-align: center;
+        padding-bottom: 20px;
       }
 
       hr {
@@ -72,8 +73,8 @@
         transition: 0.8s;
 
         &:hover {
-            padding: 21px 23px 13px 23px;
-            background: rgba(0, 0, 0, 0.2);
+          padding: 21px 23px 13px 23px;
+          background: rgba(0, 0, 0, 0.2);
         }
       }
 
@@ -116,5 +117,112 @@
     font-weight: 700;
     color: black;
     font-size: 1.2em;
+  }
+
+  //   media queries
+
+  @media only screen and (max-width: $laptop) {
+    .cost-payment-info {
+      gap: 60px;
+      padding-bottom: 70px;
+
+      .payment-text {
+        h1 {
+          font-size: 40px;
+          padding-bottom: 15px;
+        }
+
+        h4 {
+          font-size: 24px;
+          line-height: 34px;
+          padding-top: 25px;
+        }
+      }
+
+      .icons {
+        gap: 10px;
+
+        button {
+          width: 270px;
+        }
+
+        .payment-buttons {
+          gap: 10px;
+
+          .payment-text-div {
+            h5 {
+              font-size: 26px;
+              line-height: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet) {
+    .cost-payment-info {
+      width: 75%;
+      flex-direction: column;
+      gap: 30px;
+      padding-bottom: 55px;
+
+      .payment-text {
+        h4 {
+          padding-top: 40px;
+        }
+
+        p {
+            padding-bottom: 15px;
+          width: 65%;
+        }
+      }
+
+      .icons {
+        gap: 5px;
+
+        button {
+          color: $softblack;
+          width: 250px;
+          margin: 25px 10px;
+          padding: 20px 17px 12px 17px;
+          text-decoration: none;
+          font-family: $body-font;
+          background-color: $background;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+          cursor: pointer;
+          transition: 0.8s;
+
+          &:hover {
+            padding: 21px 18px 13px 18px;
+            background: rgba(0, 0, 0, 0.2);
+          }
+        }
+
+        .payment-buttons {
+          gap: 10px;
+
+          .payment-text-div {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            flex-direction: column;
+
+            h5 {
+              font-size: 24px;
+            }
+
+            p {
+             font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $phone) {
   }
 }
