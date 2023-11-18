@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     gap: 85px;
-    padding-bottom: 70px;
+    padding-bottom: 90px;
 
     .payment-text {
       display: flex;
@@ -104,11 +104,12 @@
   }
 
   .payment-terms {
-    padding: 20px;
+    padding: 30px;
     width: 60%;
     margin: auto;
     text-align: center;
-    border: 1px solid $softblack;
+    border-top: 0.5px solid $softblack;
+    border-bottom: 0.5px solid $softblack;
   }
 
   span {
