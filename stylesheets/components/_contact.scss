@@ -132,6 +132,10 @@
       position: relative;
       transition: 0.5s;
 
+      a {
+        color: $softblack;
+      }
+
       &:after {
         padding:15px 30px;
       }

@@ -72,6 +72,10 @@
         cursor: pointer;
         transition: 0.8s;
 
+        a {
+          color: $softblack;
+        }
+
         &:hover {
           padding: 21px 23px 13px 23px;
           background: rgba(0, 0, 0, 0.2);

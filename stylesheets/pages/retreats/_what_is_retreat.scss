@@ -136,6 +136,10 @@
       cursor: pointer;
       transition: 0.5s;
 
+      a {
+        color: $softblack;
+      }
+
       &:hover {
         font-size: 21px;
         background: rgba(0, 0, 0, 0.2);

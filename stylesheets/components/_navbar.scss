@@ -6,7 +6,7 @@
   justify-content: space-between;
   margin: 0;
 
-  height: 17vh;
+  height: 15vh;
 
   button {
     background: transparent;
@@ -19,18 +19,13 @@
     z-index: 2; /* Ensure the hamburger icon appears above the navbar */
   }
 
-  img {
-    padding-top: 20px;
-    width: 160px;
-  }
-
-  .retreats-logo {
-    padding-top: 10px;
+  .logo {
+    padding-top: 11px;
     padding-left: 40px;
-    width: 120px;
+    width: 112px;
 
     &:hover {
-      width: 125px;
+      width: 116px;
       transition: 0.8s;
     }
   }
@@ -77,6 +72,12 @@
 
   @media only screen and (max-width: $laptop) {
 
+    .logo {
+      padding-top: 15px;
+
+  
+    }
+
     button {
       display: block;
     }
@@ -119,21 +120,29 @@
   }
 
   @media only screen and (max-width: $tablet) {
+    justify-content: space-around;
     img {
       padding-top: 20px;
       width: 50%;
     }
 
-    .retreats-logo {
+    .logo {
       padding-top: 10px;
-      padding-left: 40px;
-      width: 100px;
+      padding-left: 0px;
+      width: 65px;
   
       &:hover {
         width: 105px;
         transition: 0.3s;
       }
     }
+
+    button {
+      margin-right: 0;
+      width: 35px;
+      z-index: 2; /* Ensure the hamburger icon appears above the navbar */
+    }
+  
 
     .pages-navbar {
       font-size: 1.5rem;

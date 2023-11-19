@@ -54,6 +54,10 @@
       position: relative;
       transition: 0.5s;
 
+      a {
+        color: $softblack;
+      }
+
       a:visited {
         color: $softblack;
       }

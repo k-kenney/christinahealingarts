@@ -69,35 +69,36 @@ footer {
   @media only screen and (max-width: $tablet) {
     .footer-container {
       img {
-        margin-top: -15px;
-        width: 110px;
+        margin-top: 10px;
+        width: 75px;
       }
 
       .copyright {
-        font-size: 15px;
+        font-size: 18px;
       }
 
       ul {
-        padding-right: 35px;
+        padding-right: 25px;
 
         i {
-          font-size: 25px;
+          font-size: 28px;
           padding: 0 5px;
         }
       }
     }
   }
 
-  @media only screen and (max-width: $phone) {
-    margin-top: 10px;
+  @media only screen and (max-width: $large-phone) {
+
     .footer-container {
+      width: 90%; 
+
       img {
-        margin-top: -10px;
-        width: 90px;
+        width: 65px;
       }
 
       ul {
-        padding-right: 25px;
+        padding-right: 0;
 
         i {
           font-size: 20px;

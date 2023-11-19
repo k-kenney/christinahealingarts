@@ -68,7 +68,10 @@
         transition: 0.5s;
         align-items: center;
         width: 200px;
-    
+
+        a {
+          color: $softblack;
+        }
     
         &:hover {
           font-size: 25px;
