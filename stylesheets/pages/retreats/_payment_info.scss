@@ -177,7 +177,7 @@
         }
 
         p {
-            padding-bottom: 15px;
+          padding-bottom: 15px;
           width: 65%;
         }
       }
@@ -215,11 +215,13 @@
             flex-direction: column;
 
             h5 {
-              font-size: 24px;
+              font-size: 23px;
+              line-height: 30px;
             }
 
             p {
-             font-size: 18px;
+             font-size: 17px;
+             margin-top: -10px;
             }
           }
         }

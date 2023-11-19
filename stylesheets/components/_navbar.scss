@@ -16,7 +16,7 @@
     height: 35px;
     margin-right: 40px;
     width: 35px;
-    z-index: 2; /* Ensure the hamburger icon appears above the navbar */
+    z-index: 3; /* Ensure the hamburger icon appears above the navbar */
   }
 
   .logo {
@@ -94,7 +94,7 @@
       text-align: left;
       top: 100px;
       width: max-content;
-      z-index: 1; /* Ensure it appears above other elements */
+      z-index: 3; /* Ensure it appears above other elements */
 
       &.mobile-hidden {
         display: none;
