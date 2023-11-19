@@ -178,7 +178,7 @@
 
         p {
           padding-bottom: 15px;
-          width: 65%;
+          width: 75%;
         }
       }
 
@@ -227,8 +227,26 @@
         }
       }
     }
+
+    .payment-terms {
+      width: 70%;
+    }
   }
 
   @media only screen and (max-width: $phone) {
+    padding-top: 50px;
+
+    .cost-payment-info {
+
+      .payment-text {
+        h1 {
+          font-size: 36px;
+        }
+      }
+    }
+
+    .payment-terms {
+      width: 80%;
+    }
   }
 }
