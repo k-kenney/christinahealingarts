@@ -1,9 +1,9 @@
 .pricing-page {
   .pricing-banner {
-    background: rgba(71, 86, 47, 0.5);
+    background: $light-green;
     padding-top: 70px;
     padding-bottom: 50px;
-    margin-top: 10px;
+    margin-top: 15px;
 
     h1 {
       margin: 0;
@@ -89,6 +89,7 @@
 
   @media only screen and (max-width: $laptop) {
     .pricing-container {
+      padding-top: 0px;
 
       .pricing-cards {
         width: 90%;
