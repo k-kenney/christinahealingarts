@@ -40,7 +40,7 @@
     padding: 15px 25px;
     text-decoration: none;
     font-family: 'Cormorant', serif;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     border-radius: 10px;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
@@ -70,8 +70,8 @@
     }
 
     &:hover{
-      padding-right: 25px;
-      padding-left:15px;
+      padding-right: 27px;
+      padding-left:17px;
       background: rgba(0, 0, 0,.2);
     }
 
@@ -99,16 +99,18 @@
     }
     button {
       margin-bottom: 30px;
-      padding: 8px 10px;
-      font-size: 14px;
-
-      &:hover {
-        content: none;
-        padding: 8px 10px;
-      }
+      padding: 8px 13px;
+      font-size: 16px;
 
       &:after {
         top: 8px;
+        content: none;
+      }
+
+      &:hover {
+        padding: 8px 13px;
+        content: none;
+        font-size: 17px;
       }
     }
   }

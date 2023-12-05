@@ -4,7 +4,7 @@
   margin-top: 120px;
   margin-bottom: 60px;
   background: $light-green;
-  width: 40%;
+  width: 60%;
   border-radius: 8px;
   padding: 60px 15px;
 
@@ -39,24 +39,10 @@
       color: $softblack;
     }
 
-    &:after {
-      content: '»';
-      position: absolute;
-      opacity: 0;
-      top: 10px;
-      right: -10px;
-      transition: 0.5s;
-    }
 
     &:hover{
-      padding-right: 25px;
-      padding-left: 15px;
+      font-size: 21px;
       background: rgba(0, 0, 0,.2);
-    }
-
-    &:hover:after {
-      opacity: 1;
-      right: 10px;
     }
   }
 
@@ -69,6 +55,7 @@
   }
 
   @media only screen and (max-width: $laptop) {
+    width: 70%;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 40px 15px;
@@ -80,31 +67,18 @@
       p {
         font-size: 22px;
       }
-
-      a {
-        margin-left: 8px;
-        padding: 5px 13px;
-        font-size: 22px;
-
-        &:after {
-          top: 8px;
-        }
-
-        &:hover{
-          padding-right: 20px;
-          padding-left: 10px;
-          background: rgba(0, 0, 0,.2);
-        }
-      }
     }
 
     @media only screen and (max-width: $tablet) {
-      width: 70%;
+      width: 80%;
       padding: 40px 15px;
 
       }
 
     @media only screen and (max-width: $phone) {
+      width: 85%;
+      padding: 20px 10px;
+
       h3 {
         font-size: 35px;
       }
@@ -112,19 +86,12 @@
         font-size: 18px;
       }
       a {
-        margin-left: 0;
-        padding: 8px 13px;
         font-size: 16px;
 
-        &:after {
-          top: 8px;
+        &:hover {
+          font-size: 17px;
         }
 
-        &:hover{
-          padding-right: 20px;
-          padding-left: 10px;
-          background: rgba(0, 0, 0,.2);
-        }
       }
 
     }
