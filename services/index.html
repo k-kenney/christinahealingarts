@@ -1,241 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-40088575.ico" />
+    <title>Christina Healing Arts</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/assets/favicon-40088575.ico">
-  <title>Christina Healing Arts</title>
+    
+    
+    <script
+      src="https://kit.fontawesome.com/0071cab30c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" crossorigin src="/assets/main-1eb60362.js"></script>
+    <link rel="stylesheet" href="/assets/index-ffb398aa.css">
+  </head>
 
-  
-  
-  <script src="https://kit.fontawesome.com/0071cab30c.js" crossorigin="anonymous"></script>
-  <script type="module" crossorigin src="/assets/main-1eb60362.js"></script>
-  <link rel="stylesheet" href="/assets/index-ffb398aa.css">
-</head>
-
-<body>
-  <!-- navbar section -->
-  <header data-controller="toggle">
-    <div class="navbar">
-      <a href="../index.html" target="_blank" rel="noopener"
-      ><img
-        class="logo"
-        src="/assets/light-green-circle-logo-7a1d9209.png"
-        alt="business logo"
-    /></a>
-      <!-- <a href="../index.html" target="_blank" rel="noopener"><img src="../img/business-logo-black.png"
+  <body>
+    <!-- navbar section -->
+    <header data-controller="toggle">
+      <div class="navbar">
+        <a href="../index.html" target="_blank" rel="noopener"
+          ><img
+            class="logo"
+            src="/assets/light-green-circle-logo-7a1d9209.png"
+            alt="business logo"
+        /></a>
+        <!-- <a href="../index.html" target="_blank" rel="noopener"><img src="../img/business-logo-black.png"
           alt="business logo"></a> -->
 
-      <nav data-toggle-target="menu" class="pages-navbar mobile-hidden">
-        <a href="../index.html">Home</a>
-        <a href="../about/index.html">About</a>
-        <a href="index.html">Services <hr></a>
-        <a href="../pricing/index.html">Pricing</a>
-        <a href="../gatherings/index.html">Gatherings</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <nav data-toggle-target="menu" class="pages-navbar mobile-hidden">
+          <a href="../index.html">Home</a>
+          <a href="../about/index.html">About</a>
+          <a href="index.html"
+            >Services
+            <hr
+          /></a>
+          <a href="../pricing/index.html">Pricing</a>
+          <a href="../gatherings/index.html">Gatherings</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-      <nav class="social-icons">
-        <a href="https://www.facebook.com/christinapharesyoga" target="_blank" rel="noopener">
-          <i class="fa-brands fa-square-facebook"></i>
-        </a>
+        <nav class="social-icons">
+          <a
+            href="https://www.facebook.com/christinapharesyoga"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
 
-        <a href="https://www.instagram.com/christinahealingarts/" target="_blank" rel="noopener">
-          <i class="fa-brands fa-square-instagram"></i>
-        </a>
+          <a
+            href="https://www.instagram.com/christinahealingarts/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
 
-        <a href="https://www.linkedin.com/in/christina-phares-18b541145/" target="_blank" rel="noopener">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </nav>
+          <a
+            href="https://www.linkedin.com/in/christina-phares-18b541145/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </nav>
 
-      <button data-action="click->toggle#toggleMenu" type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="40px" height="40px">
-          <path data-toggle-target="hamburger"
-            d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z" />
+        <button data-action="click->toggle#toggleMenu" type="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 50 50"
+            width="40px"
+            height="40px"
+          >
+            <path
+              data-toggle-target="hamburger"
+              d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z"
+            />
 
-          <path data-toggle-target="close" class="d-none"
-            d="M 40.783203 7.2714844 A 2.0002 2.0002 0 0 0 39.386719 7.8867188 L 25.050781 22.222656 L 10.714844 7.8867188 A 2.0002 2.0002 0 0 0 9.2792969 7.2792969 A 2.0002 2.0002 0 0 0 7.8867188 10.714844 L 22.222656 25.050781 L 7.8867188 39.386719 A 2.0002 2.0002 0 1 0 10.714844 42.214844 L 25.050781 27.878906 L 39.386719 42.214844 A 2.0002 2.0002 0 1 0 42.214844 39.386719 L 27.878906 25.050781 L 42.214844 10.714844 A 2.0002 2.0002 0 0 0 40.783203 7.2714844 z" />
-        </svg>
-      </button>
-    </div>
-  </header>
-  <main class="services-page">
-    <section class="services-banner">
-      <h1>Yoga Services</h1>
-    </section>
-    <section class="services-container">
-      <hr>
-      <p class="pre-text">
-        Many people are intimidated to try yoga, because they worry that they won’t be flexible enough or strong enough.
-        Others have neurological deficits or physical limitations that they think will prevent them from doing a
-        physical activity like yoga. But all you need to do yoga is a body, in any shape or form.
-      </p>
-      <hr>
-      <h1 class="services-title">Services</h1>
-      <hr class="title-hr">
-      <div class="services-cards">
-        <div class="symbol">
-          <img src="/assets/manipura-198ec1a3.png" alt="yogi symbol">
-          <h1>Adaptive Yoga</h1>
-        </div>
-        <div class="services-text">
-          <p>
-            Adaptive yoga is a style of yoga that considers all bodies and abilities. It’s accessible to everyone, and
-            multiple variations are taught, allowing the poses to be adapted to specific needs and abilities. For
-            example, chair yoga would be considered a form of adaptive yoga. Adaptive yoga is an umbrella term that can
-            include yoga for specific conditions like multiple sclerosis, yoga for people with physical disabilities, or
-            even yoga for older adults.
-          </p>
-        </div>
+            <path
+              data-toggle-target="close"
+              class="d-none"
+              d="M 40.783203 7.2714844 A 2.0002 2.0002 0 0 0 39.386719 7.8867188 L 25.050781 22.222656 L 10.714844 7.8867188 A 2.0002 2.0002 0 0 0 9.2792969 7.2792969 A 2.0002 2.0002 0 0 0 7.8867188 10.714844 L 22.222656 25.050781 L 7.8867188 39.386719 A 2.0002 2.0002 0 1 0 10.714844 42.214844 L 25.050781 27.878906 L 39.386719 42.214844 A 2.0002 2.0002 0 1 0 42.214844 39.386719 L 27.878906 25.050781 L 42.214844 10.714844 A 2.0002 2.0002 0 0 0 40.783203 7.2714844 z"
+            />
+          </svg>
+        </button>
       </div>
-      <hr>
-      <div class="services-cards">
-        <div class="symbol">
-          <img src="/assets/sahasrara-ccd6c7b5.png" alt="yogi symbol">
-          <h1>Yoga for Strength & Mobility</h1>
-        </div>
-        <div class="services-text">
-          <p>
-            Learn how to make the yoga pose work for your unique body type while developing strength, stamina, mobility
-            & overall body awareness. </p>
-        </div>
-      </div>
-      <hr>
-      <div class="services-cards">
-        <div class="symbol">
-          <img src="/assets/muladhara-34ba01e3.png" alt="yogi symbol">
-          <h1>Yoga for Stress & Anxiety</h1>
-        </div>
-        <div class="services-text">
-          <p>
-            A gentle & relaxing practice that works deeply in the connective tissues & joints of the hips, pelvis, &
-            lower spine through extended holds. Incorporates breathwork techniques & mediation to achieve a deeper state
-            of relaxation. </p>
-        </div>
-      </div>
-      <hr>
-      <div class="services-cards">
-        <div class="symbol">
-          <img src="/assets/svadhishthana-a485c229.png" alt="yogi symbol">
-          <h1>Trauma-Informed Yoga</h1>
-        </div>
-        <div class="services-text">
-          <p>
-            We've all experienced trauma. Trauma doesn’t just affect the mind; it can also be held in the body.
-            Trauma-informed yoga describes an approach to the practice that addresses the specific needs and symptoms of
-            trauma survivors. Trauma-informed teaching means we assume that all our students have had some kind of
-            trauma in their lives and that we teach in a way that offers a space for healing from trauma. </p>
-        </div>
-      </div>
-      <hr>
-      <div class="services-cards">
-        <div class="symbol">
-          <img src="/assets/sahasrara-ccd6c7b5.png" alt="yogi symbol">
-          <h1>Yoga Therapy</h1>
-        </div>
-        <div class="services-text">
-          <p>
-            All yoga is potentially therapeutic and healing, but yoga therapy is the specific application of yogic
-            tools; postures, exercises, breathwork, meditation techniques, and more to address an individual’s physical,
-            mental, and emotional needs. Yoga therapy is a safe way of working with the natural capacity of your body
-            and mind to optimize well-being.
-          </p>
-        </div>
-      </div>
-      <hr>
-      <div class="services-cards">
-        <div class="symbol">
-          <img src="/assets/yoga-copy-b28d1430.png" alt="yogi symbol">
-          <h1>Local Half-Day Retreats</h1>
-        </div>
-        <div class="services-text">
-          <p>
-            We don't heal in isolation; we heal in community. Local mini retreats are an affordable & feasible way to
-            connect to others while receiving ongoing relational support.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <section class="get-started">
-    <div class="form-calendly">
-      <h3>Ready to get started?</h3>
-      <p>Fill out the form <a
-          href="https://docs.google.com/forms/d/1c12HxTH5fKurR7dbOgmCemAS2mOiePM4Hl9trmL74yA/prefill">HERE!</a>
-        <!-- Calendly link widget begin -->
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-      <p>Schedule a time with me <a href=""
-          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/phareschristina'});return false;">HERE!</a></p>
-      <!-- Calendly link widget end -->
-    </div>
-  </section>
-
-  <!-- contact section -->
-  <section class="section-contact" id="contact">
-    <h1>Contact me</h1>
-    <hr>
-    <div class="contact-container">
-      <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mleyegqd"
-        method="post">
-        <fieldset id="fs-frm-inputs">
-          <div class="contact-col-1">
-            <div class="name-section">
-              <label for="full-name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAYAAAA3WXuFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJSSURBVHgBzVgxchoxFP1aQ51NBVTZMl0WToBPkJTpHG6QlKkcd+k8PoHxDfAJDB0Fg/EJvB0u1xcAv2eLGdvD8L92BeM3o9nVzpP0pP+l/7VOKiDP836SJD/W6/U3Vp1zKb+jXuKxQP1utVoNF4AEwoWQISTDYJcofQsfAscoA+gqxIgjKxFiTiBkhPLV2gZcTuBXq9V6AO5MbSwkrgxMdC81ABN2LSZMxADM8kZqAn2cW3iqIDowl15qgn7HvjSeKgim6kskcGeqHI2AXZJJPHzSCCYfigVM7rPGUQXB9qVEAvoqNI5lhQqJh/rbniFAIgF9jTWOKghnWckQIPUxsYQQk1ND0JnUBLb8PxPPQsLMxniMpDqGs9lsbCGatz3sP5BqDl6grXmFzYLoS+j4WMJEUcxxSPoRlA8RPvLf4jVVqKWP8IUEIPik5gBw8muNB84kVEwlQR5fDBw1bm2DOWMkaK52u30Kk/3UuExZkCk+gs9s0Rx+VB+CiByP70xFq+ZFMN8C5QqvI82MbocQCjixJvQB4pj4X0HYUCyCIOQ3RJxurjb7AkRxc5y9F+ZeCen7K04mB4QXNvDR4MWpIYaOOtz3qmwDx/RXJYHzTxxNBDGmG8G+gYP0j+t2u/eHNtMOlMkHEkOkPKmj5cwRUFJQ7eQrIi6OlsvltNPpPKLCnwgH32UetNLf+Xz+/83B2Ov1eDpv/vtksl+UGOuaJzd2F0PKs+vsCh1po9HIQc4ozjt/ig42q5jK7hUtngfwdzEegPzGe16z2VxMp9NiW6Mn/dr91Gw7qMwAAAAASUVORK5CYII=" alt="person" class="contact-icon"></label>
-              <input type="text" name="name" id="full-name" placeholder="First and Last*" required="">
-            </div>
-            <div class="email-section">
-              <label for="email-address"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAbCAYAAADh0qZQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFXSURBVHgB7dexToQwGAfwr+UGR1c2fAIbwgPgG/gG3hs4O3lsjvIG+gSOroxOhEdgY2UngP9Ga7CpEeHzrAn/pNfmu5L+0rvegSBEKZUKIW71EP0peZBxHAu0rKqqQgB4KaV8Ik8zDMM+CMPw2ZfdcwU2JfESTYvY4kd0Nf1NWrTcqkXSngXkAVt8gWFGx8NqXIZ1z9Du7Tel6wp8WeuyLI+B/cDp9bBu65q0c9TODUpj0R1wuB5wuPYYX6FFxIPL9a45YMqeLOI4Hu3i9Ph/ulqpaCX2S5z5GURLaQ7yF7CLcLOQDNhVuB8hF2BZcIuQc7BBEKi+7wsO3Crkd1gunMkqpIkLy4EzYUGavGNzwK45cCY7YoyGceJMJP2DbEiubEiubEiuaGRLfqfVyIz8Th40TfOCx1pBb7ftJ+RP9Cd8g2efOzGtJkmSkgfBX2vbdV1tbvdeATxF+5GMU5jcAAAAAElFTkSuQmCC" alt="person" class="contact-icon"></label>
-              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld*" required="">
-            </div>
-            <label for="yoga-type" class="yoga-type">Which type of yoga interests you?</label>
-            <select name="yoga-type" id="yoga-type">
-              <option value="" selected="" disabled="">Select</option>
-              <option value="adaptive">Adaptive Yoga</option>
-              <option value="mobility">Yoga for stregth & mobility</option>
-              <option value="stress">Yoga for stress & anxiety</option>
-              <option value="trauma">Trauma informed yoga</option>
-              <option value="fertility">Yoga Therapy</option>
-              <option value="Retreats">Local Half-Day Retreats</option>
-              <option value="any">I'm open</option>
-            </select>
+    </header>
+    <main class="services-page">
+      <section class="services-banner">
+        <h1>Yoga Services</h1>
+      </section>
+      <section class="services-container">
+        <hr />
+        <p class="pre-text">
+          Many people are intimidated to try yoga, because they worry that they
+          won’t be flexible enough or strong enough. Others have neurological
+          deficits or physical limitations that they think will prevent them
+          from doing a physical activity like yoga. But all you need to do yoga
+          is a body, in any shape or form.
+        </p>
+        <hr />
+        <h1 class="services-title">Services</h1>
+        <hr class="title-hr" />
+        <div class="services-cards">
+          <div class="symbol">
+            <img src="/assets/manipura-198ec1a3.png" alt="yogi symbol" />
+            <h1>Adaptive Yoga</h1>
           </div>
-          <div class="contact-col-2">
-            <!-- <label for="message">Message</label> -->
-            <textarea rows="7" name="message" id="message" placeholder="Message"></textarea>
-            <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+          <div class="services-text">
+            <p>
+              Adaptive yoga is a style of yoga that considers all bodies and
+              abilities. It’s accessible to everyone, and multiple variations
+              are taught, allowing the poses to be adapted to specific needs and
+              abilities. For example, chair yoga would be considered a form of
+              adaptive yoga. Adaptive yoga is an umbrella term that can include
+              yoga for specific conditions like multiple sclerosis, yoga for
+              people with physical disabilities, or even yoga for older adults.
+            </p>
           </div>
-        </fieldset>
-        <input type="submit" value="Submit" class="submit-button">
-      </form>
-    </div>
-  </section>
-  <!-- footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="business-logo-white">
-        <a href="../index.html" target="_blank" rel="noopener"><img src="/assets/light-green-circle-logo-7a1d9209.png"
-            alt="business-logo"></a>
-      </div>
-      <div class="copyright">
-        <small>&copy; Copyright 2023, Christina Healing Arts</small>
-      </div>
-      <div class="social-icons">
-        <ul class="social-icons">
-          <li><a href="https://www.facebook.com/christinapharesyoga" target="_blank" rel="noopener"><i
-                class="fa-brands fa-square-facebook"></i></a></li>
-          <li><a href="https://www.instagram.com/christinahealingarts/" target="_blank" rel="noopener"><i
-                class="fa-brands fa-square-instagram"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/christina-phares-18b541145/ target=" target="_blank" rel="noopener"><i
-                class="fa-brands fa-linkedin"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</body>
+        </div>
+        <hr />
+        <div class="services-cards">
+          <div class="symbol">
+            <img src="/assets/sahasrara-ccd6c7b5.png" alt="yogi symbol" />
+            <h1>Yoga for Strength & Mobility</h1>
+          </div>
+          <div class="services-text">
+            <p>
+              Learn how to make the yoga pose work for your unique body type
+              while developing strength, stamina, mobility & overall body
+              awareness.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="services-cards">
+          <div class="symbol">
+            <img src="/assets/muladhara-34ba01e3.png" alt="yogi symbol" />
+            <h1>Yoga for Stress & Anxiety</h1>
+          </div>
+          <div class="services-text">
+            <p>
+              A gentle & relaxing practice that works deeply in the connective
+              tissues & joints of the hips, pelvis, & lower spine through
+              extended holds. Incorporates breathwork techniques & mediation to
+              achieve a deeper state of relaxation.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="services-cards">
+          <div class="symbol">
+            <img src="/assets/svadhishthana-a485c229.png" alt="yogi symbol" />
+            <h1>Trauma-Informed Yoga</h1>
+          </div>
+          <div class="services-text">
+            <p>
+              We've all experienced trauma. Trauma doesn’t just affect the mind;
+              it can also be held in the body. Trauma-informed yoga describes an
+              approach to the practice that addresses the specific needs and
+              symptoms of trauma survivors. Trauma-informed teaching means we
+              assume that all our students have had some kind of trauma in their
+              lives and that we teach in a way that offers a space for healing
+              from trauma.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="services-cards">
+          <div class="symbol">
+            <img src="/assets/sahasrara-ccd6c7b5.png" alt="yogi symbol" />
+            <h1>Yoga Therapy</h1>
+          </div>
+          <div class="services-text">
+            <p>
+              All yoga is potentially therapeutic and healing, but yoga therapy
+              is the specific application of yogic tools; postures, exercises,
+              breathwork, meditation techniques, and more to address an
+              individual’s physical, mental, and emotional needs. Yoga therapy
+              is a safe way of working with the natural capacity of your body
+              and mind to optimize well-being.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="services-cards">
+          <div class="symbol">
+            <img src="/assets/yoga-copy-b28d1430.png" alt="yogi symbol" />
+            <h1>Seasonal Gatherings</h1>
+          </div>
+          <div class="services-text">
+            <p>
+              We don't heal in isolation; we heal in community. These seasonal
+              gatherings invite us to deeply connect to ourselves while
+              receiving ongoing relational support.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <section class="get-started">
+      <div class="form-calendly">
+        <h3>Ready to get started?</h3>
+        <p>
+          Fill out the form
+          <a
+            href="https://docs.google.com/forms/d/1c12HxTH5fKurR7dbOgmCemAS2mOiePM4Hl9trmL74yA/prefill"
+            >HERE!</a
+          >
+          <!-- Calendly link widget begin -->
+          <link
+            href="https://assets.calendly.com/assets/external/widget.css"
+            rel="stylesheet"
+          />
+          <script
+            src="https://assets.calendly.com/assets/external/widget.js"
+            type="text/javascript"
+            async
+          ></script>
+        </p>
+
+        <p>
+          Schedule a time with me
+          <a
+            href=""
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/phareschristina'});return false;"
+            >HERE!</a
+          >
+        </p>
+        <!-- Calendly link widget end -->
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="section-contact" id="contact">
+      <h1>Contact me</h1>
+      <hr />
+      <div class="contact-container">
+        <form
+          id="fs-frm"
+          name="department-contact-form"
+          accept-charset="utf-8"
+          action="https://formspree.io/f/mleyegqd"
+          method="post"
+        >
+          <fieldset id="fs-frm-inputs">
+            <div class="contact-col-1">
+              <div class="name-section">
+                <label for="full-name"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAYAAAA3WXuFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJSSURBVHgBzVgxchoxFP1aQ51NBVTZMl0WToBPkJTpHG6QlKkcd+k8PoHxDfAJDB0Fg/EJvB0u1xcAv2eLGdvD8L92BeM3o9nVzpP0pP+l/7VOKiDP836SJD/W6/U3Vp1zKb+jXuKxQP1utVoNF4AEwoWQISTDYJcofQsfAscoA+gqxIgjKxFiTiBkhPLV2gZcTuBXq9V6AO5MbSwkrgxMdC81ABN2LSZMxADM8kZqAn2cW3iqIDowl15qgn7HvjSeKgim6kskcGeqHI2AXZJJPHzSCCYfigVM7rPGUQXB9qVEAvoqNI5lhQqJh/rbniFAIgF9jTWOKghnWckQIPUxsYQQk1ND0JnUBLb8PxPPQsLMxniMpDqGs9lsbCGatz3sP5BqDl6grXmFzYLoS+j4WMJEUcxxSPoRlA8RPvLf4jVVqKWP8IUEIPik5gBw8muNB84kVEwlQR5fDBw1bm2DOWMkaK52u30Kk/3UuExZkCk+gs9s0Rx+VB+CiByP70xFq+ZFMN8C5QqvI82MbocQCjixJvQB4pj4X0HYUCyCIOQ3RJxurjb7AkRxc5y9F+ZeCen7K04mB4QXNvDR4MWpIYaOOtz3qmwDx/RXJYHzTxxNBDGmG8G+gYP0j+t2u/eHNtMOlMkHEkOkPKmj5cwRUFJQ7eQrIi6OlsvltNPpPKLCnwgH32UetNLf+Xz+/83B2Ov1eDpv/vtksl+UGOuaJzd2F0PKs+vsCh1po9HIQc4ozjt/ig42q5jK7hUtngfwdzEegPzGe16z2VxMp9NiW6Mn/dr91Gw7qMwAAAAASUVORK5CYII="
+                    alt="person"
+                    class="contact-icon"
+                /></label>
+                <input
+                  type="text"
+                  name="name"
+                  id="full-name"
+                  placeholder="First and Last*"
+                  required=""
+                />
+              </div>
+              <div class="email-section">
+                <label for="email-address"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAbCAYAAADh0qZQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFXSURBVHgB7dexToQwGAfwr+UGR1c2fAIbwgPgG/gG3hs4O3lsjvIG+gSOroxOhEdgY2UngP9Ga7CpEeHzrAn/pNfmu5L+0rvegSBEKZUKIW71EP0peZBxHAu0rKqqQgB4KaV8Ik8zDMM+CMPw2ZfdcwU2JfESTYvY4kd0Nf1NWrTcqkXSngXkAVt8gWFGx8NqXIZ1z9Du7Tel6wp8WeuyLI+B/cDp9bBu65q0c9TODUpj0R1wuB5wuPYYX6FFxIPL9a45YMqeLOI4Hu3i9Ph/ulqpaCX2S5z5GURLaQ7yF7CLcLOQDNhVuB8hF2BZcIuQc7BBEKi+7wsO3Crkd1gunMkqpIkLy4EzYUGavGNzwK45cCY7YoyGceJMJP2DbEiubEiubEiuaGRLfqfVyIz8Th40TfOCx1pBb7ftJ+RP9Cd8g2efOzGtJkmSkgfBX2vbdV1tbvdeATxF+5GMU5jcAAAAAElFTkSuQmCC"
+                    alt="person"
+                    class="contact-icon"
+                /></label>
+                <input
+                  type="email"
+                  name="_replyto"
+                  id="email-address"
+                  placeholder="email@domain.tld*"
+                  required=""
+                />
+              </div>
+              <label for="yoga-type" class="yoga-type"
+                >Which type of yoga interests you?</label
+              >
+              <select name="yoga-type" id="yoga-type">
+                <option value="" selected="" disabled="">Select</option>
+                <option value="adaptive">Adaptive Yoga</option>
+                <option value="mobility">Yoga for stregth & mobility</option>
+                <option value="stress">Yoga for stress & anxiety</option>
+                <option value="trauma">Trauma informed yoga</option>
+                <option value="fertility">Yoga Therapy</option>
+                <option value="Retreats">Local Half-Day Retreats</option>
+                <option value="any">I'm open</option>
+              </select>
+            </div>
+            <div class="contact-col-2">
+              <!-- <label for="message">Message</label> -->
+              <textarea
+                rows="7"
+                name="message"
+                id="message"
+                placeholder="Message"
+              ></textarea>
+              <input
+                type="hidden"
+                name="_subject"
+                id="email-subject"
+                value="Department Contact Form Submission"
+              />
+            </div>
+          </fieldset>
+          <input type="submit" value="Submit" class="submit-button" />
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="business-logo-white">
+          <a href="../index.html" target="_blank" rel="noopener"
+            ><img src="/assets/light-green-circle-logo-7a1d9209.png" alt="business-logo"
+          /></a>
+        </div>
+        <div class="copyright">
+          <small>&copy; Copyright 2023, Christina Healing Arts</small>
+        </div>
+        <div class="social-icons">
+          <ul class="social-icons">
+            <li>
+              <a
+                href="https://www.facebook.com/christinapharesyoga"
+                target="_blank"
+                rel="noopener"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/christinahealingarts/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/christina-phares-18b541145/ target="
+                target="_blank"
+                rel="noopener"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
