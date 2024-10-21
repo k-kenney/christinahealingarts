@@ -47,10 +47,11 @@
       p {
         width: 800px;
         font-size: 20px;
-        line-height: 38px;
+        line-height: 34px;
         margin: auto;
         padding-bottom: 20px;
         text-align: center;
+        color: rgb(122, 120, 122);
       }
     }
   }
@@ -64,47 +65,52 @@
     padding-bottom: 30px;
 
     button {
-        color: $softblack;
-        margin: 20px 10px;
-        padding: 12px 22px;
-        text-decoration: none;
-        font-family: $body-font;
-        font-size: 24px;
-        background-color: $background;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-        cursor: pointer;
-        transition: 0.5s;
-        align-items: center;
-        width: 200px;
+      color: $softblack;
+      margin: 20px 10px;
+      padding: 12px 22px;
+      text-decoration: none;
+      font-family: $body-font;
+      font-size: 24px;
+      background-color: $background;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+      cursor: pointer;
+      transition: 0.5s;
+      align-items: center;
+      width: 200px;
 
-        a {
-          color: $softblack;
-        }
-    
-        &:hover {
-          font-size: 25px;
-          background: rgba(0, 0, 0, 0.2);
-        }
-    
-        &:hover:after {
-          opacity: 1;
-          right: 10px;
-        }
+      a {
+        color: $softblack;
       }
 
+      &:hover {
+        font-size: 25px;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      &:hover:after {
+        opacity: 1;
+        right: 10px;
+      }
+    }
   }
 
   @media only screen and (max-width: $laptop) {
-  
     .harvest-info-container {
       .harvest-info-half {
-  
         p {
           width: 450px;
         }
-  
+      }
+
+      .gathering-info-bottom {
+        margin-top: 20px;
+
+        p {
+          width: 650px;
+          font-size: 18px;
+        }
       }
     }
   }
@@ -112,69 +118,77 @@
   @media only screen and (max-width: $tablet) {
     width: 80%;
     padding-bottom: 20px;
-  
+
     .harvest-info-title {
       padding-bottom: 60px;
-  
+
       h1 {
         font-size: 40px;
       }
-  
     }
-  
+
     .harvest-info-container {
       .harvest-info-half {
         padding-bottom: 20px;
-  
+
         p {
           width: 500px;
           font-size: 24px;
           line-height: 35px;
         }
-  
+
         img {
           display: none;
         }
       }
+
+      .gathering-info-bottom {
+        p {
+          width: 350px;
+          font-size: 18px;
+        }
+      }
     }
-  
+
     .harvest-sign-up {
       padding-top: 0;
       padding-bottom: 20px;
-  
+
       button {
-          font-size: 22px;
-          width: 175px;
-      
-      
-          &:hover {
-            font-size: 23px;
-          }
+        font-size: 22px;
+        width: 175px;
+
+        &:hover {
+          font-size: 23px;
         }
-    } 
+      }
+    }
   }
 
   @media only screen and (max-width: $phone) {
-  
     .harvest-info-title {
       padding-bottom: 30px;
-  
+
       h1 {
         font-size: 35px;
         padding-bottom: 15px;
       }
-  
     }
     .harvest-info-container {
       .harvest-info-half {
-  
         p {
           text-align: center;
           width: 300px;
           font-size: 20px;
           line-height: 30px;
         }
-  
+      }
+
+      .gathering-info-bottom {
+        p {
+          width: 275px;
+          font-size: 16px;
+        }
       }
     }
   }
