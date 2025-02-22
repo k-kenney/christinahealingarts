@@ -134,6 +134,24 @@
     }
   }
 
+  @media only screen and (max-width: $large-phone) {
+    .homepage-services-content {
+      margin-top: 0;
+      .service-ind {
+        width: 37%;
+      }
+
+      p {
+        font-size: 25px;
+        padding-top: 20px;
+        width: 150px;
+      }
+      img {
+        width: 70px;
+      }
+    }
+  }
+
   @media only screen and (max-width: $phone) {
 
 

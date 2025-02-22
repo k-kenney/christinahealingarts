@@ -42,14 +42,16 @@
       p {
         background-size: cover;
         width: 310px;
-        height: 250px;
+        height: 300px;
         line-height: 60px;
-        font-size: 60px;
+        font-size: 57px;
         padding-top: 10px;
+        background-size: cover;
+        background: rgba(255, 255, 255, 0.711);
 
         .banner-box-islander {
           font-family: $special-text;
-          font-size: 50px;
+          font-size: 45px;
           line-height: 75px;
         }
       }
@@ -86,6 +88,25 @@
       }
     }
   }
+  @media screen and (max-width: $large-phone) {
+    .banner-box {
+      left: 20%;
+      top: 75%;
+
+      p {
+        width: 250px;
+        height: 150px;
+        font-size: 42px;
+        line-height: 38px;
+
+        .banner-box-islander {
+          font-size: 40px;
+          line-height: 55px;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: $phone) {
     .banner-box {
       left: 20%;
@@ -93,7 +114,6 @@
 
       p {
         width: 200px;
-        height: 150px;
         font-size: 38px;
         line-height: 38px;
 
