@@ -1,0 +1,267 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 180 300"
+  fill="none"
+>
+  <!-- Main stem -->
+  <path
+    d="M25 290
+       C32 260 39 232 48 205
+       C57 178 67 151 80 126
+       C94 99 111 73 133 48
+       C145 35 157 25 169 15"
+    stroke="#596343"
+    stroke-width="1.5"
+    stroke-linecap="round"
+  />
+
+  <!-- Secondary stems -->
+  <path
+    d="M48 205 C37 190 29 177 21 161"
+    stroke="#596343"
+    stroke-width="1.2"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M57 179 C75 169 89 158 101 145"
+    stroke="#596343"
+    stroke-width="1.2"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M67 154 C52 143 41 132 32 119"
+    stroke="#596343"
+    stroke-width="1.2"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M80 126 C97 117 110 105 120 91"
+    stroke="#596343"
+    stroke-width="1.2"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M91 105 C78 94 68 84 61 72"
+    stroke="#596343"
+    stroke-width="1.2"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M105 86 C119 79 130 69 139 57"
+    stroke="#596343"
+    stroke-width="1.2"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M119 67 C108 58 101 49 97 38"
+    stroke="#596343"
+    stroke-width="1.2"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M133 49 C145 45 154 38 162 29"
+    stroke="#596343"
+    stroke-width="1.2"
+    stroke-linecap="round"
+  />
+
+
+  <!-- Leaves -->
+
+  <!-- Lower left -->
+  <path
+    d="M39 211
+       C27 206 20 198 17 188
+       C28 189 38 196 43 205
+       C44 208 43 210 39 211Z"
+    fill="#596343"
+    opacity=".72"
+  />
+
+  <path
+    d="M34 194
+       C23 190 16 182 14 172
+       C25 174 34 181 38 189
+       C39 192 38 193 34 194Z"
+    fill="#596343"
+    opacity=".62"
+  />
+
+  <!-- Lower right -->
+  <path
+    d="M49 184
+       C60 180 70 181 78 187
+       C68 191 58 190 51 187
+       C49 186 48 185 49 184Z"
+    fill="#596343"
+    opacity=".68"
+  />
+
+  <path
+    d="M55 170
+       C66 164 76 165 84 171
+       C74 176 64 175 56 173
+       C54 172 54 171 55 170Z"
+    fill="#596343"
+    opacity=".58"
+  />
+
+  <!-- Middle left -->
+  <path
+    d="M62 158
+       C50 155 42 148 38 139
+       C49 140 59 146 65 153
+       C66 156 65 157 62 158Z"
+    fill="#596343"
+    opacity=".7"
+  />
+
+  <path
+    d="M70 145
+       C59 140 52 132 50 122
+       C61 124 69 131 74 139
+       C75 142 74 144 70 145Z"
+    fill="#596343"
+    opacity=".62"
+  />
+
+  <!-- Middle right -->
+  <path
+    d="M78 131
+       C89 126 99 127 107 133
+       C97 137 87 137 79 134
+       C77 133 77 132 78 131Z"
+    fill="#596343"
+    opacity=".72"
+  />
+
+  <path
+    d="M88 115
+       C99 110 109 111 116 117
+       C107 121 97 121 89 118
+       C87 117 87 116 88 115Z"
+    fill="#596343"
+    opacity=".6"
+  />
+
+  <!-- Upper left -->
+  <path
+    d="M91 111
+       C80 106 73 98 70 89
+       C81 91 90 97 95 104
+       C96 107 95 109 91 111Z"
+    fill="#596343"
+    opacity=".68"
+  />
+
+  <path
+    d="M101 94
+       C91 88 85 80 83 70
+       C94 73 102 80 106 87
+       C107 90 105 92 101 94Z"
+    fill="#596343"
+    opacity=".62"
+  />
+
+  <!-- Upper right -->
+  <path
+    d="M105 88
+       C116 84 126 85 133 91
+       C124 95 114 94 106 92
+       C104 91 104 89 105 88Z"
+    fill="#596343"
+    opacity=".7"
+  />
+
+  <path
+    d="M116 72
+       C127 68 136 70 143 76
+       C134 80 124 79 117 76
+       C115 75 115 73 116 72Z"
+    fill="#596343"
+    opacity=".6"
+  />
+
+  <!-- Top left -->
+  <path
+    d="M126 56
+       C116 51 110 43 109 34
+       C119 37 127 43 131 50
+       C132 53 130 55 126 56Z"
+    fill="#596343"
+    opacity=".68"
+  />
+
+  <path
+    d="M138 46
+       C148 42 157 44 163 50
+       C154 54 145 52 139 49
+       C137 48 137 47 138 46Z"
+    fill="#596343"
+    opacity=".62"
+  />
+
+  <!-- Top -->
+  <path
+    d="M145 35
+       C137 28 134 20 136 12
+       C145 17 151 24 151 31
+       C151 34 149 35 145 35Z"
+    fill="#596343"
+    opacity=".7"
+  />
+
+  <path
+    d="M155 27
+       C162 21 170 20 177 23
+       C172 30 164 33 157 31
+       C155 30 154 29 155 27Z"
+    fill="#596343"
+    opacity=".58"
+  />
+
+
+  <!-- Small olive fruits -->
+  <circle
+    cx="29"
+    cy="177"
+    r="2.2"
+    fill="#777b55"
+  />
+
+  <circle
+    cx="75"
+    cy="92"
+    r="2.1"
+    fill="#777b55"
+  />
+
+  <circle
+    cx="116"
+    cy="79"
+    r="2"
+    fill="#777b55"
+  />
+
+  <circle
+    cx="145"
+    cy="43"
+    r="2"
+    fill="#777b55"
+  />
+
+  <circle
+    cx="158"
+    cy="25"
+    r="2"
+    fill="#777b55"
+  />
+
+</svg>

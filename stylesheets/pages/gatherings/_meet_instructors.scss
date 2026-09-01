@@ -1,3 +1,257 @@
+
+// ========================================
+// FACILITATORS
+// ========================================
+
+.facilitators {
+  width: 100%;
+
+  background: #f7f2eb;
+
+  padding: 90px 130px;
+}
+
+
+// ========================================
+// FACILITATORS CONTENT
+// ========================================
+
+.facilitators-content {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+// ========================================
+// SECTION LABEL
+// ========================================
+
+.facilitators-label {
+  margin: 0 0 12px 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 0.75rem;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+
+  color: #596343;
+}
+
+
+// ========================================
+// SECTION HEADING
+// ========================================
+
+.facilitators-content h2 {
+  margin: 0 0 60px 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  font-weight: 400;
+
+  line-height: 1.15;
+
+  color: #222;
+}
+
+
+// ========================================
+// FACILITATORS GRID
+// ========================================
+
+.facilitators-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 80px;
+
+  text-align: left;
+}
+
+
+// ========================================
+// INDIVIDUAL FACILITATOR
+// ========================================
+
+.facilitator {
+  padding-top: 25px;
+
+  border-top: 1px solid rgba(34, 34, 34, 0.25);
+}
+
+
+// ========================================
+// FACILITATOR NAME
+// ========================================
+
+.facilitator h3 {
+  margin: 0 0 15px 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+
+  font-weight: 400;
+
+  line-height: 1.2;
+
+  color: #222;
+}
+
+
+// ========================================
+// FACILITATOR TITLE
+// ========================================
+
+.facilitator-title {
+  margin: 0 0 7px 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 1rem;
+
+  line-height: 1.5;
+
+  color: #222;
+}
+
+
+// ========================================
+// FACILITATOR CERTIFICATION
+// ========================================
+
+.facilitator-certification {
+  margin: 0 0 25px 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 0.9rem;
+
+  font-style: italic;
+
+  line-height: 1.5;
+
+  color: #596343;
+}
+
+
+// ========================================
+// READ MORE LINK
+// ========================================
+
+.facilitator-link {
+  display: inline-block;
+
+  padding-bottom: 4px;
+
+  border-bottom: 1px solid #596343;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 0.9rem;
+
+  color: #596343;
+
+  text-decoration: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.facilitator-link:hover {
+  opacity: 0.65;
+}
+
+
+// ========================================
+// TABLET
+// ========================================
+
+@media (max-width: 900px) {
+
+  .facilitators {
+    padding: 70px 80px;
+  }
+
+  .facilitators-grid {
+    gap: 50px;
+  }
+
+}
+
+
+// ========================================
+// MOBILE
+// ========================================
+
+@media (max-width: 600px) {
+
+  .facilitators {
+    padding: 60px 25px;
+  }
+
+  .facilitators-content h2 {
+    margin-bottom: 40px;
+
+    font-size: 2rem;
+  }
+
+  .facilitators-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .facilitator h3 {
+    font-size: 1.8rem;
+  }
+
+}
+
+
+// ========================================
+// VERY SMALL PHONES
+// ========================================
+
+@media (max-width: 400px) {
+
+  .facilitators {
+    padding: 50px 22px;
+  }
+
+  .facilitators-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .facilitator h3 {
+    font-size: 1.65rem;
+  }
+
+  .facilitator-title {
+    font-size: 0.9rem;
+  }
+
+  .facilitator-certification {
+    font-size: 0.82rem;
+  }
+
+}
+
+
+
+
+
 .meet-inst-container {
   width: 90%;
   margin: auto;

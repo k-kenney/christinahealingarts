@@ -1,3 +1,202 @@
+// ========================================
+// GROUND & GAZE INTRODUCTION
+// ========================================
+
+.ground-gaze-intro {
+  position: relative;
+
+  width: 100%;
+
+  background: #f7f2eb;
+
+  min-height: 125px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding:70px 130px;
+  
+  overflow: hidden;
+}
+
+
+// ========================================
+// CENTER TEXT
+// ========================================
+
+.intro-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 650px;
+
+  text-align: center;
+}
+
+.intro-content p {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(0.9rem, 1.25vw, 1.05rem);
+
+  line-height: 1.55;
+
+  color: #222;
+}
+
+.intro-emphasis {
+  margin-top: 7px !important;
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  color: #596343 !important;
+}
+
+
+// ========================================
+// OLIVE BRANCHES
+// ========================================
+
+.intro-branch {
+  position: absolute;
+
+  z-index: 1;
+
+  width: 100px;
+
+  height: auto;
+
+  opacity: 0.75;
+
+  pointer-events: none;
+}
+
+
+// LEFT BRANCH
+
+.intro-branch-left {
+  left: 25px;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+
+// RIGHT BRANCH
+
+.intro-branch-right {
+  right: 25px;
+  top: 50%;
+
+  transform: translateY(-50%) scaleX(-1);
+}
+
+
+// ========================================
+// TABLET
+// ========================================
+
+@media (max-width: 900px) {
+
+  .ground-gaze-intro {
+    padding: 25px 100px;
+  }
+
+  .intro-content {
+    max-width: 600px;
+  }
+
+  .intro-branch {
+    width: 75px;
+  }
+
+  .intro-branch-left {
+    left: 15px;
+  }
+
+  .intro-branch-right {
+    right: 15px;
+  }
+}
+
+
+// ========================================
+// MOBILE
+// ========================================
+
+@media (max-width: 600px) {
+
+  .ground-gaze-intro {
+    min-height: auto;
+
+    padding: 30px 25px;
+  }
+
+  .intro-content {
+    max-width: 100%;
+  }
+
+  .intro-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .intro-emphasis {
+    margin-top: 10px !important;
+  }
+
+  .intro-branch {
+    width: 55px;
+    opacity: 0.55;
+  }
+
+  .intro-branch-left {
+    left: -15px;
+  }
+
+  .intro-branch-right {
+    right: -15px;
+  }
+}
+
+
+// ========================================
+// VERY SMALL PHONES
+// ========================================
+
+@media (max-width: 400px) {
+
+  .ground-gaze-intro {
+    padding: 28px 22px;
+  }
+
+  .intro-content p {
+    font-size: 0.82rem;
+  }
+
+  .intro-branch {
+    width: 45px;
+    opacity: 0.45;
+  }
+
+  .intro-branch-left {
+    left: -20px;
+  }
+
+  .intro-branch-right {
+    right: -20px;
+  }
+}
+
+
+
+
+
 .what-is-retreat {
   padding-top: 60px;
   padding-bottom: 90px;
