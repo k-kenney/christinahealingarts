@@ -196,6 +196,314 @@
 
 
 
+// ========================================
+// RETREAT INCLUDES
+// ========================================
+
+.retreat-includes {
+  width: 100%;
+
+  background: #f7f2eb;
+
+  padding: 75px 80px 42px;
+}
+
+
+// ========================================
+// INNER CONTENT
+// ========================================
+
+.retreat-includes-content {
+  width: 100%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+// ========================================
+// HEADING
+// ========================================
+
+.retreat-includes-heading {
+  margin-bottom: 38px;
+
+  h2 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+
+    font-weight: 400;
+
+    line-height: 1.15;
+
+    text-transform: uppercase;
+
+    color: #222;
+  }
+}
+
+
+// ========================================
+// HEADING DECORATION
+// ========================================
+
+.retreat-heading-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 10px;
+
+  span {
+    width: 27px;
+    height: 1px;
+
+    background: #777b51;
+  }
+
+  img {
+    width: 15px;
+    height: 15px;
+
+    object-fit: contain;
+  }
+}
+
+
+// ========================================
+// ICON GRID
+// ========================================
+
+.retreat-includes-grid {
+  display: grid;
+
+  // 10 columns allows us to center
+  // the final row of 4 icons
+  grid-template-columns: repeat(10, 1fr);
+
+  column-gap: 19px;
+  row-gap: 42px;
+
+  align-items: start;
+}
+
+
+// ========================================
+// INDIVIDUAL ITEMS
+// ========================================
+
+.retreat-includes-item {
+  grid-column: span 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: 0;
+
+  p {
+    margin: 12px 0 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 0.96rem;
+
+    line-height: 1.35;
+
+    font-weight: 400;
+
+    color: #222;
+  }
+}
+
+
+// ========================================
+// CENTER FINAL ROW OF 4
+// ========================================
+
+.retreat-includes-item:nth-child(11) {
+  grid-column: 2 / span 2;
+}
+
+
+// ========================================
+// SVG ICONS
+// ========================================
+
+.retreat-icon {
+  width: 52px;
+  height: 52px;
+
+  display: block;
+
+  color: #747a50;
+
+  object-fit: contain;
+}
+
+
+// ========================================
+// BOTTOM NOTE
+// ========================================
+
+.retreat-includes-note {
+  margin: 35px 0 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 0.9rem;
+
+  line-height: 1.4;
+
+  color: #222;
+}
+
+
+// ========================================
+// LARGE TABLET
+// ========================================
+
+@media (max-width: 1050px) {
+
+  .retreat-includes {
+    padding: 70px 55px 42px;
+  }
+
+  .retreat-includes-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    column-gap: 45px;
+    row-gap: 45px;
+  }
+
+  // Reset desktop grid positioning
+  .retreat-includes-item,
+  .retreat-includes-item:nth-child(11) {
+    grid-column: auto;
+  }
+}
+
+
+// ========================================
+// TABLET
+// ========================================
+
+@media (max-width: 750px) {
+
+  .retreat-includes {
+    padding: 60px 35px 38px;
+  }
+
+  .retreat-includes-heading {
+    margin-bottom: 35px;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+
+  .retreat-includes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 28px;
+    row-gap: 42px;
+  }
+
+  // Make sure all items flow normally
+  .retreat-includes-item,
+  .retreat-includes-item:nth-child(11) {
+    grid-column: auto;
+  }
+
+  .retreat-includes-item {
+    p {
+      font-size: 0.9rem;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .retreat-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .retreat-includes-note {
+    margin-top: 35px;
+
+    font-size: 0.82rem;
+  }
+}
+
+
+// ========================================
+// MOBILE
+// ========================================
+
+@media (max-width: 480px) {
+
+  .retreat-includes {
+    padding: 52px 22px 34px;
+  }
+
+  .retreat-includes-heading {
+    margin-bottom: 32px;
+
+    h2 {
+      font-size: 1.45rem;
+    }
+  }
+
+  .retreat-heading-detail {
+    margin-top: 8px;
+  }
+
+  .retreat-includes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 18px;
+    row-gap: 38px;
+  }
+
+  .retreat-includes-item,
+  .retreat-includes-item:nth-child(11) {
+    grid-column: auto;
+  }
+
+  .retreat-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .retreat-includes-item {
+    p {
+      margin-top: 10px;
+
+      font-size: 0.84rem;
+
+      line-height: 1.4;
+    }
+  }
+
+  .retreat-includes-note {
+    margin-top: 32px;
+
+    font-size: 0.76rem;
+
+    line-height: 1.45;
+  }
+}
+
+
 
 .what-is-retreat {
   padding-top: 60px;
