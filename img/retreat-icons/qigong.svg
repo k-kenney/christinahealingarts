@@ -1,1 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#68704A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="19" r="6"/><path d="M50 27v25M50 34 25 39M50 34l25-5M50 52l-13 22M50 52l14 20M27 39l-7 18M75 29l7-15"/></svg>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  fill="none"
+  stroke="#747a50"
+  stroke-width="1.6"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Head -->
+  <circle cx="32" cy="12" r="4" />
+
+  <!-- Body -->
+  <path d="M32 16v20" />
+
+  <!-- Flowing arms -->
+  <path d="M32 23C25 21 19 24 17 30" />
+  <path d="M32 23C39 21 45 24 47 30" />
+
+  <!-- Hands curving inward -->
+  <path d="M17 30c3 4 7 6 11 6" />
+  <path d="M47 30c-3 4-7 6-11 6" />
+
+  <!-- Legs -->
+  <path d="M32 36l-8 16" />
+  <path d="M32 36l8 16" />
+
+  <!-- Ground -->
+  <path d="M20 52h8" />
+  <path d="M36 52h8" />
+</svg>

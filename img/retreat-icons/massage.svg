@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+  fill="none" stroke="#f7f2eb" stroke-width="1.7"
+  stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- Head -->
+  <circle cx="19" cy="28" r="5"/>
+
+  <!-- Massage table -->
+  <path d="M10 36h44"/>
+  <path d="M13 36v14"/>
+  <path d="M51 36v14"/>
+
+  <!-- Body -->
+  <path d="M24 31c6 1 12 2 18 1"/>
+  <path d="M24 36c8-1 15-1 23 0"/>
+
+  <!-- Massage hands -->
+  <path d="M35 20c1 4 3 7 6 10"/>
+  <path d="M43 19c-1 4-3 7-6 11"/>
+
+  <path d="M33 19c2-2 4-3 6-1"/>
+  <path d="M45 18c-2-2-4-2-6 0"/>
+
+</svg>
