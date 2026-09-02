@@ -1,0 +1,72 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  fill="none"
+  stroke="#747a50"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Head -->
+  <circle cx="32" cy="13" r="4.5" />
+
+  <!-- Neck / shoulders -->
+  <path
+    d="M29 18
+       C29 21 27 23 24 24
+       C20 25 18 28 17 32"
+  />
+
+  <path
+    d="M35 18
+       C35 21 37 23 40 24
+       C44 25 46 28 47 32"
+  />
+
+  <!-- Arms -->
+  <path
+    d="M17 32
+       C16 37 18 40 22 41
+       L30 36"
+  />
+
+  <path
+    d="M47 32
+       C48 37 46 40 42 41
+       L34 36"
+  />
+
+  <!-- Prayer hands -->
+  <path d="M30 36 C31 33 31 29 32 27" />
+  <path d="M34 36 C33 33 33 29 32 27" />
+
+  <!-- Torso -->
+  <path d="M24 24 C25 31 25 37 22 43" />
+  <path d="M40 24 C39 31 39 37 42 43" />
+
+  <!-- Left crossed leg -->
+  <path
+    d="M22 43
+       C17 42 12 44 10 48
+       C8 52 12 55 18 55
+       H31"
+  />
+
+  <!-- Right crossed leg -->
+  <path
+    d="M42 43
+       C47 42 52 44 54 48
+       C56 52 52 55 46 55
+       H33"
+  />
+
+  <!-- Inner leg curves -->
+  <path
+    d="M18 48
+       C24 48 28 50 32 53
+       C36 50 40 48 46 48"
+  />
+
+  <!-- Ground line -->
+  <path d="M17 56 H47" />
+</svg>

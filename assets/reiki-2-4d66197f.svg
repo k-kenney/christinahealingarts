@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+  fill="none" stroke="#747a50" stroke-width="1.7"
+  stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- Energy -->
+  <path d="M32 12v10"/>
+  <path d="M27 17h10"/>
+
+  <path d="M20 20v6"/>
+  <path d="M17 23h6"/>
+
+  <path d="M44 20v6"/>
+  <path d="M41 23h6"/>
+
+  <!-- Left hand -->
+  <path
+    d="M9 39
+       C15 37 20 34 25 32
+       C28 31 30 33 29 35
+       C28 37 25 38 22 39"
+  />
+
+  <path
+    d="M9 39
+       C15 45 21 49 28 51"
+  />
+
+  <!-- Right hand -->
+  <path
+    d="M55 39
+       C49 37 44 34 39 32
+       C36 31 34 33 35 35
+       C36 37 39 38 42 39"
+  />
+
+  <path
+    d="M55 39
+       C49 45 43 49 36 51"
+  />
+
+  <!-- Energy circle -->
+  <circle cx="32" cy="40" r="5"/>
+
+</svg>
