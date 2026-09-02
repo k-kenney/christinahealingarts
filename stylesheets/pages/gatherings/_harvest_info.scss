@@ -1,3 +1,242 @@
+
+// ========================================
+// GROUND & GAZE INFORMATION SECTION
+// ========================================
+
+.ground-gaze-info-section {
+  margin: auto;
+  width: 90%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+
+  // ========================================
+  // TITLE
+  // ========================================
+
+  .ground-gaze-info-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 70px;
+
+    h1 {
+      font-size: 45px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    hr {
+      border: 0;
+      width: 10%;
+      background-color: #323232;
+      height: 0.5px;
+    }
+  }
+
+
+  // ========================================
+  // MAIN CONTENT
+  // ========================================
+
+  .ground-gaze-info-container {
+
+    .ground-gaze-info-half {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
+      width: 100%;
+    }
+
+
+    // ========================================
+    // FLYER
+    // ========================================
+
+    img {
+      width: 420px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 7px;
+      box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    }
+
+
+    // ========================================
+    // TEXT
+    // ========================================
+
+    .ground-gaze-info-text {
+      width: 550px;
+      max-width: 100%;
+
+      p {
+        font-size: 22px;
+        line-height: 36px;
+        margin-bottom: 25px;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+
+      em {
+        font-style: italic;
+      }
+    }
+
+  }
+
+
+  // ========================================
+  // LAPTOP
+  // ========================================
+
+  @media only screen and (max-width: $laptop) {
+
+    .ground-gaze-info-container {
+
+      .ground-gaze-info-half {
+        gap: 45px;
+      }
+
+      img {
+        width: 350px;
+      }
+
+      .ground-gaze-info-text {
+        width: 450px;
+
+        p {
+          font-size: 20px;
+          line-height: 32px;
+        }
+      }
+
+    }
+
+  }
+
+
+  // ========================================
+  // TABLET
+  // ========================================
+
+  @media only screen and (max-width: $tablet) {
+
+    width: 85%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+    .ground-gaze-info-title {
+      padding-bottom: 50px;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      hr {
+        width: 15%;
+      }
+    }
+
+
+    .ground-gaze-info-container {
+
+      .ground-gaze-info-half {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+      }
+
+
+      // Flyer sits above the text
+      img {
+        width: 380px;
+        max-width: 80%;
+      }
+
+
+      .ground-gaze-info-text {
+        width: 100%;
+        max-width: 650px;
+
+        p {
+          font-size: 20px;
+          line-height: 32px;
+          text-align: center;
+        }
+      }
+
+    }
+
+  }
+
+
+  // ========================================
+  // IPHONE / PHONE
+  // ========================================
+
+  @media only screen and (max-width: $phone) {
+
+    width: 90%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+
+    .ground-gaze-info-title {
+      padding-bottom: 35px;
+
+      h1 {
+        font-size: 35px;
+        padding-bottom: 15px;
+      }
+
+      hr {
+        width: 20%;
+      }
+    }
+
+
+    .ground-gaze-info-container {
+
+      .ground-gaze-info-half {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+
+      // Vertical flyer
+      img {
+        width: 100%;
+        max-width: 330px;
+      }
+
+
+      .ground-gaze-info-text {
+        width: 100%;
+
+        p {
+          font-size: 18px;
+          line-height: 30px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
 .harvest-info-section {
   margin: auto;
   width: 90%;
