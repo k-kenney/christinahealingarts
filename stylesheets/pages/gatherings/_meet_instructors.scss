@@ -33,7 +33,7 @@
 .facilitators-label {
   margin: 0 0 12px 0;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: $body-font;
 
   font-size: 0.75rem;
 
@@ -52,7 +52,7 @@
 .facilitators-content h2 {
   margin: 0 0 60px 0;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: $body-font;
 
   font-size: clamp(2rem, 4vw, 3rem);
 
@@ -124,7 +124,7 @@
 .facilitator h3 {
   margin: 0 0 15px 0;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: $body-font;
 
   font-size: clamp(1.7rem, 3vw, 2.4rem);
 
@@ -143,7 +143,7 @@
 .facilitator-title {
   margin: 0 0 7px 0;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: $body-font;
 
   font-size: 1rem;
 
@@ -160,7 +160,7 @@
 .facilitator-certification {
   margin: 0 0 25px 0;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: $body-font;
 
   font-size: 0.9rem;
 
@@ -288,366 +288,366 @@
 
 
 
-.meet-inst-container {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+// .meet-inst-container {
+//   width: 90%;
+//   margin: auto;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 0;
 
-  .top-circles {
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
+//   .top-circles {
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: 80px;
 
-    .meet-inst-small-pink {
-      position: relative;
-      left: 50%;
-      background-color: $pink;
-      width: 430px;
-      height: 390px;
-      border-radius: 50%;
+//     .meet-inst-small-pink {
+//       position: relative;
+//       left: 50%;
+//       background-color: $pink;
+//       width: 430px;
+//       height: 390px;
+//       border-radius: 50%;
 
-      h1 {
-        font-size: 60px;
-        text-align: center;
-        padding-top: 95px;
-      }
-    }
+//       h1 {
+//         font-size: 60px;
+//         text-align: center;
+//         padding-top: 95px;
+//       }
+//     }
 
-    .meet-inst-photo {
-      position: relative;
-      left: 7%;
-      bottom: 160px;
-      z-index: 2;
+//     .meet-inst-photo {
+//       position: relative;
+//       left: 7%;
+//       bottom: 160px;
+//       z-index: 2;
 
-      img {
-        width: 60%;
-      }
-    }
-  }
+//       img {
+//         width: 60%;
+//       }
+//     }
+//   }
 
-  .big-green-circle-container {
-    position: relative;
-    background-color: $light-green;
-    border-radius: 50%;
-    width: 700px;
-    height: 700px;
-    padding-left: 80px;
-    padding-top: 95px;
-    bottom: 170px;
-    left: 15%;
-    z-index: 1;
+//   .big-green-circle-container {
+//     position: relative;
+//     background-color: $light-green;
+//     border-radius: 50%;
+//     width: 700px;
+//     height: 700px;
+//     padding-left: 80px;
+//     padding-top: 95px;
+//     bottom: 170px;
+//     left: 15%;
+//     z-index: 1;
 
-    .big-green-circle-text {
-      text-align: right;
-      width: 450px;
+//     .big-green-circle-text {
+//       text-align: right;
+//       width: 450px;
 
-      h2 {
-        font-size: 40px;
-        padding-bottom: 15px;
-      }
+//       h2 {
+//         font-size: 40px;
+//         padding-bottom: 15px;
+//       }
 
-      p {
-        font-size: 25px;
-        line-height: 38px;
-      }
-    }
-  }
+//       p {
+//         font-size: 25px;
+//         line-height: 38px;
+//       }
+//     }
+//   }
 
-  .big-pink-circle-container {
-    position: relative;
-    background-color: $pink;
-    border-radius: 50%;
-    width: 680px;
-    height: 680px;
-    margin: auto;
-    right: 18%;
-    margin-top: -480px;
-    padding-left: 50px;
-    padding-top: 70px;
-    z-index: 0;
+//   .big-pink-circle-container {
+//     position: relative;
+//     background-color: $pink;
+//     border-radius: 50%;
+//     width: 680px;
+//     height: 680px;
+//     margin: auto;
+//     right: 18%;
+//     margin-top: -480px;
+//     padding-left: 50px;
+//     padding-top: 70px;
+//     z-index: 0;
 
-    .big-pink-circle-text {
-      text-align: left;
-      padding-top: 40px;
-      margin: auto;
-      width: 420px;
+//     .big-pink-circle-text {
+//       text-align: left;
+//       padding-top: 40px;
+//       margin: auto;
+//       width: 420px;
 
-      h2 {
-        font-size: 40px;
-        padding-bottom: 15px;
-      }
+//       h2 {
+//         font-size: 40px;
+//         padding-bottom: 15px;
+//       }
 
-      p {
-        font-size: 25px;
-        line-height: 38px;
-      }
-    }
-  }
+//       p {
+//         font-size: 25px;
+//         line-height: 38px;
+//       }
+//     }
+//   }
 
-  @media only screen and (max-width: $laptop-large) {
-    .top-circles {
-      .meet-inst-small-pink {
-        left: 45%;
-        width: 310px;
-        height: 310px;
+//   @media only screen and (max-width: $laptop-large) {
+//     .top-circles {
+//       .meet-inst-small-pink {
+//         left: 45%;
+//         width: 310px;
+//         height: 310px;
 
-        h1 {
-          font-size: 45px;
-        }
-      }
+//         h1 {
+//           font-size: 45px;
+//         }
+//       }
 
-      .meet-inst-photo {
-        left: 0;
-        padding-left: 140px;
-        bottom: 150px;
+//       .meet-inst-photo {
+//         left: 0;
+//         padding-left: 140px;
+//         bottom: 150px;
 
-        img {
-          width: 55%;
-        }
-      }
-    }
+//         img {
+//           width: 55%;
+//         }
+//       }
+//     }
 
-    .big-green-circle-container {
-      width: 570px;
-      height: 570px;
-      padding-left: 75px;
-      padding-top: 80px;
-      bottom: 280px;
-      left: 13%;
-      z-index: 1;
+//     .big-green-circle-container {
+//       width: 570px;
+//       height: 570px;
+//       padding-left: 75px;
+//       padding-top: 80px;
+//       bottom: 280px;
+//       left: 13%;
+//       z-index: 1;
 
-      .big-green-circle-text {
-        width: 380px;
+//       .big-green-circle-text {
+//         width: 380px;
 
-        h2 {
-          font-size: 35px;
-        }
+//         h2 {
+//           font-size: 35px;
+//         }
 
-        p {
-          font-size: 22px;
-          line-height: 32px;
-        }
-      }
-    }
+//         p {
+//           font-size: 22px;
+//           line-height: 32px;
+//         }
+//       }
+//     }
 
-    .big-pink-circle-container {
-      width: 550px;
-      height: 520px;
-      margin: auto;
-      right: 15%;
-      margin-top: -400px;
-      padding-left: 50px;
-      padding-top: 50px;
-      z-index: 0;
+//     .big-pink-circle-container {
+//       width: 550px;
+//       height: 520px;
+//       margin: auto;
+//       right: 15%;
+//       margin-top: -400px;
+//       padding-left: 50px;
+//       padding-top: 50px;
+//       z-index: 0;
 
-      .big-pink-circle-text {
-        text-align: left;
-        padding-top: 40px;
-        width: 400px;
+//       .big-pink-circle-text {
+//         text-align: left;
+//         padding-top: 40px;
+//         width: 400px;
 
-        h2 {
-          font-size: 35px;
-        }
+//         h2 {
+//           font-size: 35px;
+//         }
 
-        p {
-          font-size: 22px;
-          line-height: 32px;
-        }
-      }
-    }
-  }
+//         p {
+//           font-size: 22px;
+//           line-height: 32px;
+//         }
+//       }
+//     }
+//   }
 
-  @media only screen and (max-width: $laptop) {
-    .top-circles {
-      .meet-inst-small-pink {
-        width: 320px;
-        height: 300px;
+//   @media only screen and (max-width: $laptop) {
+//     .top-circles {
+//       .meet-inst-small-pink {
+//         width: 320px;
+//         height: 300px;
 
-        h1 {
-          font-size: 42px;
-        }
-      }
+//         h1 {
+//           font-size: 42px;
+//         }
+//       }
 
-      .meet-inst-photo {
-        padding-left: 60px;
-        img {
-          width: 60%;
-        }
-      }
-    }
+//       .meet-inst-photo {
+//         padding-left: 60px;
+//         img {
+//           width: 60%;
+//         }
+//       }
+//     }
 
-    .big-green-circle-container {
-      padding-top: 75px;
-      bottom: 220px;
-      left: 8%;
-    }
+//     .big-green-circle-container {
+//       padding-top: 75px;
+//       bottom: 220px;
+//       left: 8%;
+//     }
 
-    .big-pink-circle-container {
-      right: 10%;
-      margin-top: -315px;
-    }
-  }
+//     .big-pink-circle-container {
+//       right: 10%;
+//       margin-top: -315px;
+//     }
+//   }
 
-  @media only screen and (max-width: $tablet) {
-    width: 100%;
-    .top-circles {
+//   @media only screen and (max-width: $tablet) {
+//     width: 100%;
+//     .top-circles {
   
-      .meet-inst-small-pink {
-        position: relative;
-        left: 38%;
-        width: 300px;
-        height: 300px;
+//       .meet-inst-small-pink {
+//         position: relative;
+//         left: 38%;
+//         width: 300px;
+//         height: 300px;
   
-        h1 {
-          font-size: 40px;
-        }
-      }
+//         h1 {
+//           font-size: 40px;
+//         }
+//       }
   
-      .meet-inst-photo {
-        left: 0;
-        padding-left: 90px;
-        bottom: 90px;
+//       .meet-inst-photo {
+//         left: 0;
+//         padding-left: 90px;
+//         bottom: 90px;
   
-        img {
-          width: 65%;
-        }
-      }
-    }
+//         img {
+//           width: 65%;
+//         }
+//       }
+//     }
   
-    .big-green-circle-container {
-      border-radius: 5%;
-      width: 75%;
-      height: 100%;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      bottom: 50px;
-      left: 0%;
+//     .big-green-circle-container {
+//       border-radius: 5%;
+//       width: 75%;
+//       height: 100%;
+//       padding-left: 30px;
+//       padding-right: 30px;
+//       padding-top: 40px;
+//       padding-bottom: 40px;
+//       bottom: 50px;
+//       left: 0%;
   
-      .big-green-circle-text {
-        text-align: center;
-        width: 100%;
+//       .big-green-circle-text {
+//         text-align: center;
+//         width: 100%;
   
-        h2 {
-          font-size: 30px;
-          padding-bottom: 15px;
-        }
+//         h2 {
+//           font-size: 30px;
+//           padding-bottom: 15px;
+//         }
   
-        p {
-          font-size: 20px;
-          line-height: 30px;
-        }
-      }
-    }
+//         p {
+//           font-size: 20px;
+//           line-height: 30px;
+//         }
+//       }
+//     }
   
-    .big-pink-circle-container {
-      border-radius: 5%;
-      width: 75%;
-      height: 100%;
-      right: 0%;
-      margin-top: 20px;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 0px;
-      padding-bottom: 40px;
+//     .big-pink-circle-container {
+//       border-radius: 5%;
+//       width: 75%;
+//       height: 100%;
+//       right: 0%;
+//       margin-top: 20px;
+//       padding-left: 30px;
+//       padding-right: 30px;
+//       padding-top: 0px;
+//       padding-bottom: 40px;
   
-      .big-pink-circle-text {
-        text-align: center;
-        width: 100%;
+//       .big-pink-circle-text {
+//         text-align: center;
+//         width: 100%;
         
   
-        h2 {
-          font-size: 30px;
-          padding-bottom: 15px;
-        }
+//         h2 {
+//           font-size: 30px;
+//           padding-bottom: 15px;
+//         }
   
-        p {
-          font-size: 20px;
-          line-height: 30px;
-        }
-      }
-    }
+//         p {
+//           font-size: 20px;
+//           line-height: 30px;
+//         }
+//       }
+//     }
         
-  }
+//   }
 
-  @media only screen and (max-width: $large-phone) {
+//   @media only screen and (max-width: $large-phone) {
 
-    width: 100%;
-    .top-circles {
+//     width: 100%;
+//     .top-circles {
   
-      .meet-inst-small-pink {
-        left: 0;
-        width: 260px;
-        height: 240px;
+//       .meet-inst-small-pink {
+//         left: 0;
+//         width: 260px;
+//         height: 240px;
         
   
-        h1 {
-          font-size: 35px;
-          padding-top: 50px;
-        }
-      }
+//         h1 {
+//           font-size: 35px;
+//           padding-top: 50px;
+//         }
+//       }
   
-      .meet-inst-photo {
-        left: 0;
-        padding-left: 0px;
-        bottom: 80px;
+//       .meet-inst-photo {
+//         left: 0;
+//         padding-left: 0px;
+//         bottom: 80px;
   
-        img {
-          width: 280px;
-        }
-      }
-    }
+//         img {
+//           width: 280px;
+//         }
+//       }
+//     }
   
-    .big-green-circle-container {
-      background-color: transparent;
-      width: 90%;
-      height: 100%;
-      bottom: 70px;
+//     .big-green-circle-container {
+//       background-color: transparent;
+//       width: 90%;
+//       height: 100%;
+//       bottom: 70px;
   
-      .big-green-circle-text {
+//       .big-green-circle-text {
   
-        h2 {
-          font-size: 27px;
-          padding-bottom: 15px;
-        }
+//         h2 {
+//           font-size: 27px;
+//           padding-bottom: 15px;
+//         }
   
-        p {
-          font-size: 20px;
-          line-height: 30px;
-        }
-      }
-    }
+//         p {
+//           font-size: 20px;
+//           line-height: 30px;
+//         }
+//       }
+//     }
   
-    .big-pink-circle-container {
-      background-color: transparent;
-      width: 90%;
-      margin-top: -100px;
-      padding-bottom: 0px;
+//     .big-pink-circle-container {
+//       background-color: transparent;
+//       width: 90%;
+//       margin-top: -100px;
+//       padding-bottom: 0px;
   
-      .big-pink-circle-text {
-        text-align: center;
-        width: 100%;
+//       .big-pink-circle-text {
+//         text-align: center;
+//         width: 100%;
         
   
-        h2 {
-          font-size: 27px;
-          padding-bottom: 15px;
-        }
+//         h2 {
+//           font-size: 27px;
+//           padding-bottom: 15px;
+//         }
   
-        p {
-          font-size: 20px;
-          line-height: 30px;
-        }
-      }
-    }
+//         p {
+//           font-size: 20px;
+//           line-height: 30px;
+//         }
+//       }
+//     }
         
-  }
-}
+//   }
+// }
 
 // .meet-inst-container {
 //   max-width: 90%;
