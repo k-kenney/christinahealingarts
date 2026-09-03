@@ -159,84 +159,147 @@
       </div>
     </section>
 
-    <!-- contact section -->
-    <section class="section-contact" id="contact">
-      <h1>Contact me</h1>
-      <hr />
-      <div class="contact-container">
-        <form
-          id="fs-frm"
-          name="department-contact-form"
-          accept-charset="utf-8"
-          action="https://formspree.io/f/mleyegqd"
-          method="post"
-        >
-          <fieldset id="fs-frm-inputs">
-            <div class="contact-col-1">
-              <div class="name-section">
-                <label for="full-name"
-                  ><img
-                    src="../img/person-icon.png"
-                    alt="person"
-                    class="contact-icon"
-                /></label>
-                <input
-                  type="text"
-                  name="name"
-                  id="full-name"
-                  placeholder="First and Last*"
-                  required=""
-                />
-              </div>
-              <div class="email-section">
-                <label for="email-address"
-                  ><img
-                    src="../img/email-icon.png"
-                    alt="person"
-                    class="contact-icon"
-                /></label>
-                <input
-                  type="email"
-                  name="_replyto"
-                  id="email-address"
-                  placeholder="breathe@zenmail.com*"
-                  required=""
-                />
-              </div>
-              <label for="yoga-type" class="yoga-type"
-                >Which type of yoga interests you?</label
-              >
-              <select name="yoga-type" id="yoga-type">
-                <option value="" selected="" disabled="">Select</option>
-                <option value="adaptive">Adaptive Yoga</option>
-                <option value="mobility">Yoga for stregth & mobility</option>
-                <option value="stress">Somatic Yoga</option>
-                <option value="trauma">Trauma informed yoga</option>
-                <option value="fertility">Sound Healingy</option>
-                <option value="Retreats">Seasonal Gatherings</option>
-                <option value="any">I'm open</option>
-              </select>
-            </div>
-            <div class="contact-col-2">
-              <!-- <label for="message">Message</label> -->
-              <textarea
-                rows="7"
-                name="message"
-                id="message"
-                placeholder="Message"
-              ></textarea>
-              <input
-                type="hidden"
-                name="_subject"
-                id="email-subject"
-                value="Department Contact Form Submission"
-              />
-            </div>
-          </fieldset>
-          <input type="submit" value="Submit" class="submit-button" />
-        </form>
-      </div>
-    </section>
+    <!-- ========================================
+     CONTACT SECTION
+========================================= -->
+
+<section class="section-contact" id="contact">
+
+  <div class="contact-heading">
+    <p class="contact-label">GET IN TOUCH</p>
+
+    <h2>Contact Christina</h2>
+
+    <div class="contact-divider"></div>
+
+    <p class="contact-intro">
+      Have a question about yoga, sound healing, retreats, or working together?
+      Send a message below and Christina will be in touch.
+    </p>
+  </div>
+
+
+  <div class="contact-container">
+
+    <form
+      id="fs-frm"
+      name="department-contact-form"
+      accept-charset="utf-8"
+      action="https://formspree.io/f/mleyegqd"
+      method="post"
+    >
+
+      <fieldset id="fs-frm-inputs">
+
+        <!-- LEFT COLUMN -->
+        <div class="contact-col-1">
+
+          <div class="form-group">
+            <label for="full-name">Name</label>
+
+            <input
+              type="text"
+              name="name"
+              id="full-name"
+              placeholder="First and Last"
+              required
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="email-address">Email</label>
+
+            <input
+              type="email"
+              name="_replyto"
+              id="email-address"
+              placeholder="you@email.com"
+              required
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="yoga-type">
+              What are you interested in?
+            </label>
+
+            <select name="yoga-type" id="yoga-type">
+              <option value="" selected disabled>
+                Select an option
+              </option>
+
+              <option value="adaptive">
+                Adaptive Yoga
+              </option>
+
+              <option value="mobility">
+                Yoga for Strength & Mobility
+              </option>
+
+              <option value="somatic">
+                Somatic Yoga
+              </option>
+
+              <option value="trauma">
+                Trauma-Informed Yoga
+              </option>
+
+              <option value="sound-healing">
+                Sound Healing
+              </option>
+
+              <option value="retreats">
+                Retreats
+              </option>
+
+              <option value="any">
+                I'm open
+              </option>
+            </select>
+          </div>
+
+        </div>
+
+
+        <!-- RIGHT COLUMN -->
+        <div class="contact-col-2">
+
+          <div class="form-group message-group">
+            <label for="message">Message</label>
+
+            <textarea
+              rows="8"
+              name="message"
+              id="message"
+              placeholder="How can I help?"
+            ></textarea>
+          </div>
+
+        </div>
+
+
+        <input
+          type="hidden"
+          name="_subject"
+          id="email-subject"
+          value="Christina Healing Arts Contact Form Submission"
+        />
+
+      </fieldset>
+
+
+      <button type="submit" class="submit-button">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
     <!-- footer -->
     <footer>
       <div class="footer-container">

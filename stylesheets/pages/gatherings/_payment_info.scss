@@ -226,7 +226,7 @@ a.payment-card:hover {
   gap: 5px;
 
   span {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $body-font;
 
     font-size: 0.68rem;
 
@@ -234,7 +234,7 @@ a.payment-card:hover {
 
     text-transform: uppercase;
 
-    color: #747a50;
+    color: $light-green;
   }
 
   strong {
@@ -263,13 +263,13 @@ a.payment-card:hover {
   align-items: center;
   justify-content: center;
 
-  background: #697250;
+  background: $light-green;
 
   color: #f7f2eb;
 
   border-radius: 3px;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $body-font;
 
   font-size: 0.74rem;
   font-weight: 500;
@@ -302,7 +302,7 @@ a.payment-card:hover .payment-card-button {
   p {
     margin: 0 0 8px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $body-font;
 
     font-size: 0.95rem;
 
@@ -603,7 +603,7 @@ a.payment-card:hover .payment-card-button {
   p {
     margin: 0 0 15px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $body-font;
 
     font-size: 0.95rem;
     line-height: 1.55;

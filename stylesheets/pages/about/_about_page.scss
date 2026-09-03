@@ -4,6 +4,7 @@
 
 .about-page {
   width: 100%;
+
   overflow-x: hidden;
 
   background: #fff;
@@ -13,7 +14,7 @@
 
 
 // ========================================
-// INTRO
+// ABOUT INTRO
 // ========================================
 
 .about-page-intro {
@@ -76,6 +77,7 @@
 
 
 .about-intro-text {
+  width: 100%;
   max-width: 680px;
 
   margin: 0 auto;
@@ -97,7 +99,7 @@
 .facilitator-profile {
   width: 100%;
 
-  padding: 100px 7%;
+  padding: 100px 6%;
 
   background: #fff;
 }
@@ -108,20 +110,29 @@
 }
 
 
+// ========================================
+// FACILITATOR PROFILE LAYOUT
+// ========================================
+
 .facilitator-profile-inner {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1280px;
 
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: minmax(380px, 0.9fr) minmax(0, 1.1fr);
+
+  grid-template-columns:
+    minmax(450px, 1fr)
+    minmax(0, 1fr);
 
   align-items: center;
 
-  gap: 85px;
+  gap: clamp(60px, 7vw, 100px);
 }
 
+
+// Alternate the second facilitator on desktop
 
 .facilitator-profile-alt .facilitator-profile-image {
   order: 2;
@@ -134,19 +145,21 @@
 
 
 // ========================================
-// PHOTOS
+// FACILITATOR PHOTOS
 // ========================================
 
 .facilitator-profile-image {
   width: 100%;
 
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 
 .facilitator-profile-image img {
-  width: min(100%, 470px);
+  width: 100%;
+  max-width: 560px;
 
   aspect-ratio: 1 / 1;
 
@@ -155,18 +168,22 @@
   object-fit: cover;
   object-position: center;
 
-  border-radius: 28px;
+  margin: 0;
 
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+  border-radius: 30px;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.08);
 }
 
 
 // ========================================
-// PROFILE CONTENT
+// FACILITATOR CONTENT
 // ========================================
 
 .facilitator-profile-content {
   width: 100%;
+  max-width: 590px;
 }
 
 
@@ -227,6 +244,7 @@
 
 .facilitator-profile-content >
 p:not(.facilitator-eyebrow):not(.facilitator-role) {
+
   margin: 0 0 18px;
 
   font-family: $body-font;
@@ -270,6 +288,7 @@ p:not(.facilitator-eyebrow):not(.facilitator-role) {
 
 .shared-approach-content >
 p:not(.facilitator-eyebrow) {
+
   margin: 0 auto 18px;
 
   font-family: $body-font;
@@ -291,12 +310,14 @@ p:not(.facilitator-eyebrow) {
   font-weight: 600;
   font-style: italic;
 
+  line-height: 1.65;
+
   color: $light_green;
 }
 
 
 // ========================================
-// SHARED TRAINING
+// SHARED EXPERIENCE + TRAINING
 // ========================================
 
 .shared-training {
@@ -315,6 +336,10 @@ p:not(.facilitator-eyebrow) {
   margin: 0 auto;
 }
 
+
+// ========================================
+// TRAINING HEADING
+// ========================================
 
 .shared-training-heading {
   width: 100%;
@@ -367,6 +392,9 @@ p:not(.facilitator-eyebrow) {
 
 
 .shared-training-heading > p:last-child {
+  width: 100%;
+  max-width: 620px;
+
   margin: 0 auto;
 
   font-family: $body-font;
@@ -385,7 +413,9 @@ p:not(.facilitator-eyebrow) {
 
 .shared-training-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
 
   gap: 0 50px;
 }
@@ -395,6 +425,7 @@ p:not(.facilitator-eyebrow) {
   min-height: 78px;
 
   display: grid;
+
   grid-template-columns: 40px 1fr;
 
   align-items: center;
@@ -403,7 +434,8 @@ p:not(.facilitator-eyebrow) {
 
   padding: 18px 0;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.2);
 }
 
 
@@ -433,37 +465,74 @@ p:not(.facilitator-eyebrow) {
 
 
 // ========================================
-// TABLET
+// LARGE TABLET / SMALL LAPTOP
 // ========================================
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
+
+  // INTRO
+
+  .about-page-intro {
+    padding: 90px 6% 80px;
+  }
+
+
+  // FACILITATORS
+
+  .facilitator-profile {
+    padding: 85px 5%;
+  }
+
 
   .facilitator-profile-inner {
     grid-template-columns:
-      minmax(320px, 0.85fr)
-      minmax(0, 1.15fr);
+      minmax(380px, 0.95fr)
+      minmax(0, 1.05fr);
 
     gap: 55px;
   }
 
 
   .facilitator-profile-image img {
-    width: min(100%, 410px);
+    max-width: 500px;
+  }
+
+
+  // SHARED APPROACH
+
+  .shared-approach {
+    padding: 90px 6%;
+  }
+
+
+  // TRAINING
+
+  .shared-training {
+    padding: 85px 6% 95px;
   }
 
 }
 
 
 // ========================================
-// SMALL TABLET
+// TABLET
 // ========================================
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
+
+  // INTRO
 
   .about-page-intro {
     padding: 80px 45px 75px;
   }
 
+
+  .about-page-intro-content {
+    max-width: 650px;
+  }
+
+
+  // FACILITATORS
 
   .facilitator-profile {
     padding: 75px 45px;
@@ -473,39 +542,74 @@ p:not(.facilitator-eyebrow) {
   .facilitator-profile-inner {
     grid-template-columns: 1fr;
 
-    gap: 42px;
+    gap: 45px;
   }
 
 
+  // Both photos first on tablet/mobile
+
   .facilitator-profile-image,
-  .facilitator-profile-alt .facilitator-profile-image {
+  .facilitator-profile-alt
+  .facilitator-profile-image {
+
     order: 1;
   }
 
 
   .facilitator-profile-content,
-  .facilitator-profile-alt .facilitator-profile-content {
+  .facilitator-profile-alt
+  .facilitator-profile-content {
+
     order: 2;
   }
 
 
   .facilitator-profile-image img {
-    width: min(100%, 500px);
+    width: 100%;
+    max-width: 600px;
+
+    border-radius: 28px;
   }
 
+
+  .facilitator-profile-content {
+    width: 100%;
+    max-width: 600px;
+
+    margin: 0 auto;
+  }
+
+
+  // SHARED APPROACH
 
   .shared-approach {
     padding: 85px 45px;
   }
 
 
+  .shared-approach-content {
+    max-width: 650px;
+  }
+
+
+  // TRAINING
+
   .shared-training {
     padding: 80px 45px 90px;
   }
 
 
+  .shared-training-heading {
+    margin-bottom: 45px;
+  }
+
+
   .shared-training-grid {
     grid-template-columns: 1fr;
+
+    max-width: 650px;
+
+    margin: 0 auto;
   }
 
 }
@@ -515,7 +619,9 @@ p:not(.facilitator-eyebrow) {
 // MOBILE
 // ========================================
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+
+  // INTRO
 
   .about-page-intro {
     padding: 65px 25px;
@@ -527,13 +633,22 @@ p:not(.facilitator-eyebrow) {
   }
 
 
-  .about-intro-text {
-    font-size: 0.95rem;
+  .about-title-divider {
+    margin: 20px auto;
   }
 
 
+  .about-intro-text {
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+  }
+
+
+  // FACILITATORS
+
   .facilitator-profile {
-    padding: 65px 25px;
+    padding: 60px 22px;
   }
 
 
@@ -542,19 +657,47 @@ p:not(.facilitator-eyebrow) {
   }
 
 
+  .facilitator-profile-image {
+    width: 100%;
+  }
+
+
   .facilitator-profile-image img {
     width: 100%;
+    max-width: none;
 
-    max-width: 430px;
+    aspect-ratio: 1 / 1;
 
     border-radius: 22px;
+  }
+
+
+  .facilitator-profile-content {
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
   }
 
 
   .facilitator-profile-content h2,
   .shared-approach-content h2,
   .shared-training-heading h2 {
+
     font-size: 2rem;
+  }
+
+
+  .facilitator-divider {
+    margin-top: 17px;
+    margin-bottom: 21px;
+  }
+
+
+  .facilitator-role {
+    margin-bottom: 23px !important;
+
+    font-size: 0.95rem !important;
   }
 
 
@@ -562,19 +705,41 @@ p:not(.facilitator-eyebrow) {
   p:not(.facilitator-eyebrow):not(.facilitator-role),
   .shared-approach-content >
   p:not(.facilitator-eyebrow) {
+
     font-size: 0.94rem;
 
     line-height: 1.7;
   }
 
 
+  // SHARED APPROACH
+
   .shared-approach {
     padding: 70px 25px;
   }
 
 
+  .shared-approach-content .approach-emphasis {
+    margin-top: 25px;
+
+    font-size: 1.05rem;
+  }
+
+
+  // TRAINING
+
   .shared-training {
     padding: 65px 25px 75px;
+  }
+
+
+  .shared-training-heading {
+    margin-bottom: 35px;
+  }
+
+
+  .shared-training-heading > p:last-child {
+    font-size: 0.92rem;
   }
 
 
@@ -582,11 +747,20 @@ p:not(.facilitator-eyebrow) {
     min-height: 70px;
 
     grid-template-columns: 34px 1fr;
+
+    gap: 12px;
+
+    padding: 16px 0;
   }
 
 
   .training-item p {
     font-size: 0.87rem;
+  }
+
+
+  .training-item span {
+    font-size: 0.63rem;
   }
 
 }
@@ -596,25 +770,24 @@ p:not(.facilitator-eyebrow) {
 // VERY SMALL MOBILE
 // ========================================
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
+
+  // INTRO
 
   .about-page-intro {
     padding: 60px 20px;
   }
 
 
+  .about-page-intro h1 {
+    font-size: 2.05rem;
+  }
+
+
+  // FACILITATORS
+
   .facilitator-profile {
-    padding: 60px 20px;
-  }
-
-
-  .shared-approach {
-    padding: 65px 20px;
-  }
-
-
-  .shared-training {
-    padding: 60px 20px 70px;
+    padding: 55px 18px;
   }
 
 
@@ -622,398 +795,33 @@ p:not(.facilitator-eyebrow) {
     border-radius: 18px;
   }
 
-}
 
+  .facilitator-profile-content h2,
+  .shared-approach-content h2,
+  .shared-training-heading h2 {
 
-.about-page {
-  padding-bottom: 25px;
-
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    margin-top: 50px;
-    border-radius: 5px;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    font-size: 1.85rem;
   }
 
-  .about-text {
-    display: flex;
-    align-items: start;
-    margin: auto;
-    width: 850px;
-    margin-top: 100px;
 
-    h1 {
-      text-align: left;
-      font-size: 55px;
-      margin: 0;
-      padding: 0;
-      padding-bottom: 30px;
-      margin-right: 70px;
-    }
+  // SHARED APPROACH
 
-    hr {
-      border: 0;
-      width: 145px;
-      background-color: #323232;
-      height: 0.5px;
-      margin-left: 0;
-      margin-top: 0;
-    }
-
-    .about-description {
-      font-size: 20px;
-      margin: 0;
-      padding: 0;
-      margin-left: 70px;
-    }
-
-    p {
-      margin-bottom: 40px;
-    }
-
-    p span {
-      font-family: $special-text;
-      font-size: 30px;
-    }
-
-    ul {
-      padding: 5px 30px;
-    }
-    ul li {
-      margin-bottom: 20px;
-    }
+  .shared-approach {
+    padding: 65px 20px;
   }
 
-  .dear {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    background: $pink;
-    width: cover;
-    padding-top: 65px;
-    padding-bottom: 65px;
 
-    h3 {
-      font-size: 28px;
-      line-height: 40px;
-      margin: auto;
-      padding: 30px;
-      text-align: center;
-      width: 75%;
-      border-right: $softblack solid 0.5px;
-      border-left: $softblack solid 0.5px;
-    }
+  // TRAINING
+
+  .shared-training {
+    padding: 60px 20px 70px;
   }
 
-  .licenses {
-    margin: auto;
-    padding: 0;
 
-    h1 {
-      text-align: center;
-      font-size: 45px;
-      margin: 0;
-      padding-bottom: 20px;
-      padding-top: 65px;
-    }
+  .training-item {
+    grid-template-columns: 30px 1fr;
 
-    hr {
-      border: 0;
-      width: 10%;
-      background-color: #323232;
-      height: 0.5px;
-      margin: auto;
-      margin-bottom: 70px;
-      margin-top: 0;
-    }
-
-    .license-list {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      ul li {
-        margin: auto;
-        text-align: left;
-        font-size: 24px;
-        line-height: 45px;
-        display: list-item;
-        list-style-type: disc;
-        list-style-position: inside;
-        padding-left: 40px;
-      }
-    }
+    gap: 10px;
   }
 
-  .personal-life-container {
-    width: cover;
-    background: $light-green;
-    padding-bottom: 70px;
-    margin-top: 100px;
-    color: $background;
-
-    .personal-life {
-      width: 80%;
-      margin: auto;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-
-      h1 {
-        text-align: center;
-        font-size: 45px;
-        margin: 0;
-        padding-bottom: 20px;
-        padding-top: 65px;
-      }
-
-      hr {
-        border: 0;
-        width: 10%;
-        background-color: $background;
-        height: 0.5px;
-        margin: auto;
-        margin-bottom: 50px;
-        margin-top: 0;
-      }
-
-      p {
-        text-align: center;
-        width: 80%;
-        font-size: 24px;
-        line-height: 40px;
-        margin: auto;
-      }
-
-      .images {
-        margin: auto;
-        width: 100%;
-
-        img {
-          width: 80%;
-          border-radius: 5px;
-          box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: $laptop) {
-
-    .about-text {
-      width: 650px;
-      margin-top: 80px;
-
-      .about-description {
-        font-size: 20px;
-        margin-left: 30px;
-      }
-      h1 {
-        font-size: 45px;
-        padding-bottom: 30px;
-        margin-right: 50px;
-      }
-
-      hr {
-        width: 116px;
-      }
-
-      p {
-        margin-bottom: 30px;
-      }
-    }
-
-    .personal-life-container {
-      .personal-life {
-        flex-direction: column;
-        padding-bottom: 40px;
-
-        .images {
-          margin: auto;
-          width: 70%;
-
-          img {
-            width: 70%;
-          }
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: $tablet) {
-    img {
-      width: 90%;
-      margin-top: 30px;
-    }
-
-    .about-text {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 85%;
-      margin-top: 55px;
-
-      .about-description {
-        margin-left: 0;
-        margin-top: 45px;
-        text-align: center;
-      }
-      h1 {
-        font-size: 40px;
-        text-align: center;
-        padding-bottom: 15px;
-        margin-right: 0;
-      }
-
-      hr {
-        width: 15%;
-        margin: auto;
-      }
-
-      h3 {
-        margin-bottom: 20px;
-      }
-
-      p {
-        margin-bottom: 22px;
-      }
-    }
-
-    .dear {
-      h3 {
-        font-size: 24px;
-        width: 80%;
-      }
-    }
-    .licenses {
-      h1 {
-        font-size: 35px;
-      }
-
-      hr {
-        margin-bottom: 50px;
-      }
-
-      .license-list {
-        width: 80%;
-        margin: auto;
-        text-align: left;
-
-        ul li {
-          font-size: 18px;
-          line-height: 40px;
-        }
-      }
-    }
-
-
-    .personal-life-container {
-      .personal-life {
-        flex-direction: column;
-        padding-bottom: 20px;
-
-        h1 {
-          font-size: 35px;
-          padding-top: 40px;
-        }
-
-        hr {
-          margin-bottom: 30px;
-        }
-        p {
-          font-size: 22px;
-          line-height: 30px;
-        }
-
-        .images {
-          margin: auto;
-          width: 70%;
-          padding-top: 30px;
-
-          img {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: $phone) {
-    padding-bottom: 10px;
-    img {
-      margin-top: 10px;
-    }
-
-    .about-text {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 260px;
-      margin-top: 35px;
-
-      .about-description {
-        margin-left: 0;
-        margin-top: 45px;
-        text-align: center;
-      }
-      h1 {
-        font-size: 30px;
-        text-align: center;
-        padding-bottom: 15px;
-        margin-right: 0;
-      }
-
-      hr {
-        width: 15%;
-        margin: auto;
-      }
-
-      h3 {
-        margin-bottom: 20px;
-      }
-
-      p {
-        margin-bottom: 20px;
-      }
-    }
-
-    .dear {
-      margin-top: 30px;
-      margin-bottom: 30px;
-      padding-top: 65px;
-      padding-bottom: 65px;
-
-      h3 {
-        width: 85%;
-        border-right: none;
-        border-left: none;
-        border-top: $softblack solid 0.5px;
-        border-bottom: $softblack solid 0.5px;
-      }
-    }
-    .licenses {
-      h1 {
-        font-size: 23px;
-        padding-top: 20px;
-      }
-
-      hr {
-        margin-bottom: 40px;
-      }
-
-      .license-list {
-        ul li {
-          text-align: left;
-          font-size: 18px;
-          line-height: 35px;
-          padding: 5px 0;
-          padding-left: 1.5em;
-          text-indent: -1.3em;
-        }
-      }
-    }
-  }
 }
