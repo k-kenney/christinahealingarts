@@ -4,15 +4,21 @@
 
 .hero {
   width: 100%;
+
   background: #f7f2eb;
+
   overflow: hidden;
 }
 
 .hero-content {
   width: 100%;
-  min-height: 390px;
+
+  min-height: 420px;
+
   display: grid;
+
   grid-template-columns: 52% 48%;
+
   position: relative;
 }
 
@@ -23,39 +29,71 @@
 
 .hero-text {
   position: relative;
+
   z-index: 2;
 
-  padding: 35px 20px 35px 5%;
+  padding: 50px 30px 50px 6%;
+
   display: flex;
+
   flex-direction: column;
+
   justify-content: center;
+
+  align-items: flex-start;
+
+  text-align: left;
 }
 
 .hero-text h1 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.5rem, 5.5vw, 5.8rem);
-  font-weight: 400;
-  line-height: 0.95;
-  letter-spacing: -2px;
-  color: #111;
-
   margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(4rem, 5.8vw, 6rem);
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  letter-spacing: -2px;
+
+  color: #111;
 }
+
+
+// ========================================
+// SUBTITLE
+// ========================================
 
 .hero-subtitle {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1rem, 1.5vw, 1.35rem);
-  color: #596343;
+  margin: 16px 0 5px;
 
-  margin: 10px 0 2px;
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(1.15rem, 1.7vw, 1.5rem);
+
+  line-height: 1.3;
+
+  color: #596343;
 }
 
-.hero-location {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(0.75rem, 1vw, 1rem);
-  letter-spacing: clamp(2px, 0.35vw, 4px);
 
+// ========================================
+// LOCATION TITLE
+// ========================================
+
+.hero-location {
   margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(0.8rem, 1.05vw, 1rem);
+
+  letter-spacing: clamp(2.5px, 0.35vw, 4px);
+
+  line-height: 1.4;
+
   color: #222;
 }
 
@@ -66,24 +104,31 @@
 
 .hero-divider {
   display: flex;
-  align-items: center;
-  gap: 10px;
 
-  width: min(190px, 45%);
-  margin: 8px 0;
+  align-items: center;
+
+  gap: 11px;
+
+  width: min(210px, 48%);
+
+  margin: 13px 0;
 }
 
 .hero-divider::before,
 .hero-divider::after {
   content: "";
+
   height: 1px;
-  background: #77735f;
+
+  background: $light_green;
+
   flex: 1;
 }
 
 .hero-divider span {
-  color: #596343;
-  font-size: 12px;
+  color: $light_green;
+
+  font-size: 13px;
 }
 
 
@@ -93,17 +138,22 @@
 
 .hero-details {
   display: flex;
+
   align-items: center;
+
   flex-wrap: wrap;
 
-  gap: 20px;
+  gap: 24px;
+
+  margin-bottom: 20px;
 
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(0.75rem, 1vw, 0.9rem);
+
+  font-size: clamp(0.85rem, 1.1vw, 1rem);
+
+  line-height: 1.45;
 
   color: #222;
-
-  margin-bottom: 14px;
 }
 
 .hero-details span + span {
@@ -114,15 +164,18 @@
   content: "";
 
   position: absolute;
-  left: -11px;
+
+  left: -13px;
+
   top: 50%;
 
   transform: translateY(-50%);
 
   width: 1px;
-  height: 18px;
 
-  background: #8c897d;
+  height: 19px;
+
+  background: $light_green;
 }
 
 
@@ -131,14 +184,15 @@
 // ========================================
 
 .hero-description {
-  max-width: 430px;
+  max-width: 500px;
 
-  font-size: clamp(0.72rem, 1vw, 0.85rem);
-  line-height: 1.55;
+  margin: 0 0 22px;
+
+  font-size: clamp(0.9rem, 1.15vw, 1rem);
+
+  line-height: 1.75;
 
   color: #222;
-
-  margin: 0 0 14px;
 }
 
 
@@ -148,30 +202,40 @@
 
 .hero-button {
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
 
   width: fit-content;
 
-  background: #596343;
+  padding: 12px 24px;
+
+  background: $light_green;
+
   color: white;
 
   text-decoration: none;
+
   text-transform: uppercase;
 
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.3px;
+  font-size: 0.74rem;
 
-  padding: 10px 22px;
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
 
   border-radius: 3px;
 
-  transition: background 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 .hero-button:hover {
   background: #454e35;
+
+  transform: translateY(-1px);
 }
 
 
@@ -180,11 +244,13 @@
 // ========================================
 
 .hero-note {
+  margin: 10px 0 0;
+
   font-family: Georgia, "Times New Roman", serif;
 
-  font-size: 0.75rem;
+  font-size: 0.82rem;
 
-  margin: 7px 0 0;
+  line-height: 1.4;
 
   color: #333;
 }
@@ -200,7 +266,7 @@
   width: 100%;
   height: 100%;
 
-  min-height: 390px;
+  min-height: 420px;
 
   overflow: hidden;
 }
@@ -212,6 +278,7 @@
   height: 100%;
 
   object-fit: cover;
+
   object-position: center center;
 }
 
@@ -244,47 +311,73 @@
 
 
 // ========================================
-// TABLET
-// 769px - 1100px
+// TABLET / SMALL LAPTOP
 // ========================================
 
 @media (max-width: 1100px) {
 
   .hero-content {
     grid-template-columns: 54% 46%;
-    min-height: 350px;
+
+    min-height: 390px;
   }
+
 
   .hero-text {
-    padding: 30px 15px 30px 35px;
+    padding: 42px 25px 42px 38px;
   }
+
 
   .hero-text h1 {
-    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-size: clamp(3.5rem, 6vw, 4.8rem);
   }
+
 
   .hero-subtitle {
-    font-size: 1.1rem;
+    margin-top: 14px;
+
+    font-size: 1.2rem;
   }
 
+
   .hero-location {
-    font-size: 0.8rem;
+    font-size: 0.84rem;
+
     letter-spacing: 3px;
   }
 
-  .hero-details {
-    gap: 16px;
-    font-size: 0.78rem;
+
+  .hero-divider {
+    margin: 12px 0;
+
+    width: 195px;
   }
+
+
+  .hero-details {
+    gap: 18px;
+
+    margin-bottom: 17px;
+
+    font-size: 0.86rem;
+  }
+
 
   .hero-description {
-    max-width: 380px;
-    font-size: 0.78rem;
+    max-width: 410px;
+
+    margin-bottom: 20px;
+
+    font-size: 0.88rem;
+
+    line-height: 1.7;
   }
 
+
   .hero-image {
-    min-height: 350px;
+    min-height: 390px;
   }
+
 
   .hero-image::before {
     width: 130px;
@@ -293,62 +386,116 @@
 
 
 // ========================================
-// SMALL TABLET
-// 600px - 768px
+// STACKED TABLET
 // ========================================
 
 @media (max-width: 768px) {
 
   .hero-content {
     grid-template-columns: 1fr;
+
     min-height: auto;
   }
 
+
   .hero-text {
     width: 100%;
-    padding: 40px 30px 35px;
+
+    padding: 60px 40px 50px;
+
+    align-items: center;
+
+    text-align: center;
   }
+
 
   .hero-text h1 {
-    font-size: clamp(3rem, 10vw, 4rem);
+    font-size: clamp(3.4rem, 10vw, 4.5rem);
+
+    line-height: 1;
   }
+
 
   .hero-subtitle {
-    font-size: 1.15rem;
+    margin: 15px 0 5px;
+
+    font-size: 1.25rem;
   }
 
+
   .hero-location {
-    font-size: 0.8rem;
+    font-size: 0.82rem;
+
     letter-spacing: 3px;
   }
 
+
   .hero-divider {
-    width: 180px;
+    width: 190px;
+
+    margin: 14px auto;
   }
+
 
   .hero-details {
-    font-size: 0.82rem;
+    justify-content: center;
+
+    gap: 22px;
+
+    margin-bottom: 20px;
+
+    font-size: 0.9rem;
   }
 
+
   .hero-description {
-    max-width: 500px;
-    font-size: 0.85rem;
+    max-width: 540px;
+
+    margin: 0 auto 22px;
+
+    font-size: 0.92rem;
+
+    line-height: 1.75;
+
+    text-align: center;
   }
+
+
+  .hero-button {
+    margin: 0 auto;
+
+    padding: 12px 25px;
+
+    font-size: 0.72rem;
+  }
+
+
+  .hero-note {
+    margin-top: 11px;
+
+    font-size: 0.8rem;
+
+    text-align: center;
+  }
+
 
   .hero-image {
     width: 100%;
-    height: 400px;
-    min-height: 400px;
+
+    height: 410px;
+
+    min-height: 410px;
   }
+
 
   .hero-image::before {
     width: 100%;
-    height: 100px;
+    height: 110px;
 
     background: linear-gradient(
       to bottom,
       #f7f2eb 0%,
-      rgba(247, 242, 235, 0.7) 40%,
+      rgba(247, 242, 235, 0.72) 40%,
       rgba(247, 242, 235, 0) 100%
     );
   }
@@ -357,110 +504,177 @@
 
 // ========================================
 // MOBILE
-// 480px - 599px
 // ========================================
 
 @media (max-width: 599px) {
 
   .hero-text {
-    padding: 35px 22px 30px;
+    padding: 52px 26px 44px;
+
+    align-items: center;
+
+    text-align: center;
   }
 
+
   .hero-text h1 {
-    font-size: clamp(2.8rem, 12vw, 3.5rem);
+    font-size: clamp(3rem, 12vw, 3.8rem);
+
     letter-spacing: -1.5px;
   }
 
+
   .hero-subtitle {
-    font-size: 1.05rem;
-    margin-top: 8px;
+    margin-top: 13px;
+
+    font-size: 1.12rem;
   }
 
+
   .hero-location {
-    font-size: 0.72rem;
+    font-size: 0.74rem;
+
     letter-spacing: 2.5px;
   }
 
+
   .hero-divider {
-    width: 160px;
+    width: 165px;
+
+    margin: 13px auto;
   }
 
+
   .hero-details {
-    gap: 12px;
-    font-size: 0.75rem;
-    line-height: 1.4;
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+
+    font-size: 0.8rem;
+
+    line-height: 1.5;
+
+    text-align: center;
   }
+
 
   .hero-details span + span::before {
     height: 15px;
-    left: -7px;
+
+    left: -8px;
   }
+
 
   .hero-description {
-    font-size: 0.82rem;
-    line-height: 1.6;
+    max-width: 450px;
+
+    margin: 0 auto 21px;
+
+    font-size: 0.88rem;
+
+    line-height: 1.7;
+
+    text-align: center;
   }
+
 
   .hero-button {
-    padding: 11px 20px;
-    font-size: 0.68rem;
+    margin: 0 auto;
+
+    padding: 12px 22px;
+
+    font-size: 0.7rem;
   }
+
 
   .hero-note {
-    font-size: 0.72rem;
+    margin-top: 10px;
+
+    font-size: 0.76rem;
+
+    text-align: center;
   }
 
+
   .hero-image {
-    height: 330px;
-    min-height: 330px;
+    height: 340px;
+
+    min-height: 340px;
   }
 }
 
 
 // ========================================
 // VERY SMALL PHONES
-// Under 400px
 // ========================================
 
 @media (max-width: 399px) {
 
   .hero-text {
-    padding: 30px 18px 25px;
+    padding: 45px 20px 38px;
   }
+
 
   .hero-text h1 {
-    font-size: 2.7rem;
+    font-size: 2.85rem;
   }
+
 
   .hero-subtitle {
-    font-size: 0.95rem;
+    font-size: 1.02rem;
   }
 
+
   .hero-location {
-    font-size: 0.65rem;
+    font-size: 0.68rem;
+
     letter-spacing: 2px;
   }
 
+
+  .hero-divider {
+    width: 150px;
+  }
+
+
   .hero-details {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 0.78rem;
   }
+
 
   .hero-details span + span::before {
     display: none;
   }
 
+
   .hero-description {
-    font-size: 0.78rem;
+    font-size: 0.84rem;
+
+    line-height: 1.7;
   }
+
+
+  .hero-button {
+    width: 100%;
+
+    max-width: 240px;
+  }
+
 
   .hero-image {
-    height: 280px;
-    min-height: 280px;
+    height: 290px;
+
+    min-height: 290px;
   }
 }
-
 
 
 

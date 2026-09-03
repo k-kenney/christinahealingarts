@@ -1,4 +1,542 @@
 // ========================================
+// PAYMENT / RESERVE YOUR SPOT
+// ========================================
+
+.cost-payment-container {
+  width: 100%;
+
+  padding: 75px 8% 60px;
+
+  background: #f7f2eb;
+
+  color: #222;
+}
+
+
+// ========================================
+// HEADING
+// ========================================
+
+.payment-heading {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 0 auto 45px;
+
+  text-align: center;
+
+  .payment-label {
+    margin: 0 0 9px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 0.75rem;
+    font-weight: 500;
+
+    letter-spacing: 0.16em;
+
+    color: #697250;
+  }
+
+  h2 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(2rem, 4vw, 2.8rem);
+
+    font-weight: 400;
+
+    color: #222;
+  }
+}
+
+
+// ========================================
+// SMALL OLIVE DIVIDER
+// ========================================
+
+.payment-divider {
+  width: 55px;
+  height: 1px;
+
+  margin: 18px auto 20px;
+
+  background: #747a50;
+}
+
+
+// ========================================
+// INTRO TEXT
+// ========================================
+
+.payment-heading-text {
+  max-width: 570px;
+
+  margin: 0 auto;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 0.95rem;
+
+  line-height: 1.6;
+
+  color: #555;
+}
+
+
+// ========================================
+// THREE PAYMENT OPTIONS
+// ========================================
+
+.payment-options {
+  width: 100%;
+  max-width: 1050px;
+
+  margin: 0 auto 45px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+
+// ========================================
+// PAYMENT CARD
+// ========================================
+
+.payment-card {
+  min-height: 340px;
+
+  padding: 35px 28px 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  background: #fffaf4;
+
+  color: #222;
+
+  border: 1px solid rgba(116, 122, 80, 0.35);
+
+  border-radius: 3px;
+
+  box-shadow: 0 8px 24px rgba(55, 52, 39, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+  h3 {
+    margin: 17px 0 10px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.45rem;
+
+    font-weight: 400;
+
+    color: #222;
+  }
+}
+
+
+// ========================================
+// CARD HOVER
+// ========================================
+
+a.payment-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #747a50;
+
+  box-shadow: 0 13px 30px rgba(55, 52, 39, 0.13);
+}
+
+
+// ========================================
+// PAYMENT ICON
+// ========================================
+
+.payment-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+  }
+}
+
+
+// ========================================
+// DESCRIPTION
+// ========================================
+
+.payment-description {
+  min-height: 45px;
+
+  margin: 0 0 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 0.88rem;
+
+  line-height: 1.5;
+
+  color: #555;
+}
+
+
+// ========================================
+// PAYMENT ACCOUNT
+// ========================================
+
+.payment-account {
+  width: 100%;
+
+  margin: auto 0 20px;
+
+  padding: 15px 10px;
+
+  border-top: 1px solid rgba(116, 122, 80, 0.25);
+  border-bottom: 1px solid rgba(116, 122, 80, 0.25);
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 5px;
+
+  span {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 0.68rem;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+
+    color: #747a50;
+  }
+
+  strong {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 0.95rem;
+
+    font-weight: 400;
+
+    color: #333;
+  }
+}
+
+
+// ========================================
+// PAYMENT BUTTON
+// ========================================
+
+.payment-card-button {
+  min-width: 150px;
+
+  padding: 11px 20px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #697250;
+
+  color: #f7f2eb;
+
+  border-radius: 3px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 0.74rem;
+  font-weight: 500;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition: background 0.25s ease;
+}
+
+
+a.payment-card:hover .payment-card-button {
+  background: #596343;
+}
+
+
+// ========================================
+// PAYMENT SUMMARY
+// ========================================
+
+.payment-summary {
+  width: 100%;
+  max-width: 760px;
+
+  margin: 0 auto 42px;
+
+  text-align: center;
+
+  p {
+    margin: 0 0 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+
+    color: #333;
+  }
+
+  strong {
+    font-weight: 600;
+
+    color: #596343;
+  }
+}
+
+
+// ========================================
+// PAYMENT NOTE
+// ========================================
+
+.payment-summary .payment-note {
+  max-width: 650px;
+
+  margin: 17px auto 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 0.9rem;
+
+  font-style: italic;
+
+  color: #697250;
+}
+
+
+// ========================================
+// PAYMENT TERMS
+// ========================================
+
+.payment-terms {
+  width: 100%;
+  max-width: 950px;
+
+  margin: 0 auto;
+
+  padding: 25px 30px;
+
+  border-top: 1px solid rgba(116, 122, 80, 0.45);
+  border-bottom: 1px solid rgba(116, 122, 80, 0.45);
+
+  text-align: center;
+
+  p {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 0.8rem;
+
+    line-height: 1.6;
+
+    color: #555;
+  }
+
+  strong {
+    font-weight: 700;
+
+    color: #596343;
+  }
+}
+
+
+// ========================================
+// TABLET
+// ========================================
+
+@media (max-width: 900px) {
+
+  .cost-payment-container {
+    padding: 60px 7% 50px;
+  }
+
+
+  .payment-heading {
+    margin-bottom: 38px;
+  }
+
+
+  .payment-options {
+    max-width: 540px;
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  .payment-card {
+    min-height: 0;
+
+    padding: 32px 28px;
+  }
+
+
+  .payment-description {
+    min-height: 0;
+  }
+
+
+  .payment-account {
+    margin-top: 5px;
+  }
+
+
+  .payment-summary {
+    max-width: 600px;
+  }
+
+
+  .payment-terms {
+    max-width: 650px;
+
+    padding: 24px 22px;
+  }
+}
+
+
+// ========================================
+// MOBILE
+// ========================================
+
+@media (max-width: 480px) {
+
+  .cost-payment-container {
+    padding: 48px 6% 42px;
+  }
+
+
+  // HEADING
+
+  .payment-heading {
+    margin-bottom: 32px;
+
+    .payment-label {
+      font-size: 0.68rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+
+  .payment-heading-text {
+    font-size: 0.9rem;
+
+    line-height: 1.55;
+  }
+
+
+  // CARDS
+
+  .payment-options {
+    margin-bottom: 38px;
+
+    gap: 15px;
+  }
+
+
+  .payment-card {
+    padding: 28px 20px;
+
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
+
+
+  // ICONS
+
+  .payment-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+
+  // DESCRIPTION
+
+  .payment-description {
+    font-size: 0.85rem;
+  }
+
+
+  // ACCOUNT
+
+  .payment-account {
+    padding: 13px 8px;
+
+    strong {
+      font-size: 0.9rem;
+    }
+  }
+
+
+  // SUMMARY
+
+  .payment-summary {
+    margin-bottom: 35px;
+
+    p {
+      font-size: 0.88rem;
+    }
+  }
+
+
+  .payment-summary .payment-note {
+    font-size: 0.86rem;
+  }
+
+
+  // TERMS
+
+  .payment-terms {
+    padding: 20px 14px;
+
+    p {
+      font-size: 0.75rem;
+
+      line-height: 1.55;
+    }
+  }
+}
+
+// ========================================
 // RETREAT EXPERIENCE
 // ========================================
 
@@ -316,7 +854,7 @@
 
 .cost-payment-container {
   width: cover;
-  background-color: $pink;
+  background-color: #f7f2ec;
   padding-top: 70px;
   padding-bottom: 70px;
   margin-top: 70px;

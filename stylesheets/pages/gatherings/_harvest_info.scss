@@ -1,440 +1,356 @@
-
 // ========================================
-// GROUND & GAZE INFORMATION SECTION
+// GROUND & GAZE INTRODUCTION
 // ========================================
 
-.ground-gaze-info-section {
-  margin: auto;
-  width: 90%;
-  padding-top: 75px;
-  padding-bottom: 75px;
+.ground-gaze-intro {
+  position: relative;
 
+  width: 100%;
 
-  // ========================================
-  // TITLE
-  // ========================================
+  padding: 115px 140px 105px;
 
-  .ground-gaze-info-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 70px;
+  background: #f7f2eb;
 
-    h1 {
-      font-size: 45px;
-      padding-bottom: 20px;
-      text-align: center;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    hr {
-      border: 0;
-      width: 10%;
-      background-color: #323232;
-      height: 0.5px;
-    }
-  }
+  overflow: hidden;
 
-
-  // ========================================
-  // MAIN CONTENT
-  // ========================================
-
-  .ground-gaze-info-container {
-
-    .ground-gaze-info-half {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 70px;
-      width: 100%;
-    }
-
-
-    // ========================================
-    // FLYER
-    // ========================================
-
-    img {
-      width: 420px;
-      max-width: 100%;
-      height: auto;
-      border-radius: 7px;
-      box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-    }
-
-
-    // ========================================
-    // TEXT
-    // ========================================
-
-    .ground-gaze-info-text {
-      width: 550px;
-      max-width: 100%;
-
-      p {
-        font-size: 22px;
-        line-height: 36px;
-        margin-bottom: 25px;
-      }
-
-      strong {
-        font-weight: bold;
-      }
-
-      em {
-        font-style: italic;
-      }
-    }
-
-  }
-
-
-  // ========================================
-  // LAPTOP
-  // ========================================
-
-  @media only screen and (max-width: $laptop) {
-
-    .ground-gaze-info-container {
-
-      .ground-gaze-info-half {
-        gap: 45px;
-      }
-
-      img {
-        width: 350px;
-      }
-
-      .ground-gaze-info-text {
-        width: 450px;
-
-        p {
-          font-size: 20px;
-          line-height: 32px;
-        }
-      }
-
-    }
-
-  }
-
-
-  // ========================================
-  // TABLET
-  // ========================================
-
-  @media only screen and (max-width: $tablet) {
-
-    width: 85%;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-
-    .ground-gaze-info-title {
-      padding-bottom: 50px;
-
-      h1 {
-        font-size: 40px;
-      }
-
-      hr {
-        width: 15%;
-      }
-    }
-
-
-    .ground-gaze-info-container {
-
-      .ground-gaze-info-half {
-        flex-direction: column;
-        gap: 40px;
-        align-items: center;
-      }
-
-
-      // Flyer sits above the text
-      img {
-        width: 380px;
-        max-width: 80%;
-      }
-
-
-      .ground-gaze-info-text {
-        width: 100%;
-        max-width: 650px;
-
-        p {
-          font-size: 20px;
-          line-height: 32px;
-          text-align: center;
-        }
-      }
-
-    }
-
-  }
-
-
-  // ========================================
-  // IPHONE / PHONE
-  // ========================================
-
-  @media only screen and (max-width: $phone) {
-
-    width: 90%;
-    padding-top: 45px;
-    padding-bottom: 45px;
-
-
-    .ground-gaze-info-title {
-      padding-bottom: 35px;
-
-      h1 {
-        font-size: 35px;
-        padding-bottom: 15px;
-      }
-
-      hr {
-        width: 20%;
-      }
-    }
-
-
-    .ground-gaze-info-container {
-
-      .ground-gaze-info-half {
-        flex-direction: column;
-        gap: 30px;
-      }
-
-
-      // Vertical flyer
-      img {
-        width: 100%;
-        max-width: 330px;
-      }
-
-
-      .ground-gaze-info-text {
-        width: 100%;
-
-        p {
-          font-size: 18px;
-          line-height: 30px;
-          text-align: center;
-          margin-bottom: 20px;
-        }
-      }
-
-    }
-
-  }
-
+  border-top: 1px solid rgba(116, 122, 80, 0.1);
+  border-bottom: 1px solid rgba(116, 122, 80, 0.1);
 }
 
 
+// ========================================
+// CONTENT
+// ========================================
+
+.intro-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
 
 
-.harvest-info-section {
-  margin: auto;
-  width: 90%;
-  padding-top: 75px;
+// ========================================
+// SMALL LABEL
+// ========================================
 
-  .harvest-info-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 80px;
+.intro-label {
+  margin: 0 0 16px;
 
-    h1 {
-      font-size: 45px;
-      padding-bottom: 20px;
-    }
+  font-family: Arial, Helvetica, sans-serif;
 
-    hr {
-      border: 0;
-      width: 10%;
-      background-color: #323232;
-      height: 0.5px;
-    }
+  font-size: 0.7rem;
+  font-weight: 500;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+
+  color: #697250;
+}
+
+
+// ========================================
+// HEADLINE
+// ========================================
+
+.intro-content h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+
+  font-weight: 400;
+
+  line-height: 1.2;
+
+  color: #222;
+}
+
+
+// ========================================
+// DIVIDER
+// ========================================
+
+.intro-divider {
+  width: 55px;
+  height: 1px;
+
+  margin: 22px auto 25px;
+
+  background: #747a50;
+}
+
+
+// ========================================
+// DESCRIPTION
+// ========================================
+
+.intro-description {
+  max-width: 660px;
+
+  margin: 0 auto;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(0.98rem, 1.2vw, 1.08rem);
+
+  line-height: 1.75;
+
+  color: #383838;
+}
+
+
+// ========================================
+// EMPHASIS
+// ========================================
+
+.intro-emphasis {
+  margin: 18px auto 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 0.96rem;
+
+  font-style: italic;
+  font-weight: 600;
+
+  line-height: 1.6;
+
+  color: #596343;
+}
+
+
+// ========================================
+// OLIVE BRANCHES
+// ========================================
+
+.intro-branch {
+  position: absolute;
+  z-index: 1;
+
+  width: 115px;
+  height: auto;
+
+  opacity: 0.5;
+
+  pointer-events: none;
+}
+
+
+// LEFT BRANCH
+
+.intro-branch-left {
+  left: 8%;
+  top: 60%;
+
+  transform: translateY(-50%) rotate(-6deg);
+}
+
+
+// RIGHT BRANCH
+
+.intro-branch-right {
+  right: 8%;
+  top: 60%;
+
+  transform: translateY(-50%) scaleX(-1) rotate(-6deg);
+}
+
+
+// ========================================
+// LARGE LAPTOP
+// ========================================
+
+@media (max-width: 1200px) {
+
+  .ground-gaze-intro {
+    padding: 105px 100px 95px;
   }
 
-  .harvest-info-container {
-    .harvest-info-half {
-      display: flex;
-      justify-content: center;
-      gap: 60px;
-      align-items: center;
-      padding-bottom: 40px;
 
-      p {
-        width: 550px;
-        font-size: 24px;
-        line-height: 40px;
-      }
-
-      img {
-        width: 330px;
-        border-radius: 7px;
-        box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-      }
-    }
-    .gathering-info-bottom {
-      p {
-        width: 800px;
-        font-size: 20px;
-        line-height: 34px;
-        margin: auto;
-        padding-bottom: 20px;
-        text-align: center;
-        color: rgb(122, 120, 122);
-      }
-    }
+  .intro-content {
+    max-width: 650px;
   }
 
-  .harvest-sign-up {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
 
-    button {
-      color: $softblack;
-      margin: 20px 10px;
-      padding: 12px 22px;
-      text-decoration: none;
-      font-family: $body-font;
-      font-size: 24px;
-      background-color: $background;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-      cursor: pointer;
-      transition: 0.5s;
-      align-items: center;
-      width: 200px;
+  .intro-branch {
+    width: 95px;
 
-      a {
-        color: $softblack;
-      }
-
-      &:hover {
-        font-size: 25px;
-        background: rgba(0, 0, 0, 0.2);
-      }
-
-      &:hover:after {
-        opacity: 1;
-        right: 10px;
-      }
-    }
+    opacity: 0.42;
   }
 
-  @media only screen and (max-width: $laptop) {
-    .harvest-info-container {
-      .harvest-info-half {
-        p {
-          width: 450px;
-        }
-      }
 
-      .gathering-info-bottom {
-        margin-top: 20px;
-
-        p {
-          width: 650px;
-          font-size: 18px;
-        }
-      }
-    }
+  .intro-branch-left {
+    left: 4%;
   }
 
-  @media only screen and (max-width: $tablet) {
-    width: 80%;
-    padding-bottom: 20px;
 
-    .harvest-info-title {
-      padding-bottom: 60px;
-      text-align: center;
+  .intro-branch-right {
+    right: 4%;
+  }
+}
 
-      h1 {
-        font-size: 40px;
-      }
-    }
 
-    .harvest-info-container {
-      .harvest-info-half {
-        padding-bottom: 20px;
+// ========================================
+// TABLET
+// ========================================
 
-        p {
-          width: 500px;
-          font-size: 24px;
-          line-height: 35px;
-        }
+@media (max-width: 900px) {
 
-        img {
-          display: none;
-        }
-      }
-
-      .gathering-info-bottom {
-        p {
-          width: 350px;
-          font-size: 18px;
-
-          span {
-            color: black;
-            font-weight: bold;
-          }
-        }
-      }
-    }
-
-    .harvest-sign-up {
-      padding-top: 0;
-      padding-bottom: 20px;
-
-      button {
-        font-size: 22px;
-        width: 175px;
-
-        &:hover {
-          font-size: 23px;
-        }
-      }
-    }
+  .ground-gaze-intro {
+    padding: 90px 60px 85px;
   }
 
-  @media only screen and (max-width: $phone) {
-    .harvest-info-title {
-      padding-bottom: 30px;
 
-      h1 {
-        font-size: 35px;
-        padding-bottom: 15px;
-      }
-    }
-    .harvest-info-container {
-      .harvest-info-half {
-        p {
-          text-align: center;
-          width: 300px;
-          font-size: 20px;
-          line-height: 30px;
-        }
-      }
+  .intro-content {
+    max-width: 600px;
+  }
 
-      .gathering-info-bottom {
-        p {
-          width: 275px;
-          font-size: 16px;
-        }
-      }
-    }
+
+  // Hide decorative branches on tablet
+  // and all smaller screens.
+
+  .intro-branch {
+    display: none;
+  }
+
+
+  .intro-label {
+    margin-bottom: 14px;
+  }
+
+
+  .intro-content h2 {
+    font-size: 2.15rem;
+  }
+
+
+  .intro-divider {
+    margin: 20px auto 23px;
+  }
+
+
+  .intro-description {
+    font-size: 1rem;
+
+    line-height: 1.7;
+  }
+
+
+  .intro-emphasis {
+    margin-top: 16px;
+
+    font-size: 0.94rem;
+  }
+}
+
+
+// ========================================
+// SMALL TABLET
+// ========================================
+
+@media (max-width: 700px) {
+
+  .ground-gaze-intro {
+    padding: 80px 42px 75px;
+  }
+
+
+  .intro-content {
+    max-width: 520px;
+  }
+
+
+  .intro-content h2 {
+    font-size: 2rem;
+  }
+}
+
+
+// ========================================
+// MOBILE
+// ========================================
+
+@media (max-width: 480px) {
+
+  .ground-gaze-intro {
+    padding: 70px 25px 65px;
+  }
+
+
+  .intro-content {
+    max-width: 100%;
+  }
+
+
+  .intro-label {
+    margin-bottom: 13px;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 0.16em;
+  }
+
+
+  .intro-content h2 {
+    font-size: 1.8rem;
+
+    line-height: 1.22;
+  }
+
+
+  .intro-divider {
+    width: 48px;
+
+    margin: 19px auto 21px;
+  }
+
+
+  .intro-description {
+    font-size: 0.93rem;
+
+    line-height: 1.7;
+  }
+
+
+  .intro-emphasis {
+    margin-top: 15px;
+
+    font-size: 0.88rem;
+
+    line-height: 1.55;
+  }
+}
+
+
+// ========================================
+// VERY SMALL PHONES
+// ========================================
+
+@media (max-width: 360px) {
+
+  .ground-gaze-intro {
+    padding: 62px 20px 58px;
+  }
+
+
+  .intro-content h2 {
+    font-size: 1.65rem;
+  }
+
+
+  .intro-description {
+    font-size: 0.9rem;
   }
 }

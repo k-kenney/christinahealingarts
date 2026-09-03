@@ -1,123 +1,318 @@
-.harvest-retreat-banner {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background: $light-green;
 
-  .harvest-banner-text {
-    width: 400px;
+// ========================================
+// GROUND & GAZE INFORMATION SECTION
+// ========================================
+
+.ground-gaze-info-section {
+  margin: auto;
+
+  width: 90%;
+
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+
+  // ========================================
+  // TITLE
+  // ========================================
+
+  .ground-gaze-info-title {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    padding-bottom: 70px;
+
+    h1 {
+      margin: 0;
+
+      font-size: 45px;
+      text-align: center;
+
+      padding-bottom: 20px;
+    }
+
+    hr {
+      width: 10%;
+      height: 0.5px;
+
+      margin: 0;
+
+      border: 0;
+
+      background-color: #323232;
+    }
+  }
+
+
+  // ========================================
+  // MAIN CONTENT
+  // ========================================
+
+  .ground-gaze-info-container {
+    display: flex;
     flex-direction: column;
 
-    h2 {
-      font-size: 45px;
-      line-height: 55px;
-      text-align: center;
-      padding-bottom: 40px;
-      color: $background;
+    gap: 80px;
+  }
+
+
+  // ========================================
+  // EACH ROW
+  // ========================================
+
+  .ground-gaze-info-half {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+
+    width: 100%;
+  }
+
+
+  // ========================================
+  // IMAGES
+  // ========================================
+
+  .ground-gaze-info-half img {
+    width: 420px;
+    max-width: 100%;
+    height: 420px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.35);
+
+    flex-shrink: 0;
+  }
+
+
+  // ========================================
+  // FIRST IMAGE / FLYER
+  // Keeps flyer proportions
+  // ========================================
+
+  .ground-gaze-info-half:first-child img {
+    height: auto;
+
+    object-fit: contain;
+  }
+
+
+  // ========================================
+  // TEXT
+  // ========================================
+
+  .ground-gaze-info-text {
+    width: 550px;
+    max-width: 100%;
+
+    p {
+      margin: 0 0 25px;
+
+      font-size: 22px;
+      line-height: 36px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
-    button {
-      color: $softblack;
-      margin: 20px 10px;
-      padding: 12px 22px;
-      text-decoration: none;
-      font-family: $body-font;
-      font-size: 24px;
-      background-color: $background;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-      cursor: pointer;
-      transition: 0.5s;
+    strong {
+      font-weight: bold;
+    }
 
-      a {
-        color: $softblack;
-      }
-
-      &:hover {
-        font-size: 25px;
-        background: rgba(0, 0, 0, 0.2);
-      }
-
-      &:hover:after {
-        opacity: 1;
-        right: 10px;
-      }
+    em {
+      font-style: italic;
     }
   }
 
-  .flyer {
-    img {
-      border-radius: 7px;
-      box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-      width: 500px;
-    }
-  }
+
+  // ========================================
+  // LAPTOP
+  // ========================================
 
   @media only screen and (max-width: $laptop) {
 
-  .harvest-banner-text {
-    width: 350px;
-
-
-    h2 {
-      font-size: 35px;
-      line-height: 45px;
+    .ground-gaze-info-container {
+      gap: 65px;
     }
 
-    button {
-      font-size: 22px;
+    .ground-gaze-info-half {
+      gap: 45px;
     }
-  }
 
-  .flyer {
-    img {
-      border-radius: 7px;
-      box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    .ground-gaze-info-half img {
+      width: 350px;
+      height: 350px;
+    }
+
+    .ground-gaze-info-half:first-child img {
+      height: auto;
+    }
+
+    .ground-gaze-info-text {
       width: 450px;
+
+      p {
+        font-size: 20px;
+        line-height: 32px;
+      }
     }
   }
-  }
+
+
+  // ========================================
+  // TABLET
+  // ========================================
 
   @media only screen and (max-width: $tablet) {
+    width: 85%;
+
     padding-top: 60px;
     padding-bottom: 60px;
-    flex-direction: column;
-  
-    .harvest-banner-text {
-  
-      h2 {
-        display: none;
 
+
+    .ground-gaze-info-title {
+      padding-bottom: 50px;
+
+      h1 {
+        font-size: 40px;
       }
-  
-      button {
-        display: none;;
+
+      hr {
+        width: 15%;
       }
     }
-  
-    .flyer {
-      img {
-        width: 400px;
+
+
+    .ground-gaze-info-container {
+      gap: 70px;
+    }
+
+
+    // Every row now becomes image -> text
+    .ground-gaze-info-half {
+      flex-direction: column;
+
+      gap: 28px;
+
+      align-items: center;
+    }
+
+
+    // Force image to top
+    .ground-gaze-info-half img {
+      order: 1;
+
+      width: 100%;
+      max-width: 600px;
+      height: 340px;
+    }
+
+
+    // Text always goes underneath
+    .ground-gaze-info-text {
+      order: 2;
+
+      width: 100%;
+      max-width: 600px;
+
+      p {
+        font-size: 19px;
+        line-height: 31px;
+
+        text-align: left;
       }
+    }
+
+
+    // Flyer should not be cropped
+    .ground-gaze-info-half:first-child img {
+      width: 380px;
+      max-width: 85%;
+      height: auto;
+
+      object-fit: contain;
     }
   }
 
+
+  // ========================================
+  // PHONE
+  // ========================================
+
   @media only screen and (max-width: $phone) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    width: 90%;
+
+    padding-top: 45px;
+    padding-bottom: 45px;
 
 
-    .flyer {
-      img {
-        width: 300px;
+    .ground-gaze-info-title {
+      padding-bottom: 35px;
+
+      h1 {
+        font-size: 35px;
+
+        padding-bottom: 15px;
+      }
+
+      hr {
+        width: 20%;
+      }
+    }
+
+
+    .ground-gaze-info-container {
+      gap: 55px;
+    }
+
+
+    .ground-gaze-info-half {
+      gap: 24px;
+    }
+
+
+    // Landscape images
+    .ground-gaze-info-half img {
+      width: 100%;
+      max-width: 100%;
+      height: 250px;
+
+      border-radius: 5px;
+    }
+
+
+    // Flyer image stays vertical
+    .ground-gaze-info-half:first-child img {
+      width: 100%;
+      max-width: 330px;
+      height: auto;
+    }
+
+
+    .ground-gaze-info-text {
+      width: 100%;
+
+      p {
+        font-size: 18px;
+        line-height: 29px;
+
+        text-align: left;
+
+        margin-bottom: 18px;
       }
     }
   }
 }
+
