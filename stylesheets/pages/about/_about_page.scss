@@ -1,3 +1,630 @@
+// ========================================
+// ABOUT PAGE
+// ========================================
+
+.about-page {
+  width: 100%;
+  overflow-x: hidden;
+
+  background: #fff;
+
+  font-family: $body-font;
+}
+
+
+// ========================================
+// INTRO
+// ========================================
+
+.about-page-intro {
+  width: 100%;
+
+  padding: 100px 7% 90px;
+
+  background: #f7f2eb;
+
+  text-align: center;
+}
+
+
+.about-page-intro-content {
+  width: 100%;
+  max-width: 760px;
+
+  margin: 0 auto;
+}
+
+
+.about-label {
+  margin: 0 0 14px;
+
+  font-family: $body-font;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+
+  color: $light_green;
+}
+
+
+.about-page-intro h1 {
+  margin: 0;
+
+  font-family: $body-font;
+
+  font-size: clamp(2.4rem, 4.5vw, 4rem);
+  font-weight: 400;
+
+  line-height: 1.1;
+
+  color: #222;
+}
+
+
+.about-title-divider {
+  width: 58px;
+  height: 1px;
+
+  margin: 24px auto;
+
+  background: $light_green;
+}
+
+
+.about-intro-text {
+  max-width: 680px;
+
+  margin: 0 auto;
+
+  font-family: $body-font;
+
+  font-size: 1.05rem;
+
+  line-height: 1.75;
+
+  color: #444;
+}
+
+
+// ========================================
+// FACILITATOR PROFILES
+// ========================================
+
+.facilitator-profile {
+  width: 100%;
+
+  padding: 100px 7%;
+
+  background: #fff;
+}
+
+
+.facilitator-profile-alt {
+  background: #f7f2eb;
+}
+
+
+.facilitator-profile-inner {
+  width: 100%;
+  max-width: 1140px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(380px, 0.9fr) minmax(0, 1.1fr);
+
+  align-items: center;
+
+  gap: 85px;
+}
+
+
+.facilitator-profile-alt .facilitator-profile-image {
+  order: 2;
+}
+
+
+.facilitator-profile-alt .facilitator-profile-content {
+  order: 1;
+}
+
+
+// ========================================
+// PHOTOS
+// ========================================
+
+.facilitator-profile-image {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+.facilitator-profile-image img {
+  width: min(100%, 470px);
+
+  aspect-ratio: 1 / 1;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 28px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+
+// ========================================
+// PROFILE CONTENT
+// ========================================
+
+.facilitator-profile-content {
+  width: 100%;
+}
+
+
+.facilitator-eyebrow {
+  margin: 0 0 12px;
+
+  font-family: $body-font;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  color: $light_green;
+}
+
+
+.facilitator-profile-content h2,
+.shared-approach-content h2 {
+  margin: 0;
+
+  font-family: $body-font;
+
+  font-size: clamp(2.1rem, 3vw, 2.9rem);
+  font-weight: 400;
+
+  line-height: 1.15;
+
+  color: #222;
+}
+
+
+.facilitator-divider {
+  width: 52px;
+  height: 1px;
+
+  margin: 20px 0 24px;
+
+  background: $light_green;
+}
+
+
+.facilitator-role {
+  margin: 0 0 28px !important;
+
+  font-family: $body-font;
+
+  font-size: 1rem !important;
+  font-weight: 600;
+
+  line-height: 1.5 !important;
+
+  color: $light_green !important;
+}
+
+
+.facilitator-profile-content >
+p:not(.facilitator-eyebrow):not(.facilitator-role) {
+  margin: 0 0 18px;
+
+  font-family: $body-font;
+
+  font-size: 1rem;
+
+  line-height: 1.75;
+
+  color: #3d3d3d;
+}
+
+
+// ========================================
+// SHARED APPROACH
+// ========================================
+
+.shared-approach {
+  width: 100%;
+
+  padding: 105px 7%;
+
+  background: #fff;
+}
+
+
+.shared-approach-content {
+  width: 100%;
+  max-width: 730px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+.shared-approach-content .facilitator-divider {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.shared-approach-content >
+p:not(.facilitator-eyebrow) {
+  margin: 0 auto 18px;
+
+  font-family: $body-font;
+
+  font-size: 1rem;
+
+  line-height: 1.75;
+
+  color: #3d3d3d;
+}
+
+
+.shared-approach-content .approach-emphasis {
+  margin-top: 30px;
+
+  font-family: $body-font;
+
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-style: italic;
+
+  color: $light_green;
+}
+
+
+// ========================================
+// SHARED TRAINING
+// ========================================
+
+.shared-training {
+  width: 100%;
+
+  padding: 95px 7% 105px;
+
+  background: $light_green;
+}
+
+
+.shared-training-inner {
+  width: 100%;
+  max-width: 1050px;
+
+  margin: 0 auto;
+}
+
+
+.shared-training-heading {
+  width: 100%;
+  max-width: 680px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+
+.shared-training-label {
+  margin: 0 0 12px;
+
+  font-family: $body-font;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+.shared-training-heading h2 {
+  margin: 0;
+
+  font-family: $body-font;
+
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 400;
+
+  line-height: 1.2;
+
+  color: #fff;
+}
+
+
+.shared-training-divider {
+  width: 52px;
+  height: 1px;
+
+  margin: 22px auto;
+
+  background: rgba(255, 255, 255, 0.7);
+}
+
+
+.shared-training-heading > p:last-child {
+  margin: 0 auto;
+
+  font-family: $body-font;
+
+  font-size: 0.98rem;
+
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+// ========================================
+// TRAINING GRID
+// ========================================
+
+.shared-training-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 0 50px;
+}
+
+
+.training-item {
+  min-height: 78px;
+
+  display: grid;
+  grid-template-columns: 40px 1fr;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.training-item span {
+  font-family: $body-font;
+
+  font-size: 0.67rem;
+  font-weight: 600;
+
+  letter-spacing: 0.1em;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+
+.training-item p {
+  margin: 0;
+
+  font-family: $body-font;
+
+  font-size: 0.92rem;
+
+  line-height: 1.5;
+
+  color: #fff;
+}
+
+
+// ========================================
+// TABLET
+// ========================================
+
+@media (max-width: 1000px) {
+
+  .facilitator-profile-inner {
+    grid-template-columns:
+      minmax(320px, 0.85fr)
+      minmax(0, 1.15fr);
+
+    gap: 55px;
+  }
+
+
+  .facilitator-profile-image img {
+    width: min(100%, 410px);
+  }
+
+}
+
+
+// ========================================
+// SMALL TABLET
+// ========================================
+
+@media (max-width: 800px) {
+
+  .about-page-intro {
+    padding: 80px 45px 75px;
+  }
+
+
+  .facilitator-profile {
+    padding: 75px 45px;
+  }
+
+
+  .facilitator-profile-inner {
+    grid-template-columns: 1fr;
+
+    gap: 42px;
+  }
+
+
+  .facilitator-profile-image,
+  .facilitator-profile-alt .facilitator-profile-image {
+    order: 1;
+  }
+
+
+  .facilitator-profile-content,
+  .facilitator-profile-alt .facilitator-profile-content {
+    order: 2;
+  }
+
+
+  .facilitator-profile-image img {
+    width: min(100%, 500px);
+  }
+
+
+  .shared-approach {
+    padding: 85px 45px;
+  }
+
+
+  .shared-training {
+    padding: 80px 45px 90px;
+  }
+
+
+  .shared-training-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+// ========================================
+// MOBILE
+// ========================================
+
+@media (max-width: 600px) {
+
+  .about-page-intro {
+    padding: 65px 25px;
+  }
+
+
+  .about-page-intro h1 {
+    font-size: 2.25rem;
+  }
+
+
+  .about-intro-text {
+    font-size: 0.95rem;
+  }
+
+
+  .facilitator-profile {
+    padding: 65px 25px;
+  }
+
+
+  .facilitator-profile-inner {
+    gap: 35px;
+  }
+
+
+  .facilitator-profile-image img {
+    width: 100%;
+
+    max-width: 430px;
+
+    border-radius: 22px;
+  }
+
+
+  .facilitator-profile-content h2,
+  .shared-approach-content h2,
+  .shared-training-heading h2 {
+    font-size: 2rem;
+  }
+
+
+  .facilitator-profile-content >
+  p:not(.facilitator-eyebrow):not(.facilitator-role),
+  .shared-approach-content >
+  p:not(.facilitator-eyebrow) {
+    font-size: 0.94rem;
+
+    line-height: 1.7;
+  }
+
+
+  .shared-approach {
+    padding: 70px 25px;
+  }
+
+
+  .shared-training {
+    padding: 65px 25px 75px;
+  }
+
+
+  .training-item {
+    min-height: 70px;
+
+    grid-template-columns: 34px 1fr;
+  }
+
+
+  .training-item p {
+    font-size: 0.87rem;
+  }
+
+}
+
+
+// ========================================
+// VERY SMALL MOBILE
+// ========================================
+
+@media (max-width: 400px) {
+
+  .about-page-intro {
+    padding: 60px 20px;
+  }
+
+
+  .facilitator-profile {
+    padding: 60px 20px;
+  }
+
+
+  .shared-approach {
+    padding: 65px 20px;
+  }
+
+
+  .shared-training {
+    padding: 60px 20px 70px;
+  }
+
+
+  .facilitator-profile-image img {
+    border-radius: 18px;
+  }
+
+}
+
+
 .about-page {
   padding-bottom: 25px;
 

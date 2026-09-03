@@ -16,76 +16,289 @@
   </head>
 
   <body>
-    <!-- navbar section -->
-    <header data-controller="toggle">
-      <div class="navbar">
-        <a href="../index.html" target="_blank" rel="noopener"
-        ><img
-          class="logo"
-          src="../img/circle-logo-yellow.png"
-          alt="business logo"
-      /></a>
+      <!-- REUSABLE NAVBAR -->
+  <div data-controller="navbar"></div>
 
-        <nav data-toggle-target="menu" class="pages-navbar mobile-hidden">
-          <a href="../index.html">Home</a>
-          <a href="index.html"
-            >About
-            <hr
-          /></a>
-          <a href="../services/index.html">Services</a>
-          <a href="../pricing/index.html">Pricing</a>
-          <a href="../gatherings/index.html">Gatherings</a>
-          <a href="#contact">Contact</a>
-        </nav>
+<main class="about-page">
 
-        <nav class="social-icons">
-          <a
-            href="https://www.facebook.com/christinapharesyoga"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="fa-brands fa-square-facebook"></i>
-          </a>
+  <!-- ========================================
+       INTRO
+  ========================================= -->
 
-          <a
-            href="https://www.instagram.com/christinahealingarts/"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="fa-brands fa-square-instagram"></i>
-          </a>
+  <section class="about-page-intro">
+    <div class="about-page-intro-content">
 
-          <a
-            href="https://www.linkedin.com/in/christina-phares-18b541145/"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </nav>
+      <p class="about-label">
+        CHRISTINA HEALING ARTS
+      </p>
 
-        <button data-action="click->toggle#toggleMenu" type="button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 50 50"
-            width="40px"
-            height="40px"
-          >
-            <path
-              data-toggle-target="hamburger"
-              d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z"
-            />
+      <h1>Meet Your Facilitators</h1>
 
-            <path
-              data-toggle-target="close"
-              class="d-none"
-              d="M 40.783203 7.2714844 A 2.0002 2.0002 0 0 0 39.386719 7.8867188 L 25.050781 22.222656 L 10.714844 7.8867188 A 2.0002 2.0002 0 0 0 9.2792969 7.2792969 A 2.0002 2.0002 0 0 0 7.8867188 10.714844 L 22.222656 25.050781 L 7.8867188 39.386719 A 2.0002 2.0002 0 1 0 10.714844 42.214844 L 25.050781 27.878906 L 39.386719 42.214844 A 2.0002 2.0002 0 1 0 42.214844 39.386719 L 27.878906 25.050781 L 42.214844 10.714844 A 2.0002 2.0002 0 0 0 40.783203 7.2714844 z"
-            />
-          </svg>
-        </button>
+      <div class="about-title-divider"></div>
+
+      <p class="about-intro-text">
+        Christina and Abigail bring complementary experience, care,
+        and intention to the spaces they facilitate together.
+        Their shared approach is rooted in connection, choice,
+        nervous-system support, and creating room for each person
+        to meet themselves where they are.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       CHRISTINA
+  ========================================= -->
+
+  <section class="facilitator-profile" id="christina">
+
+    <div class="facilitator-profile-inner">
+
+      <div class="facilitator-profile-image">
+        <img
+          src="../img/about-hero.jpg"
+          alt="Christina Phares"
+        />
       </div>
-    </header>
-    <main class="about-page">
+
+      <div class="facilitator-profile-content">
+
+        <p class="facilitator-eyebrow">
+          FACILITATOR
+        </p>
+
+        <h2>Christina Phares</h2>
+
+        <div class="facilitator-divider"></div>
+
+        <p class="facilitator-role">
+          Somatic Wellness &amp; Mind-Body Facilitator
+        </p>
+
+        <p>
+          Born and raised in San Diego, Christina was first introduced
+          to yoga while teaching English as a Second Language in South
+          Korea. It was there that she began to more deeply understand
+          the connection between mind and body.
+        </p>
+
+        <p>
+          After returning to the United States, Christina completed her
+          200-Hour Yoga Alliance Approved Teacher Training and continued
+          expanding her work through trauma-informed yoga, somatics,
+          adaptive yoga, Yin Yoga, breathwork, meditation, and Reiki.
+        </p>
+
+        <p>
+          Her years working in yoga studio management eventually led her
+          toward creating a practice centered on her own vision:
+          offering tools for introspection and empowering people to take
+          an active role in their wellbeing.
+        </p>
+
+        <p>
+          Christina approaches her work as a supportive guide, creating
+          space for exploration, curiosity, movement, and self-trust.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       ABIGAIL
+  ========================================= -->
+
+  <section class="facilitator-profile facilitator-profile-alt" id="abigail">
+
+    <div class="facilitator-profile-inner">
+
+      <div class="facilitator-profile-image">
+        <img
+          src="../img/abigail_berard.png"
+          alt="Abigail Berard"
+        />
+      </div>
+
+      <div class="facilitator-profile-content">
+
+        <p class="facilitator-eyebrow">
+          FACILITATOR
+        </p>
+
+        <h2>Abigail Berard</h2>
+
+        <div class="facilitator-divider"></div>
+
+        <p class="facilitator-role">
+          Trauma-Informed Wellness Facilitator
+        </p>
+
+        <p>
+          Abigail brings a compassionate, trauma-informed perspective
+          to the spaces she facilitates, with an emphasis on emotional
+          wellbeing, grounding, and nervous-system support.
+        </p>
+
+        <p>
+          Her work creates opportunities for reflection, connection,
+          restorative care, and moments of stillness that allow people
+          to reconnect with what they need.
+        </p>
+
+        <p>
+          Abigail also brings Reiki into her work, offering another
+          layer of support within experiences designed to help
+          participants slow down, soften, and feel more present.
+        </p>
+
+        <p>
+          Her approach centers choice and personal agency, creating
+          space where participation, rest, curiosity, and simply being
+          are all equally welcome.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       SHARED APPROACH
+  ========================================= -->
+
+  <section class="shared-approach">
+
+    <div class="shared-approach-content">
+
+      <p class="facilitator-eyebrow">
+        TOGETHER
+      </p>
+
+      <h2>
+        A Shared Approach to Wellbeing
+      </h2>
+
+      <div class="facilitator-divider"></div>
+
+      <p>
+        Christina and Abigail believe wellbeing is personal.
+        There is no single way a meaningful experience has to look.
+      </p>
+
+      <p>
+        Their role is to create supportive spaces where movement,
+        stillness, community, solitude, reflection, and rest can all
+        exist together.
+      </p>
+
+      <p>
+        Whether guiding a retreat, wellness experience, or shared
+        practice, they aim to offer structure without pressure and
+        support without expectation.
+      </p>
+
+      <p class="approach-emphasis">
+        Your body gets to vote.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       EXPERIENCE & TRAINING
+  ========================================= -->
+
+  <section class="shared-training">
+
+    <div class="shared-training-inner">
+
+      <div class="shared-training-heading">
+
+        <p class="shared-training-label">
+          EXPERIENCE &amp; TRAINING
+        </p>
+
+        <h2>
+          Rooted in Practice, Education &amp; Care
+        </h2>
+
+        <div class="shared-training-divider"></div>
+
+        <p>
+          Their combined backgrounds inform the thoughtful,
+          supportive spaces they create together.
+        </p>
+
+      </div>
+
+
+      <div class="shared-training-grid">
+
+        <div class="training-item">
+          <span>01</span>
+          <p>Trauma-Informed Wellness &amp; Yoga Practices</p>
+        </div>
+
+        <div class="training-item">
+          <span>02</span>
+          <p>Somatic &amp; Nervous-System Support</p>
+        </div>
+
+        <div class="training-item">
+          <span>03</span>
+          <p>Reiki Levels 1 &amp; 2</p>
+        </div>
+
+        <div class="training-item">
+          <span>04</span>
+          <p>Yoga Teacher Training &amp; Movement Practices</p>
+        </div>
+
+        <div class="training-item">
+          <span>05</span>
+          <p>Yin Yoga, Breathwork &amp; Meditation</p>
+        </div>
+
+        <div class="training-item">
+          <span>06</span>
+          <p>Grounding, Reflection &amp; Restorative Practices</p>
+        </div>
+
+        <div class="training-item">
+          <span>07</span>
+          <p>Adaptive &amp; Accessible Wellness Practices</p>
+        </div>
+
+        <div class="training-item">
+          <span>08</span>
+          <p>Community-Centered Facilitation</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       CONTACT
+  ========================================= -->
+
+  <div data-controller="contact"></div>
+
+</main>
+    <!-- <main class="about-page">
       <section class="about-hero">
         <img src="../img/about-hero.jpg" alt="Picture of Christina" />
       </section>
@@ -171,13 +384,13 @@
               whenever & wherever she goes.
             </p>
           </div>
-          <div class="images">
+          <div class="images"> -->
             <!-- <img src="../img/christy-band.jpeg" alt="Christy's band" /> -->
-            <img src="../img/christy-music.jpg" alt="Christy's band" />
+            <!-- <img src="../img/christy-music.jpg" alt="Christy's band" />
           </div>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <section class="get-started">
       <div class="form-calendly">
