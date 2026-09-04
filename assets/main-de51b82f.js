@@ -9,7 +9,7 @@ var S=Object.defineProperty;var V=(r,e,t)=>e in r?S(r,e,{enumerable:!0,configura
           <div class="business-logo-white">
             <a href="/" aria-label="Christina Healing Arts home">
               <img
-                src="/img/yellow-logo-circle.png"
+                src="./img/yellow-logo-circle.png"
                 alt="Christina Healing Arts"
               />
             </a>
