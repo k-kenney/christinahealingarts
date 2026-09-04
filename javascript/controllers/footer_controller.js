@@ -9,7 +9,7 @@ export default class extends Controller {
           <div class="business-logo-white">
             <a href="/" aria-label="Christina Healing Arts home">
               <img
-                src="/img/yellow-logo-circle.png"
+                src="./img/yellow-logo-circle.png"
                 alt="Christina Healing Arts"
               />
             </a>
