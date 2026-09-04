@@ -1,0 +1,152 @@
+// ========================================
+// RETREAT PHOTO GALLERY
+// ========================================
+
+.retreat-gallery {
+  width: 100%;
+
+  background: none;
+
+  padding: 70px 60px 80px;
+}
+
+
+// ========================================
+// GALLERY HEADING
+// ========================================
+
+.retreat-gallery-heading {
+  text-align: center;
+
+  margin-bottom: 38px;
+}
+
+.retreat-gallery-label {
+  margin: 0 0 10px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 0.72rem;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+
+  color: #747a50;
+}
+
+.retreat-gallery-heading h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+
+  font-weight: 400;
+
+  color: #3f4939;
+}
+
+.retreat-gallery-divider {
+  width: 48px;
+  height: 1px;
+
+  margin: 20px auto 0;
+
+  background: #b6a77c;
+}
+
+
+// ========================================
+// PHOTO ROW
+// ========================================
+
+.retreat-gallery-row {
+  width: 100%;
+  max-width: 1300px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+
+// ========================================
+// INDIVIDUAL PHOTOS
+// ========================================
+
+.retreat-gallery-image {
+  width: 100%;
+  height: 210px;
+
+  overflow: hidden;
+
+  border-radius: 3px;
+}
+
+.retreat-gallery-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.retreat-gallery-image:hover img {
+  transform: scale(1.025);
+}
+
+
+// ========================================
+// TABLET
+// ========================================
+
+@media (max-width: 900px) {
+
+  .retreat-gallery {
+    padding: 60px 35px 70px;
+  }
+
+  .retreat-gallery-row {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+  }
+
+  .retreat-gallery-image {
+    height: 220px;
+  }
+}
+
+
+// ========================================
+// MOBILE
+// ========================================
+
+@media (max-width: 600px) {
+
+  .retreat-gallery {
+    padding: 50px 20px 60px;
+  }
+
+  .retreat-gallery-heading {
+    margin-bottom: 30px;
+  }
+
+  .retreat-gallery-row {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .retreat-gallery-image {
+    height: 140px;
+  }
+}
