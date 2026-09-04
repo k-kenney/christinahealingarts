@@ -276,6 +276,41 @@
   }
 }
 
+// ========================================
+// RETREAT DIVIDER
+// ========================================
+
+.retreat-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  margin: 24px auto;
+
+  gap: 10px;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+
+    width: 75px;
+    height: 1px;
+
+    background-color: #596343;
+  }
+
+  span {
+    display: block;
+
+    font-size: .85rem;
+    line-height: 1;
+
+    color: #596343;
+  }
+}
+
 
 // ========================================
 // ICON GRID

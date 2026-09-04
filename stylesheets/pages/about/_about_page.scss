@@ -645,10 +645,23 @@ p:not(.facilitator-eyebrow) {
   }
 
 
+// ========================================
+// FACILITATOR ANCHORS
+// ========================================
+
+.facilitator-anchor {
+  display: block;
+  position: relative;
+
+  // Keeps the navbar from covering the facilitator
+  scroll-margin-top: 100px;
+}
+
   // FACILITATORS
 
   .facilitator-profile {
     padding: 60px 22px;
+    scroll-margin-top: 100px;
   }
 
 
