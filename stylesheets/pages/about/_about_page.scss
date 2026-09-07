@@ -692,6 +692,18 @@ p:not(.facilitator-eyebrow) {
     margin: 0;
   }
 
+  .facilitator-credentials {
+    margin: -8px 0 28px;
+
+    font-family: $body-font;
+    font-size: 0.78rem;
+    font-weight: 500;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $light-green;
+  }
 
   .facilitator-profile-content h2,
   .shared-approach-content h2,
